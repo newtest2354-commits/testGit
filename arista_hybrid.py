@@ -48,7 +48,7 @@ class Config:
     max_workers: int = 80
     queue_size: int = 20000
     batch_size: int = 500
-    tcp_timeout: float = 0.2
+    tcp_timeout: float = 0.3
     max_latency: int = 200
     min_latency: int = 50
     redis_url: str = "redis://localhost:6379"
@@ -60,7 +60,7 @@ class Config:
     retention_days: int = 7
     maxmind_path: str = "GeoLite2-Country.mmdb"
     use_online_fallback: bool = False
-    max_geo_batch: int = 15
+    max_geo_batch: int = 50
     max_ports_per_ip: int = 7
     enable_http_test: bool = True
     http_test_timeout: float = 1.0
@@ -72,6 +72,8 @@ class Config:
     ports: List[int] = None
     http_parallel: int = 200
     quality_threshold: int = 200
+    geo_thread_pool: int = 4
+    tcp_port_parallel: int = 7
 
     def __post_init__(self):
         if self.ports is None:
@@ -120,8 +122,9 @@ class EventDrivenDialer:
         self.pending = defaultdict(list)
         self.results = {}
         self._lock = asyncio.Lock()
+        self.port_semaphore = asyncio.Semaphore(50)
     
-    async def dial_port(self, ip: str, port: int, timeout: float = 0.2) -> Tuple[Optional[int], Optional[float]]:
+    async def dial_port(self, ip: str, port: int, timeout: float = 0.3) -> Tuple[Optional[int], Optional[float]]:
         await self.scheduler.acquire(ip)
         try:
             start = time.time()
@@ -136,22 +139,33 @@ class EventDrivenDialer:
         except:
             return port, None
     
-    async def scan_ip(self, ip: str, ports: List[int], timeout: float = 0.2, min_latency: int = 50, max_latency: int = 200) -> Tuple[Optional[int], Optional[float]]:
-        for port in ports:
-            p, lat = await self.dial_port(ip, port, timeout)
-            if lat is not None:
-                if lat <= max_latency:
-                    return p, lat
-                return None, None
-        return None, None
+    async def scan_ip_parallel(self, ip: str, ports: List[int], timeout: float = 0.3, min_latency: int = 50, max_latency: int = 200) -> Tuple[Optional[int], Optional[float]]:
+        async def check_port(port):
+            async with self.port_semaphore:
+                p, lat = await self.dial_port(ip, port, timeout)
+                return p, lat
+        
+        tasks = [check_port(p) for p in ports]
+        results = await asyncio.gather(*tasks)
+        
+        best_port = None
+        best_latency = None
+        
+        for port, latency in results:
+            if latency is not None and latency <= max_latency:
+                if best_latency is None or latency < best_latency:
+                    best_latency = latency
+                    best_port = port
+        
+        return best_port, best_latency
 
 class HTTPProxyTester:
     def __init__(self, config: Config):
         self.config = config
         self.session = None
         self._lock = asyncio.Lock()
-        self.cache = {}
-        self.cache_size = 2000
+        self.cache = OrderedDict()
+        self.cache_size = 5000
     
     async def get_session(self):
         if self.session is None:
@@ -164,6 +178,7 @@ class HTTPProxyTester:
     async def test_proxy(self, ip: str, port: int, timeout: float = 1.0) -> bool:
         cache_key = f"{ip}:{port}"
         if cache_key in self.cache:
+            self.cache.move_to_end(cache_key)
             return self.cache[cache_key]
         
         try:
@@ -178,8 +193,9 @@ class HTTPProxyTester:
                     data = await resp.json()
                     result = data.get('origin') == ip
                     self.cache[cache_key] = result
+                    self.cache.move_to_end(cache_key)
                     if len(self.cache) > self.cache_size:
-                        self.cache.pop(next(iter(self.cache)))
+                        self.cache.popitem(last=False)
                     if HAS_PROMETHEUS:
                         if result:
                             HTTP_WORKING.inc()
@@ -190,6 +206,9 @@ class HTTPProxyTester:
             pass
         
         self.cache[cache_key] = False
+        self.cache.move_to_end(cache_key)
+        if len(self.cache) > self.cache_size:
+            self.cache.popitem(last=False)
         if HAS_PROMETHEUS:
             HTTP_FAILED.inc()
         return False
@@ -220,12 +239,12 @@ class AsyncTCPBatchScanner:
         self._lock = asyncio.Lock()
         self.results = {}
     
-    async def scan_batch(self, ips: List[str], ports: List[int], timeout: float = 0.2, min_latency: int = 50, max_latency: int = 200) -> Dict[str, Tuple[int, float]]:
+    async def scan_batch(self, ips: List[str], ports: List[int], timeout: float = 0.3, min_latency: int = 50, max_latency: int = 200) -> Dict[str, Tuple[int, float]]:
         self.results = {}
         self.scheduler.reset()
         
         async def scan_one(ip: str):
-            best_port, best_latency = await self.dialer.scan_ip(ip, ports, timeout, min_latency, max_latency)
+            best_port, best_latency = await self.dialer.scan_ip_parallel(ip, ports, timeout, min_latency, max_latency)
             if best_latency is not None:
                 async with self._lock:
                     self.results[ip] = (best_port, best_latency)
@@ -241,7 +260,9 @@ class AsyncStorage:
         self._lock = asyncio.Lock()
         self.batch_buffer = []
         self.buffer_lock = asyncio.Lock()
-        self.buffer_size = 200
+        self.buffer_size = 500
+        self.flush_interval = 5.0
+        self.last_flush = time.time()
 
     async def init(self):
         self.pool = await aiosqlite.connect(
@@ -286,9 +307,11 @@ class AsyncStorage:
     async def insert_fast(self, proxy: Dict):
         async with self.buffer_lock:
             self.batch_buffer.append(proxy)
-            if len(self.batch_buffer) >= self.buffer_size:
+            now = time.time()
+            if len(self.batch_buffer) >= self.buffer_size or (now - self.last_flush) >= self.flush_interval:
                 await self.insert_batch(self.batch_buffer)
                 self.batch_buffer.clear()
+                self.last_flush = now
 
     async def flush(self):
         async with self.buffer_lock:
@@ -323,7 +346,7 @@ class AsyncStorage:
             await self.pool.close()
 
 class LRUCache:
-    def __init__(self, maxsize: int = 20000):
+    def __init__(self, maxsize: int = 50000):
         self.cache = OrderedDict()
         self.maxsize = maxsize
         self._lock = asyncio.Lock()
@@ -346,12 +369,13 @@ class LRUCache:
         return len(self.cache)
 
 class DistributedGeoEnricher:
-    def __init__(self, mmdb_path: str = None, use_online: bool = False):
+    def __init__(self, mmdb_path: str = None, use_online: bool = False, thread_pool: int = 4):
         self.mmdb = None
-        self.cache = LRUCache(maxsize=20000)
+        self.cache = LRUCache(maxsize=50000)
         self.use_online = use_online
         self.logger = logging.getLogger("DistributedGeo")
         self.provider_stats = defaultdict(lambda: {"success": 0, "fail": 0, "total": 0})
+        self.thread_pool = ThreadPoolExecutor(max_workers=thread_pool)
         
         if mmdb_path and os.path.exists(mmdb_path) and HAS_MAXMIND:
             try:
@@ -398,19 +422,30 @@ class DistributedGeoEnricher:
             return results
         
         if self.mmdb:
-            for ip in uncached:
+            loop = asyncio.get_event_loop()
+            
+            def query_mmdb(ip):
                 try:
                     data = self.mmdb.get(ip)
                     if data and "country" in data:
-                        country = data["country"]["iso_code"]
-                        results[ip] = country
-                        await self.cache.set(ip, country)
-                    else:
-                        results[ip] = "XX"
-                        await self.cache.set(ip, "XX")
+                        return ip, data["country"]["iso_code"]
+                    return ip, None
                 except:
-                    results[ip] = "XX"
-                    await self.cache.set(ip, "XX")
+                    return ip, None
+            
+            mmdb_results = await asyncio.gather(*[
+                loop.run_in_executor(self.thread_pool, query_mmdb, ip)
+                for ip in uncached
+            ])
+            
+            for ip, country in mmdb_results:
+                if country:
+                    results[ip] = country
+                    await self.cache.set(ip, country)
+            
+            uncached = [ip for ip in uncached if ip not in results]
+        
+        if not uncached:
             return results
         
         if not self.use_online:
@@ -419,7 +454,7 @@ class DistributedGeoEnricher:
                 await self.cache.set(ip, "XX")
             return results
         
-        geo_chunk_size = 10
+        geo_chunk_size = 20
         chunks = [uncached[i:i+geo_chunk_size] for i in range(0, len(uncached), geo_chunk_size)]
         
         for chunk in chunks:
@@ -485,6 +520,7 @@ class DistributedGeoEnricher:
             await self.session.close()
         if self.mmdb:
             self.mmdb.close()
+        self.thread_pool.shutdown(wait=False)
 
 class RedisQueue:
     def __init__(self, url: str):
@@ -523,12 +559,12 @@ class RedisQueue:
         if self.connected:
             try:
                 pipe = self.redis.pipeline()
-                pipe.lrange("scan_queue", -count, -1)
-                pipe.ltrim("scan_queue", 0, -(count + 1))
+                pipe.lrange("scan_queue", 0, count - 1)
+                pipe.ltrim("scan_queue", count, -1)
                 results = await pipe.execute()
                 messages = results[0]
                 if messages:
-                    for msg in reversed(messages):
+                    for msg in messages:
                         event_data = msgpack.unpackb(msg, raw=False)
                         events_with_ids.append((event_data, None))
                     return events_with_ids
@@ -614,25 +650,34 @@ class AdaptiveBatcher:
     def get_batch_size(self) -> int:
         return int(self.current_batch)
 
+class SharedResources:
+    def __init__(self, config: Config):
+        self.config = config
+        self.queue = RedisQueue(config.redis_url)
+        self.storage = AsyncStorage(config.db_path)
+        self.geo = DistributedGeoEnricher(config.maxmind_path, config.use_online_fallback, config.geo_thread_pool)
+        self._initialized = False
+    
+    async def init(self):
+        if not self._initialized:
+            await self.queue.init()
+            await self.storage.init()
+            self._initialized = True
+
 class HybridWorker:
-    def __init__(self, config: Config, worker_id: int, progress: ProgressTracker = None):
+    def __init__(self, config: Config, worker_id: int, shared: SharedResources, progress: ProgressTracker = None):
         self.config = config
         self.worker_id = worker_id
+        self.shared = shared
         self.progress = progress
         self.logger = self._setup_logger()
         self.runner_id = config.runner_id
 
-        self.queue = RedisQueue(config.redis_url)
-        self.storage = AsyncStorage(config.db_path)
-        self.geo = DistributedGeoEnricher(config.maxmind_path, config.use_online_fallback)
         self.batcher = AdaptiveBatcher(config.batch_size)
         self.scanner = AsyncTCPBatchScanner(max_concurrent=300)
         self.http_tester = HTTPProxyTester(config) if config.enable_http_test else None
 
         self.running = True
-        self.retry_count = defaultdict(int)
-        self.max_retries = config.max_retries
-
         self.stats = {"scanned": 0, "accepted": 0, "rejected": 0, "errors": 0}
 
     def _setup_logger(self) -> logging.Logger:
@@ -671,7 +716,7 @@ class HybridWorker:
                 
                 if tcp_results:
                     ip_list = list(tcp_results.keys())
-                    countries = await self.geo.get_country_batch(ip_list)
+                    countries = await self.shared.geo.get_country_batch(ip_list)
                     
                     for ip, (port, latency) in tcp_results.items():
                         if latency < self.config.max_latency:
@@ -705,27 +750,9 @@ class HybridWorker:
             results = await self.http_tester.test_batch(results)
 
         for proxy in results:
-            await self.storage.insert_fast(proxy)
+            await self.shared.storage.insert_fast(proxy)
 
         return results
-
-    async def process_batch_with_retry(self, ips: List[str]) -> List[Dict]:
-        key = f"{ips[0] if ips else 'empty'}"
-
-        for attempt in range(self.max_retries):
-            try:
-                return await self.scan_batch(ips)
-            except Exception as e:
-                self.retry_count[key] = attempt + 1
-                if attempt < self.max_retries - 1:
-                    delay = (2 ** attempt) + random.uniform(0, 0.5)
-                    await asyncio.sleep(delay)
-                else:
-                    self.logger.error(f"Failed after {self.max_retries} attempts: {e}")
-                    self.stats["errors"] += 1
-                    return []
-
-        return []
 
     async def consume_loop(self):
         self.logger.info(f"Worker {self.worker_id} started (PID: {os.getpid()}) (Runner: {self.runner_id})")
@@ -735,7 +762,7 @@ class HybridWorker:
 
         while self.running:
             try:
-                events_with_ids = await self.queue.pull_events(count=300, block=300)
+                events_with_ids = await self.shared.queue.pull_events(count=300, block=300)
 
                 if not events_with_ids:
                     await asyncio.sleep(0.01)
@@ -749,11 +776,11 @@ class HybridWorker:
                 if not batch_ips:
                     continue
 
-                results = await self.process_batch_with_retry(batch_ips)
+                results = await self.scan_batch(batch_ips)
 
                 if results:
                     for r in results:
-                        await self.queue.push_event({
+                        await self.shared.queue.push_event({
                             "type": "proxy_found",
                             "data": r
                         })
@@ -768,8 +795,7 @@ class HybridWorker:
         if HAS_PROMETHEUS:
             ACTIVE_WORKERS.dec()
 
-        await self.storage.flush()
-        await self.geo.close()
+        await self.shared.storage.flush()
         if self.http_tester:
             await self.http_tester.close()
 
@@ -778,8 +804,7 @@ class HybridPipeline:
         self.config = config or Config()
         self.logger = self._setup_logger()
 
-        self.queue = RedisQueue(self.config.redis_url)
-        self.storage = AsyncStorage(self.config.db_path)
+        self.shared = SharedResources(self.config)
         self.progress = ProgressTracker(interval=10)
 
         self.workers = []
@@ -854,7 +879,7 @@ class HybridPipeline:
                         self.logger.info(f"Got {len(ips)} IPs from {url}")
 
                         for ip in ips[:2000]:
-                            await self.queue.push_event({
+                            await self.shared.queue.push_event({
                                 "ts": time.time(),
                                 "ip": ip,
                                 "type": "scan_request",
@@ -871,11 +896,11 @@ class HybridPipeline:
     async def show_progress(self):
         while True:
             try:
-                count = await self.storage.get_count()
+                count = await self.shared.storage.get_count()
                 self.logger.info(f"Database: {count} proxies stored")
                 if HAS_PROMETHEUS:
                     PROXY_COUNT.set(count)
-                    queue_size = await self.queue.get_queue_size()
+                    queue_size = await self.shared.queue.get_queue_size()
                     QUEUE_SIZE.set(queue_size)
                 await asyncio.sleep(30)
             except:
@@ -892,13 +917,12 @@ class HybridPipeline:
         self.logger.info(f"UV Loop: {HAS_UVLOOP}")
         self.logger.info(f"Quality threshold: {self.config.quality_threshold}ms")
 
-        await self.queue.init()
-        await self.storage.init()
+        await self.shared.init()
 
-        await self.storage.cleanup_old(self.config.retention_days)
+        await self.shared.storage.cleanup_old(self.config.retention_days)
 
         for i in range(self.num_workers):
-            worker = HybridWorker(self.config, i, self.progress)
+            worker = HybridWorker(self.config, i, self.shared, self.progress)
             self.workers.append(worker)
 
         producer_task = asyncio.create_task(self.fetch_and_push_ips())
@@ -911,7 +935,7 @@ class HybridPipeline:
             self.logger.info("Waiting for queue to drain...")
 
             for _ in range(30):
-                queue_size = await self.queue.get_queue_size()
+                queue_size = await self.shared.queue.get_queue_size()
                 if queue_size == 0:
                     break
                 await asyncio.sleep(1)
@@ -924,7 +948,7 @@ class HybridPipeline:
 
             await self.progress.finish()
 
-            best = await self.storage.get_best(self.config.max_output_ips)
+            best = await self.shared.storage.get_best(self.config.max_output_ips)
 
             self.logger.info(f"Found {len(best)} best proxies")
 
@@ -936,11 +960,11 @@ class HybridPipeline:
             with open("proxies_output.json", "w") as f:
                 json.dump(best, f, indent=2)
 
-            count = await self.storage.get_count()
+            count = await self.shared.storage.get_count()
             self.logger.info(f"Output saved to proxies_output.txt ({len(best)} IPs)")
             self.logger.info(f"Total proxies in database: {count}")
 
-            geo_stats = self.workers[0].geo.get_stats() if self.workers else {}
+            geo_stats = self.shared.geo.get_stats()
             if geo_stats:
                 self.logger.info(f"Geo stats: {geo_stats}")
 
@@ -949,7 +973,8 @@ class HybridPipeline:
             for w in self.workers:
                 w.running = False
         finally:
-            await self.storage.close()
+            await self.shared.storage.close()
+            await self.shared.geo.close()
 
 async def main():
     config = Config(
@@ -964,10 +989,11 @@ async def main():
         enable_http_test=True,
         enable_prometheus=True,
         enable_uvloop=True,
-        tcp_timeout=0.2,
+        tcp_timeout=0.3,
         http_test_timeout=1.0,
         http_parallel=200,
         quality_threshold=200,
+        geo_thread_pool=4,
         runner_id=f"runner-{os.getpid()}"
     )
     pipeline = HybridPipeline(config)
