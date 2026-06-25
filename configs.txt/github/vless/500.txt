@@ -1,5 +1,5 @@
 # GITHUB - Tier 500 - VLESS
-# Updated: 2026-06-25 14:19:38
+# Updated: 2026-06-25 14:45:22
 # Count: 500
 
 vless://a44e0875-210f-4941-9062-89b6361a14c6@94.131.123.167:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=apple.com&security=reality&pbk=i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4&sid=8bcfe256cf216fd8#T.ME: @aristapnel
@@ -500,5 +500,5 @@ vless://7c0f30a2-a7c1-43b1-bc51-20f07036a76e@de-01.gni-daed.ru:443?encryption=no
 vless://403c1990-0922-43e9-9027-03ef38c92c87@72.56.245.170:40443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=deepl.com&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&allowInsecure=1&fp=firefox&security=reality&pbk=Y15uAAl8fpWhma1FIWyZujgRKdwxYaaF4zIyWyu9vSo&sid=5cc0#T.ME: @aristapnel
 vless://8a53834d-435a-496c-bcc3-a66088e5b926@45.38.37.4:45012?encryption=none&host=&path=%2F&security=none&type=httpupgrade#T.ME: @aristapnel
 vless://0058c215-ab1e-400c-a403-b5b2fda7e846@151.101.0.60:80?encryption=none&security=none&type=ws&host=max-gb1.global.ssl.fastly.net&path=/#T.ME: @aristapnel
+vless://0058c215-ab1e-400c-a403-b5b2fda7e846@151.101.0.60:80?path=/&security=none&encryption=none&host=max-gb1.global.ssl.fastly.net&type=ws#T.ME: @aristapnel
 vless://0058c215-ab1e-400c-a403-b5b2fda7e846@151.101.103.151:80?encryption=none&security=none&type=ws&host=max-gb1.global.ssl.fastly.net&path=/?ed=2560#T.ME: @aristapnel
-vless://0058c215-ab1e-400c-a403-b5b2fda7e846@151.101.109.223:80?encryption=none&host=max-gb1.global.ssl.fastly.net&path=/&security=none&type=ws#T.ME: @aristapnel

@@ -1,5 +1,5 @@
 # GITHUB - TROJAN - Tier 50
-# Updated: 2026-06-25 14:19:49
+# Updated: 2026-06-25 14:45:33
 # Count: 49
 
 proxies:
@@ -307,15 +307,19 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
 - name: 'T.ME: @aristapnel #24'
   type: trojan
-  server: 185.126.236.44
-  port: 443
-  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-  network: tcp
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.mesaly.click
+  servername: epge.muarua.filegear-sg.me
   client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: epge.muarua.filegear-sg.me
 - name: 'T.ME: @aristapnel #25'
   type: trojan
   server: 185.126.236.44
@@ -417,6 +421,17 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #34'
   type: trojan
+  server: 185.126.236.44
+  port: 443
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.mesaly.click
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #35'
+  type: trojan
   server: 119.246.1.143
   port: 443
   password: BxceQaOe
@@ -426,7 +441,7 @@ proxies:
   tcp-fast-open: true
   servername: t.me/ripaojiedian
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #35'
+- name: 'T.ME: @aristapnel #36'
   type: trojan
   server: 198.52.244.10
   port: 443
@@ -436,17 +451,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 198.52.244.10
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #36'
-  type: trojan
-  server: 207.126.167.162
-  port: 443
-  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 207.126.167.162
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #37'
   type: trojan
@@ -461,6 +465,17 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #38'
   type: trojan
+  server: 207.126.167.162
+  port: 443
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 207.126.167.162
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #39'
+  type: trojan
   server: 207.126.167.241
   port: 443
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
@@ -469,17 +484,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 207.126.167.241
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #39'
-  type: trojan
-  server: 46.8.113.142
-  port: 443
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ch-2.bexum.fun
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #40'
   type: trojan
@@ -560,14 +564,14 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #47'
   type: trojan
-  server: 94.103.173.70
-  port: 9443
+  server: 46.8.113.142
+  port: 443
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: de-1.hysteria.ltd
+  servername: ch-2.bexum.fun
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #48'
   type: trojan

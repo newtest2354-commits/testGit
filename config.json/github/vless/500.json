@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-25 14:23:15
+// Updated: 2026-06-25 14:48:58
 // Count: 492
 
 {
@@ -9840,6 +9840,23 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #499",
+      "server": "151.101.0.60",
+      "server_port": 80,
+      "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "max-gb1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "T.ME: @aristapnel #500",
       "server": "151.101.103.151",
       "server_port": 80,
       "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
@@ -9849,23 +9866,6 @@
       "transport": {
         "type": "ws",
         "path": "/?ed=2560",
-        "headers": {
-          "Host": "max-gb1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "T.ME: @aristapnel #500",
-      "server": "151.101.109.223",
-      "server_port": 80,
-      "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
-      "tls": {
-        "enabled": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "max-gb1.global.ssl.fastly.net"
         }

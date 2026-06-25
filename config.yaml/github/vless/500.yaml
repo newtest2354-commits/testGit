@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-06-25 14:19:49
+# Updated: 2026-06-25 14:45:33
 # Count: 494
 
 proxies:
@@ -8815,9 +8815,9 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'T.ME: @aristapnel #500'
+- name: 'T.ME: @aristapnel #499'
   type: vless
-  server: 151.101.109.223
+  server: 151.101.0.60
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   network: ws
@@ -9335,7 +9335,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #496'
   - 'T.ME: @aristapnel #497'
   - 'T.ME: @aristapnel #498'
-  - 'T.ME: @aristapnel #500'
+  - 'T.ME: @aristapnel #499'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
