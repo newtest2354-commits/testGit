@@ -1,5 +1,5 @@
 // GITHUB - TROJAN - Tier 250
-// Updated: 2026-06-25 16:08:54
+// Updated: 2026-06-25 20:13:57
 // Count: 250
 
 {
@@ -4557,16 +4557,61 @@
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #241",
-      "server": "54.250.183.37",
-      "server_port": 10624,
-      "password": "BxceQaOe",
+      "server": "38.60.220.65",
+      "server_port": 443,
+      "password": "t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak",
       "tls": {
-        "enabled": false
+        "enabled": true,
+        "server_name": "38.60.220.65",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #242",
+      "server": "43.169.18.179",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.creationlong.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.creationlong.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #243",
+      "server": "13.39.209.35",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.39.209.35",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #244",
       "server": "149.104.104.58",
       "server_port": 443,
       "password": "S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix",
@@ -4582,13 +4627,13 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #243",
-      "server": "103.125.216.68",
+      "tag": "T.ME: @aristapnel #245",
+      "server": "92.119.35.105",
       "server_port": 443,
-      "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
+      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
       "tls": {
         "enabled": true,
-        "server_name": "103.125.216.68",
+        "server_name": "92.119.35.105",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -4598,17 +4643,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #244",
-      "server": "92.119.35.97",
-      "server_port": 443,
-      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
-      "tls": {
-        "enabled": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #245",
+      "tag": "T.ME: @aristapnel #246",
       "server": "185.137.157.145",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4624,7 +4659,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #246",
+      "tag": "T.ME: @aristapnel #247",
       "server": "38.54.64.247",
       "server_port": 443,
       "password": "ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk",
@@ -4640,7 +4675,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #247",
+      "tag": "T.ME: @aristapnel #248",
       "server": "45.61.52.243",
       "server_port": 443,
       "password": "O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk",
@@ -4656,7 +4691,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #248",
+      "tag": "T.ME: @aristapnel #249",
       "server": "185.137.157.154",
       "server_port": 443,
       "password": "n-S5Kuz58YgwljisuLEJltip2OWf1ourWz",
@@ -4672,29 +4707,13 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #249",
+      "tag": "T.ME: @aristapnel #250",
       "server": "38.60.202.163",
       "server_port": 443,
       "password": "ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed",
       "tls": {
         "enabled": true,
         "server_name": "38.60.202.163",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #250",
-      "server": "185.126.236.190",
-      "server_port": 443,
-      "password": "VGBzLm49=M_i02Az30tIeonkQw180t-edg",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.126.236.190",
         "insecure": false,
         "utls": {
           "enabled": true,
