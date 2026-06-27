@@ -1,5 +1,5 @@
 # GITHUB - TROJAN - Tier 50
-# Updated: 2026-06-27 08:46:53
+# Updated: 2026-06-27 13:54:19
 # Count: 36
 
 proxies:
@@ -277,21 +277,6 @@ proxies:
       Host: space.byu.id.yxls.eu.cc
 - name: 'T.ME: @aristapnel #22'
   type: trojan
-  server: 104.16.72.70
-  port: 443
-  password: 6c862415-30d2-4813-8e49-42e99a0bd415
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: space.byu.id.yxls.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /us-gllc
-    headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #23'
-  type: trojan
   server: 45.130.125.126
   port: 443
   password: 86957ec0-b213-433b-a43b-51f2175e0ec3
@@ -305,7 +290,7 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #24'
+- name: 'T.ME: @aristapnel #23'
   type: trojan
   server: space.byu.id.yxls.eu.cc
   port: 443
@@ -320,7 +305,7 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #25'
+- name: 'T.ME: @aristapnel #24'
   type: trojan
   server: 213.176.113.98
   port: 2053
@@ -335,7 +320,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'T.ME: @aristapnel #26'
+- name: 'T.ME: @aristapnel #25'
   type: trojan
   server: 119.246.1.143
   port: 443
@@ -346,7 +331,7 @@ proxies:
   tcp-fast-open: true
   servername: t.me/ripaojiedian
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #28'
+- name: 'T.ME: @aristapnel #29'
   type: trojan
   server: masir_sefid
   port: 443
@@ -357,7 +342,52 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #41'
+- name: 'T.ME: @aristapnel #37'
+  type: trojan
+  server: 146.75.116.190
+  port: 80
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 3-mitivpn.global.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/app_bedal🇨🇳
+    headers:
+      Host: 146.75.116.190
+- name: 'T.ME: @aristapnel #39'
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: global.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /de
+    headers:
+      Host: global.fastly.com
+- name: 'T.ME: @aristapnel #42'
+  type: trojan
+  server: 167.82.101.251
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /de
+    headers:
+      Host: ssl.fastly.com
+- name: 'T.ME: @aristapnel #43'
   type: trojan
   server: 45.61.52.243
   port: 443
@@ -368,7 +398,7 @@ proxies:
   tcp-fast-open: true
   servername: 45.61.52.243
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #42'
+- name: 'T.ME: @aristapnel #44'
   type: trojan
   server: 207.126.167.150
   port: 443
@@ -379,53 +409,7 @@ proxies:
   tcp-fast-open: true
   servername: 207.126.167.150
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #43'
-  type: trojan
-  server: 83.228.251.47
-  port: 2087
-  password: SoftNetConnect
-  network: grpc
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 'T.ME: @aristapnel #44'
-  type: trojan
-  server: 83.228.251.47
-  port: 42549
-  password: SoftNetConnect
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.speedtest.net
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #45'
-  type: trojan
-  server: 83.228.251.47
-  port: 443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #46'
-  type: trojan
-  server: 83.228.251.47
-  port: 8443
-  password: SoftNetConnect
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #47'
   type: trojan
   server: 103.125.216.11
   port: 443
@@ -436,7 +420,7 @@ proxies:
   tcp-fast-open: true
   servername: 103.125.216.11
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #48'
+- name: 'T.ME: @aristapnel #46'
   type: trojan
   server: 103.125.216.68
   port: 443
@@ -447,18 +431,29 @@ proxies:
   tcp-fast-open: true
   servername: 103.125.216.68
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #49'
+- name: 'T.ME: @aristapnel #47'
   type: trojan
-  server: 38.60.202.163
+  server: 92.119.35.123
   port: 443
-  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
+  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 38.60.202.163
+  servername: 92.119.35.123
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #50'
+- name: 'T.ME: @aristapnel #48'
+  type: trojan
+  server: 92.119.35.125
+  port: 443
+  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 92.119.35.125
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #49'
   type: trojan
   server: 92.119.35.127
   port: 443
@@ -468,6 +463,17 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 92.119.35.127
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #50'
+  type: trojan
+  server: 92.119.35.117
+  port: 443
+  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 92.119.35.117
   client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
@@ -502,9 +508,9 @@ proxy-groups:
   - 'T.ME: @aristapnel #23'
   - 'T.ME: @aristapnel #24'
   - 'T.ME: @aristapnel #25'
-  - 'T.ME: @aristapnel #26'
-  - 'T.ME: @aristapnel #28'
-  - 'T.ME: @aristapnel #41'
+  - 'T.ME: @aristapnel #29'
+  - 'T.ME: @aristapnel #37'
+  - 'T.ME: @aristapnel #39'
   - 'T.ME: @aristapnel #42'
   - 'T.ME: @aristapnel #43'
   - 'T.ME: @aristapnel #44'

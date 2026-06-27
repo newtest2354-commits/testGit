@@ -1,6 +1,6 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-06-27 08:46:53
-# Count: 493
+# Updated: 2026-06-27 13:54:19
+# Count: 495
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -8799,20 +8799,61 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #498'
   type: vless
-  server: 151.101.0.60
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
+  server: 89.208.231.191
+  port: 8443
+  uuid: 00d12539-9917-07d0-a8c4-66dab356eb40
+  network: tcp
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: max-gb1.global.ssl.fastly.net
+  servername: o-gate.perekrestok.ru
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
+- name: 'T.ME: @aristapnel #499'
+  type: vless
+  server: 89.208.231.191
+  port: 8443
+  uuid: 00d12539-9917-1f40-a8c4-66dab356eb40
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: o-gate.perekrestok.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
+- name: 'T.ME: @aristapnel #500'
+  type: vless
+  server: 172.67.195.229
+  port: 443
+  uuid: 00e94078-bb1e-49aa-8567-e1b3b2843150
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: rapid-hat-441d.platovpn.workers.dev
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   ws-opts:
     path: /
     headers:
-      Host: max-gb1.global.ssl.fastly.net
+      Host: rapid-hat-441d.platovpn.workers.dev
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
 proxy-groups:
@@ -9317,6 +9358,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #496'
   - 'T.ME: @aristapnel #497'
   - 'T.ME: @aristapnel #498'
+  - 'T.ME: @aristapnel #499'
+  - 'T.ME: @aristapnel #500'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204

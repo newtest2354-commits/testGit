@@ -1,5 +1,5 @@
 // GITHUB - VMESS - Tier ALL
-// Updated: 2026-06-27 08:50:25
+// Updated: 2026-06-27 13:56:02
 // Count: 45
 
 {
@@ -330,11 +330,11 @@
       "tag": "T.ME: @aristapnel #16",
       "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
-      "uuid": "b98325b3-0bc0-4149-9b0b-bf7dc1668ae9",
+      "uuid": "6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "usc-cure-grad-exceptional.trycloudflare.com",
+        "server_name": "attitude-interracial-country-gen.trycloudflare.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -343,9 +343,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/b98325b3-0bc0-4149-9b0b-bf7dc1668ae9-vm",
+        "path": "/6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm",
         "headers": {
-          "Host": "usc-cure-grad-exceptional.trycloudflare.com"
+          "Host": "attitude-interracial-country-gen.trycloudflare.com"
         }
       }
     },
