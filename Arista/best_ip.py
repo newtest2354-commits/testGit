@@ -7,7 +7,7 @@ from datetime import datetime
 class BestIPProcessor:
     def __init__(self):
         self.output_dir = "best_ip"
-        self.source_url = "https://cdn.jsdelivr.net/gh/aristapanell-cell/ARISTA-MATRIX-PIPELINE@main/output/best_ips.txt"
+        self.source_url = "https://raw.githubusercontent.com/new493370/NewIp/refs/heads/main/output/best_ips.txt"
         self.fields = ['ip', 'port', 'cdn', 'sni', 'country', 'type', 'city', 'provider', 'score', 'ttfb', 'proto', 'reliability', 'tcp', 'asn']
         
     def ensure_output_dir(self):
@@ -124,40 +124,6 @@ class BestIPProcessor:
         
         ip_port = [f"[IP: {item['ip']}] [PORT: {item['port']}]" for item in parsed_data if item.get('ip') and item.get('port')]
         
-        ip_port_cdn_sni_country_type = []
-        for item in parsed_data:
-            parts = []
-            if item.get('ip'):
-                parts.append(f"[IP: {item['ip']}]")
-            if item.get('port'):
-                parts.append(f"[PORT: {item['port']}]")
-            if item.get('cdn') and item['cdn'] != '-':
-                parts.append(f"[CDN: {item['cdn']}]")
-            if item.get('sni') and item['sni'] != '-':
-                parts.append(f"[SNI: {item['sni']}]")
-            if item.get('country') and item['country'] != '-':
-                parts.append(f"[Country: {item['country']}]")
-            if item.get('type') and item['type'] != '-':
-                parts.append(f"[TYPE: {item['type']}]")
-            if item.get('score') and item['score'] != '-':
-                parts.append(f"[SCORE: {item['score']}]")
-            if item.get('tcp') and item['tcp'] != '-':
-                parts.append(f"[TCP: {item['tcp']}]")
-            if item.get('ttfb') and item['ttfb'] != '-':
-                parts.append(f"[TTFB: {item['ttfb']}]")
-            if item.get('proto') and item['proto'] != '-':
-                parts.append(f"[PROTO: {item['proto']}]")
-            if item.get('reliability') and item['reliability'] != '-':
-                parts.append(f"[REL: {item['reliability']}]")
-            if item.get('city') and item['city'] != '-':
-                parts.append(f"[City: {item['city']}]")
-            if item.get('provider') and item['provider'] != '-':
-                parts.append(f"[Provider: {item['provider']}]")
-            if item.get('asn') and item['asn'] != '-':
-                parts.append(f"[ASN: {item['asn']}]")
-            if parts:
-                ip_port_cdn_sni_country_type.append(" ".join(parts))
-        
         full_details = []
         for item in parsed_data:
             parts = []
@@ -202,11 +168,6 @@ class BestIPProcessor:
             f.write(f"# Count: {len(ip_port)}\n\n")
             f.write('\n'.join(ip_port))
         
-        with open(os.path.join(self.output_dir, 'ip_port_cdn_sni_country_type.txt'), 'w', encoding='utf-8') as f:
-            f.write(f"# IP,PORT,CDN,SNI,COUNTRY,TYPE - Updated: {timestamp}\n")
-            f.write(f"# Count: {len(ip_port_cdn_sni_country_type)}\n\n")
-            f.write('\n'.join(ip_port_cdn_sni_country_type))
-        
         with open(os.path.join(self.output_dir, 'full_details.txt'), 'w', encoding='utf-8') as f:
             f.write(f"# Full Details - Updated: {timestamp}\n")
             f.write(f"# Count: {len(full_details)}\n\n")
@@ -217,13 +178,12 @@ class BestIPProcessor:
         print(f"Files created in '{self.output_dir}/':")
         print(f"  - ip_only.txt: {len(ip_only)} entries")
         print(f"  - ip_port.txt: {len(ip_port)} entries")
-        print(f"  - ip_port_cdn_sni_country_type.txt: {len(ip_port_cdn_sni_country_type)} entries")
         print(f"  - full_details.txt: {len(full_details)} entries")
     
     def create_empty_files(self):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
-        files = ['ip_only.txt', 'ip_port.txt', 'ip_port_cdn_sni_country_type.txt', 'full_details.txt']
+        files = ['ip_only.txt', 'ip_port.txt', 'full_details.txt']
         for filename in files:
             filepath = os.path.join(self.output_dir, filename)
             with open(filepath, 'w', encoding='utf-8') as f:
