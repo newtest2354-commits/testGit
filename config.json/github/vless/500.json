@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-28 04:22:01
+// Updated: 2026-06-28 09:25:44
 // Count: 492
 
 {
@@ -9869,17 +9869,23 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #500",
-      "server": "ov-italy1.09vpn.com",
-      "server_port": 80,
-      "uuid": "049e56d8-0ba0-49e3-b764-ee04122b9f00",
+      "server": "101.33.75.233",
+      "server_port": 39738,
+      "uuid": "03d73bc8-01a9-46a7-90b9-3d27065ed328",
       "tls": {
-        "enabled": false
+        "enabled": true,
+        "server_name": "c.eoa.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vless/",
+        "path": "/",
         "headers": {
-          "Host": "ov-italy1.09vpn.com"
+          "Host": "c.eoa.ccwu.cc"
         }
       }
     },

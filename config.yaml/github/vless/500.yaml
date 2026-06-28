@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-06-28 04:18:50
+# Updated: 2026-06-28 09:22:14
 # Count: 495
 
 proxies:
@@ -8841,20 +8841,23 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #500'
   type: vless
-  server: ov-italy1.09vpn.com
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+  server: 101.33.75.233
+  port: 39738
+  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ov-italy1.09vpn.com
+  servername: c.eoa.ccwu.cc
   client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-italy1.09vpn.com
+      Host: c.eoa.ccwu.cc
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
 proxy-groups:

@@ -1,6 +1,6 @@
 # GITHUB - ALL - Tier 200
-# Updated: 2026-06-28 04:18:53
-# Count: 186
+# Updated: 2026-06-28 09:22:18
+# Count: 187
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -340,6 +340,17 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #27'
   type: trojan
+  server: 18.163.56.230
+  port: 3941
+  password: BxceQaOe
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: t.me/ripaojiedian
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #28'
+  type: trojan
   server: 207.126.167.241
   port: 443
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
@@ -349,7 +360,7 @@ proxies:
   tcp-fast-open: true
   servername: 207.126.167.241
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #31'
+- name: 'T.ME: @aristapnel #32'
   type: trojan
   server: masir_sefid
   port: 443
@@ -360,7 +371,7 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #38'
+- name: 'T.ME: @aristapnel #39'
   type: trojan
   server: 146.75.116.190
   port: 80
@@ -388,15 +399,6 @@ proxies:
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'T.ME: @aristapnel #42'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: 46.254.18.107
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #43'
-  type: hysteria2
   server: 202.61.205.86
   port: 4433
   password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
@@ -404,7 +406,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #44'
+- name: 'T.ME: @aristapnel #43'
   type: hysteria2
   server: 31.76.28.28
   port: 443
@@ -413,7 +415,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #45'
+- name: 'T.ME: @aristapnel #44'
   type: hysteria2
   server: 140.245.27.220
   port: 51000
@@ -422,12 +424,21 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #46'
+- name: 'T.ME: @aristapnel #45'
   type: hysteria2
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 103.115.109.49
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #46'
+  type: hysteria2
+  server: 13.231.108.76
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.231.108.76
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
@@ -469,6 +480,15 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #51'
   type: hysteria2
+  server: 18.143.117.69
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 18.143.117.69
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #52'
+  type: hysteria2
   server: 3.66.236.81
   port: 443
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
@@ -476,7 +496,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #52'
+- name: 'T.ME: @aristapnel #53'
   type: hysteria2
   server: 3.79.47.137
   port: 443
@@ -485,7 +505,16 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #53'
+- name: 'T.ME: @aristapnel #54'
+  type: hysteria2
+  server: 47.131.248.82
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 47.131.248.82
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #55'
   type: hysteria2
   server: vpn-sg-001.fastervpn.world
   port: 443
@@ -494,7 +523,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #54'
+- name: 'T.ME: @aristapnel #56'
   type: hysteria2
   server: mumbai-3.nezhasu.com
   port: 443
@@ -503,7 +532,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #55'
+- name: 'T.ME: @aristapnel #57'
   type: hysteria2
   server: lsdg1.lansecs.top
   port: 58338
@@ -512,7 +541,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #56'
+- name: 'T.ME: @aristapnel #58'
   type: hysteria2
   server: 70.34.215.221
   port: 20335
@@ -523,7 +552,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: U1wBrYQyFm
-- name: 'T.ME: @aristapnel #57'
+- name: 'T.ME: @aristapnel #59'
   type: hysteria2
   server: dir.cybsecguru.com
   port: 35000
@@ -534,7 +563,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: '%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-- name: 'T.ME: @aristapnel #58'
+- name: 'T.ME: @aristapnel #60'
   type: hysteria2
   server: falankefu1.nezhasu.com
   port: 443
@@ -543,7 +572,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #59'
+- name: 'T.ME: @aristapnel #61'
   type: hysteria2
   server: lsus3.lansecs.top
   port: 58338
@@ -552,7 +581,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #60'
+- name: 'T.ME: @aristapnel #62'
   type: hysteria2
   server: lundun1.nezhasu.com
   port: 443
@@ -561,7 +590,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #61'
+- name: 'T.ME: @aristapnel #63'
   type: hysteria2
   server: xg.xn--mes13n8pi8x2b.shop
   port: 21072
@@ -570,7 +599,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #62'
+- name: 'T.ME: @aristapnel #64'
   type: hysteria2
   server: xg.xn--mes13n8pi8x2b.shop
   port: 21494
@@ -579,7 +608,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #63'
+- name: 'T.ME: @aristapnel #65'
   type: hysteria2
   server: tw.xn--mes13n8pi8x2b.shop
   port: 21828
@@ -588,7 +617,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #64'
+- name: 'T.ME: @aristapnel #66'
   type: hysteria2
   server: tw.xn--mes13n8pi8x2b.shop
   port: 21860
@@ -597,7 +626,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #65'
+- name: 'T.ME: @aristapnel #67'
   type: hysteria2
   server: rb.xn--mes13n8pi8x2b.shop
   port: 21545
@@ -606,7 +635,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #66'
+- name: 'T.ME: @aristapnel #68'
   type: hysteria2
   server: rb.xn--mes13n8pi8x2b.shop
   port: 21842
@@ -615,7 +644,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #67'
+- name: 'T.ME: @aristapnel #69'
   type: hysteria2
   server: mg.xn--mes13n8pi8x2b.shop
   port: 21349
@@ -624,7 +653,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #68'
+- name: 'T.ME: @aristapnel #70'
   type: hysteria2
   server: mg.xn--mes13n8pi8x2b.shop
   port: 21639
@@ -633,7 +662,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #69'
+- name: 'T.ME: @aristapnel #71'
   type: hysteria2
   server: trq.xn--mes13n8pi8x2b.shop
   port: 21112
@@ -642,7 +671,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #70'
+- name: 'T.ME: @aristapnel #72'
   type: hysteria2
   server: trq.xn--mes13n8pi8x2b.shop
   port: 21910
@@ -651,7 +680,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #71'
+- name: 'T.ME: @aristapnel #73'
   type: hysteria2
   server: agt.xn--mes13n8pi8x2b.shop
   port: 21440
@@ -660,7 +689,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #72'
+- name: 'T.ME: @aristapnel #74'
   type: hysteria2
   server: agt.xn--mes13n8pi8x2b.shop
   port: 21654
@@ -669,7 +698,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #73'
+- name: 'T.ME: @aristapnel #75'
   type: hysteria2
   server: 206.71.158.37
   port: 36400
@@ -680,7 +709,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
-- name: 'T.ME: @aristapnel #74'
+- name: 'T.ME: @aristapnel #76'
   type: hysteria2
   server: 206.71.158.37
   port: 36300
@@ -691,7 +720,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
-- name: 'T.ME: @aristapnel #75'
+- name: 'T.ME: @aristapnel #77'
   type: hysteria2
   server: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
   port: 1743
@@ -700,7 +729,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #76'
+- name: 'T.ME: @aristapnel #78'
   type: hysteria2
   server: 208.87.243.187
   port: 22222
@@ -709,7 +738,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #77'
+- name: 'T.ME: @aristapnel #79'
   type: hysteria2
   server: news.dd.msk.su
   port: 443
@@ -720,7 +749,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: 9b5cujsederxbp59
-- name: 'T.ME: @aristapnel #78'
+- name: 'T.ME: @aristapnel #80'
   type: hysteria2
   server: social.klipp.su
   port: 443
@@ -731,28 +760,6 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: 3sv5vpdl9xr84lyb
-- name: 'T.ME: @aristapnel #79'
-  type: hysteria2
-  server: musicclips.videolinks.ru
-  port: 8443
-  password: lak374gtxzrxz241
-  sni: musicclips.videolinks.ru
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: 8zzng75tz4tf82pj
-- name: 'T.ME: @aristapnel #80'
-  type: hysteria2
-  server: nrealistic.nn-foto.ru
-  port: 1935
-  password: lak374gtxzrxz241
-  sni: nrealistic.nn-foto.ru
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: lhfl2z9mjngb7csh
 - name: 'T.ME: @aristapnel #81'
   type: ss
   server: 82.38.31.149
@@ -2462,8 +2469,9 @@ proxy-groups:
   - 'T.ME: @aristapnel #25'
   - 'T.ME: @aristapnel #26'
   - 'T.ME: @aristapnel #27'
-  - 'T.ME: @aristapnel #31'
-  - 'T.ME: @aristapnel #38'
+  - 'T.ME: @aristapnel #28'
+  - 'T.ME: @aristapnel #32'
+  - 'T.ME: @aristapnel #39'
   - 'T.ME: @aristapnel #41'
   - 'T.ME: @aristapnel #42'
   - 'T.ME: @aristapnel #43'

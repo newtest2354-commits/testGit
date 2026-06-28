@@ -1,5 +1,5 @@
 # GITHUB - Tier 500 - VLESS
-# Updated: 2026-06-28 04:18:39
+# Updated: 2026-06-28 09:22:03
 # Count: 500
 
 vless://a44e0875-210f-4941-9062-89b6361a14c6@94.131.123.167:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=apple.com&security=reality&pbk=i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4&sid=8bcfe256cf216fd8#T.ME: @aristapnel
@@ -501,4 +501,4 @@ vless://403c1990-0922-43e9-9027-03ef38c92c87@72.56.245.170:40443/?type=tcp&encry
 vless://8a53834d-435a-496c-bcc3-a66088e5b926@45.38.37.4:45012?encryption=none&host=&path=%2F&security=none&type=httpupgrade#T.ME: @aristapnel
 vless://00e94078-bb1e-49aa-8567-e1b3b2843150@172.67.195.229:443?allowInsecure=1&encryption=none&fp=chrome&host=rapid-hat-441d.platovpn.workers.dev&path=/&security=tls&sni=rapid-hat-441d.platovpn.workers.dev&type=ws#T.ME: @aristapnel
 vless://00e94078-bb1e-49aa-8567-e1b3b2843150@172.67.195.229:443?encryption=none&security=tls&sni=rapid-hat-441d.platovpn.workers.dev&type=ws&host=rapid-hat-441d.platovpn.workers.dev&path=/#T.ME: @aristapnel
-vless://049e56d8-0ba0-49e3-b764-ee04122b9f00@ov-italy1.09vpn.com:80?path=/vless/&encryption=none&type=ws#T.ME: @aristapnel
+vless://03d73bc8-01a9-46a7-90b9-3d27065ed328@101.33.75.233:39738?path=/&security=tls&encryption=none&insecure=0&host=c.eoa.ccwu.cc&fp=chrome&type=ws&allowInsecure=0&sni=c.eoa.ccwu.cc#T.ME: @aristapnel
