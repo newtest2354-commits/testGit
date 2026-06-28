@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-06-28 14:01:27
+# Updated: 2026-06-28 19:30:56
 # Count: 495
 
 proxies:
@@ -8820,43 +8820,44 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #499'
   type: vless
-  server: 172.67.195.229
+  server: 93.93.88.28
   port: 443
-  uuid: 00e94078-bb1e-49aa-8567-e1b3b2843150
+  uuid: 02ab2364-44e0-4f1e-992b-72a3d4cdc3d0
   network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: rapid-hat-441d.platovpn.workers.dev
+  servername: cdn-discover.truesight.store
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /
+    path: /v1/data/sync/
     headers:
-      Host: rapid-hat-441d.platovpn.workers.dev
+      Host: cdn-discover.truesight.store
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #500'
   type: vless
-  server: ov-italy1.09vpn.com
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  network: ws
-  tls: false
+  server: 89.208.231.191
+  port: 8443
+  uuid: 0387bd2f-3459-07d0-87f9-7df4a12b5c95
+  network: tcp
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ov-italy1.09vpn.com
+  servername: o-gate.perekrestok.ru
   client-fingerprint: chrome
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test

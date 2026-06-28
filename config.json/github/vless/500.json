@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-28 14:04:31
+// Updated: 2026-06-28 19:32:47
 // Count: 492
 
 {
@@ -9846,42 +9846,50 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #499",
-      "server": "172.67.195.229",
+      "server": "93.93.88.28",
       "server_port": 443,
-      "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
+      "uuid": "02ab2364-44e0-4f1e-992b-72a3d4cdc3d0",
       "tls": {
         "enabled": true,
-        "server_name": "rapid-hat-441d.platovpn.workers.dev",
+        "server_name": "cdn-discover.truesight.store",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
+        },
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/v1/data/sync/",
         "headers": {
-          "Host": "rapid-hat-441d.platovpn.workers.dev"
+          "Host": "93.93.88.28"
         }
       }
     },
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #500",
-      "server": "ov-italy1.09vpn.com",
-      "server_port": 80,
-      "uuid": "049e56d8-0ba0-49e3-b764-ee04122b9f00",
+      "server": "89.208.231.191",
+      "server_port": 8443,
+      "uuid": "0387bd2f-3459-07d0-87f9-7df4a12b5c95",
       "tls": {
-        "enabled": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "ov-italy1.09vpn.com"
+        "enabled": true,
+        "server_name": "o-gate.perekrestok.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
+          "short_id": "d8c6b58bcbb0c323"
         }
-      }
+      },
+      "flow": "xtls-rprx-vision"
     },
     {
       "type": "direct",

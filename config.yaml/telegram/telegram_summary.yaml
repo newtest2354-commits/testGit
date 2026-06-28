@@ -1,8 +1,8 @@
 # TELEGRAM YAML Conversion Summary
-# Updated: 2026-06-28 14:01:27
+# Updated: 2026-06-28 19:30:56
 
 source: TELEGRAM
-updated: '2026-06-28 14:01:27'
+updated: '2026-06-28 19:30:56'
 categories:
   vmess:
     ALL: 18
@@ -12,7 +12,7 @@ categories:
     '250': 250
     '200': 200
     '300': 300
-    ALL: 801
+    ALL: 753
     '400': 400
     '50': 50
     '100': 100
@@ -22,17 +22,19 @@ categories:
     '50': 50
     '100': 100
   ss:
-    ALL: 53
+    ALL: 50
     '50': 50
   hysteria2:
-    ALL: 5
+    ALL: 6
+  wireguard:
+    ALL: 1
 ALL:
   '150': 150
   '500': 500
   '250': 250
   '200': 200
   '300': 300
-  ALL: 1057
+  ALL: 1008
   '400': 400
   '50': 50
   '100': 100
