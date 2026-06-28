@@ -1,6 +1,6 @@
 # GITHUB - TROJAN - Tier 50
-# Updated: 2026-06-27 19:30:06
-# Count: 36
+# Updated: 2026-06-28 04:18:50
+# Count: 37
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -262,6 +262,28 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #21'
   type: trojan
+  server: d1.catcat321.com
+  port: 42531
+  password: 63872b0d-87dd-4474-b690-92773af2922e
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: d.usj1.cat.bilibili.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #22'
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20035
+  password: 63872b0d-87dd-4474-b690-92773af2922e
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: hk.catxstar.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #23'
+  type: trojan
   server: 104.16.72.70
   port: 443
   password: 6c862415-30d2-4813-8e49-42e99a0bd415
@@ -275,7 +297,7 @@ proxies:
     path: /us-gllc
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #22'
+- name: 'T.ME: @aristapnel #24'
   type: trojan
   server: 45.130.125.126
   port: 443
@@ -290,22 +312,7 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #23'
-  type: trojan
-  server: space.byu.id.yxls.eu.cc
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: space.byu.id.yxls.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #24'
+- name: 'T.ME: @aristapnel #25'
   type: trojan
   server: 213.176.113.98
   port: 2053
@@ -320,7 +327,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'T.ME: @aristapnel #25'
+- name: 'T.ME: @aristapnel #26'
   type: trojan
   server: 119.246.1.143
   port: 443
@@ -331,7 +338,18 @@ proxies:
   tcp-fast-open: true
   servername: t.me/ripaojiedian
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #29'
+- name: 'T.ME: @aristapnel #27'
+  type: trojan
+  server: 207.126.167.241
+  port: 443
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 207.126.167.241
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #31'
   type: trojan
   server: masir_sefid
   port: 443
@@ -342,7 +360,7 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #37'
+- name: 'T.ME: @aristapnel #38'
   type: trojan
   server: 146.75.116.190
   port: 80
@@ -357,21 +375,6 @@ proxies:
     path: /?https://t.me/app_bedal🇨🇳
     headers:
       Host: 146.75.116.190
-- name: 'T.ME: @aristapnel #39'
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: global.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /de
-    headers:
-      Host: global.fastly.com
 - name: 'T.ME: @aristapnel #42'
   type: trojan
   server: 167.82.101.251
@@ -444,17 +447,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #48'
   type: trojan
-  server: 92.119.35.125
-  port: 443
-  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 92.119.35.125
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #49'
-  type: trojan
   server: 92.119.35.127
   port: 443
   password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
@@ -463,6 +455,17 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 92.119.35.127
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #49'
+  type: trojan
+  server: 92.119.35.117
+  port: 443
+  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 92.119.35.117
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #50'
   type: trojan
@@ -508,9 +511,10 @@ proxy-groups:
   - 'T.ME: @aristapnel #23'
   - 'T.ME: @aristapnel #24'
   - 'T.ME: @aristapnel #25'
-  - 'T.ME: @aristapnel #29'
-  - 'T.ME: @aristapnel #37'
-  - 'T.ME: @aristapnel #39'
+  - 'T.ME: @aristapnel #26'
+  - 'T.ME: @aristapnel #27'
+  - 'T.ME: @aristapnel #31'
+  - 'T.ME: @aristapnel #38'
   - 'T.ME: @aristapnel #42'
   - 'T.ME: @aristapnel #43'
   - 'T.ME: @aristapnel #44'

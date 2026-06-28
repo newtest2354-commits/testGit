@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-27 19:33:07
+// Updated: 2026-06-28 04:22:01
 // Count: 492
 
 {
@@ -9823,50 +9823,6 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #498",
-      "server": "89.208.231.191",
-      "server_port": 8443,
-      "uuid": "00d12539-9917-07d0-a8c4-66dab356eb40",
-      "tls": {
-        "enabled": true,
-        "server_name": "o-gate.perekrestok.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
-          "short_id": "d8c6b58bcbb0c323"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "T.ME: @aristapnel #499",
-      "server": "89.208.231.191",
-      "server_port": 8443,
-      "uuid": "00d12539-9917-1f40-a8c4-66dab356eb40",
-      "tls": {
-        "enabled": true,
-        "server_name": "o-gate.perekrestok.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
-          "short_id": "d8c6b58bcbb0c323"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "T.ME: @aristapnel #500",
       "server": "172.67.195.229",
       "server_port": 443,
       "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
@@ -9884,6 +9840,46 @@
         "path": "/",
         "headers": {
           "Host": "rapid-hat-441d.platovpn.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "T.ME: @aristapnel #499",
+      "server": "172.67.195.229",
+      "server_port": 443,
+      "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
+      "tls": {
+        "enabled": true,
+        "server_name": "rapid-hat-441d.platovpn.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rapid-hat-441d.platovpn.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "T.ME: @aristapnel #500",
+      "server": "ov-italy1.09vpn.com",
+      "server_port": 80,
+      "uuid": "049e56d8-0ba0-49e3-b764-ee04122b9f00",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-italy1.09vpn.com"
         }
       }
     },
