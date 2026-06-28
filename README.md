@@ -136,6 +136,44 @@
 
 ---
 
-❤️ ساخته شده توسط تیم آریستا (🇲‌🇲‌🇩‌) ❤️
+<div align="center">
+
+# 📡 بانک اطلاعات IPهای برتر
+
+### ⚡ آخرین نتایج اسکن به‌صورت زنده در دسترس است
+
+<br>
+
+<a href="https://cdn.jsdelivr.net/gh/aristapanell-cell/ARISTA-MATRIX-PIPELINE@main/output/best_ips.txt">
+    <img src="https://img.shields.io/badge/⚡_BEST_IPS-LIVE-00C853?style=for-the-badge&logo=github&logoColor=white&labelColor=111827" alt="BEST IPS">
+</a>
+
+<br><br>
+
+⭐ **مشاهده لیست کامل IPهای رتبه‌بندی‌شده**  
+🚀 **Score • TTFB • Protocol • CDN • Domain • Country • City • Provider**
+
+</div>
+
+---
+<div align="center">
+
+<table border="0" cellpadding="20" style="background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 20px; border: 2px solid #e94560; margin: 0 auto;">
+  <tr>
+    <td align="center" style="padding: 25px 40px;">
+      <span style="font-size: 1.8em; color: #e94560;">❤️</span>
+      <span style="font-size: 1.5em; color: #ffffff; font-weight: bold;"> ساخته شده توسط تیم آریستا </span>
+      <span style="font-size: 1.8em; color: #e94560;">❤️</span>
+      <br>
+      <span style="font-size: 1.2em; color: #ffd700;">🇲‌🇲‌🇩‌</span>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## ⭐ حمایت
+
+اگر این پروژه برای شما مفید بود، لطفاً با ⭐ در GitHub از ما حمایت کنید.
 
 </div>
