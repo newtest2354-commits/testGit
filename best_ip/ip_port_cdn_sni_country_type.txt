@@ -1,4 +1,4 @@
-# IP,PORT,CDN,SNI,COUNTRY,TYPE - Updated: 2026-06-28 09:25:47
+# IP,PORT,CDN,SNI,COUNTRY,TYPE - Updated: 2026-06-28 12:52:33
 # Count: 691
 
 [IP: 1.0.0.1] [PORT: 2083] [CDN: cloudflare] [SNI: cloudflare.com] [Country: Australia] [TYPE: HTTPS] [SCORE: 12] [TTFB: 80ms] [PROTO: h2] [REL: 1.0] [Provider: Cloudflare]
