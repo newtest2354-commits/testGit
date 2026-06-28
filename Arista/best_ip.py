@@ -7,7 +7,7 @@ from datetime import datetime
 class BestIPProcessor:
     def __init__(self):
         self.output_dir = "best_ip"
-        self.source_url = "https://raw.githubusercontent.com/new493370/NewIp/refs/heads/main/output/best_ips.txt"
+        self.source_url = "https://cdn.jsdelivr.net/gh/aristapanell-cell/ARISTA-MATRIX-PIPELINE@main/output/best_ips.txt"
         self.fields = ['ip', 'port', 'cdn', 'sni', 'country', 'type', 'city', 'provider', 'score', 'ttfb', 'proto', 'reliability', 'tcp', 'asn']
         
     def ensure_output_dir(self):
