@@ -1,20 +1,9 @@
 # COMBINED - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-28 13:36:32
+# Updated: 2026-06-28 13:47:34
 # Count: 44
 
 proxies:
 - name: 'ARISTA #1'
-  type: hysteria2
-  server: 65.109.177.191
-  port: 443
-  password: V2RayyNgvpn
-  sni: 65.109.177.191
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #2'
   type: hysteria2
   server: 65.109.177.191
   port: 443
@@ -25,7 +14,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #3'
+- name: 'ARISTA #2'
   type: hysteria2
   server: 65.109.177.191
   port: 443
@@ -36,7 +25,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #4'
+- name: 'ARISTA #3'
   type: hysteria2
   server: 191.101.238.183
   port: 54040
@@ -47,6 +36,17 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: '%40JynMarket'
+- name: 'ARISTA #5'
+  type: hysteria2
+  server: 65.109.177.191
+  port: 443
+  password: V2RayyNgvpn
+  sni: 65.109.177.191
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
 - name: 'T.ME: @aristapnel #6'
   type: hysteria2
   server: hy2.aspidnet.xyz
@@ -437,7 +437,7 @@ proxy-groups:
   - 'ARISTA #1'
   - 'ARISTA #2'
   - 'ARISTA #3'
-  - 'ARISTA #4'
+  - 'ARISTA #5'
   - 'T.ME: @aristapnel #6'
   - 'T.ME: @aristapnel #7'
   - 'T.ME: @aristapnel #8'
