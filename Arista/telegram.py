@@ -1,5 +1,3 @@
-# telegram.py
-
 import requests
 import re
 import json
@@ -11,16 +9,9 @@ import time
 import os
 import asyncio
 import aiohttp
-import concurrent.futures
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
-
-TEST_URLS = [
-    "http://captive.apple.com/hotspot-detect.html",
-    "http://cp.cloudflare.com",
-    "http://www.gstatic.com/generate_204"
-]
 
 class TelegramConfigExtractor:
     def __init__(self):
@@ -33,7 +24,7 @@ class TelegramConfigExtractor:
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1',
         })
-
+        
         self.channels = [
             "https://t.me/s/JynMarket",
             "https://t.me/s/ConfigX2ray",
@@ -645,9 +636,9 @@ class TelegramConfigExtractor:
             "https://t.me/s/N3TWRK",
             "https://t.me/s/v2dogs_n"
         ]
-
+        
         self.channels = list(set(self.channels))
-
+        
         self.config_patterns = [
             r'(vmess://[A-Za-z0-9+/=]+)',
             r'(vless://[^\s]+)',
@@ -660,7 +651,7 @@ class TelegramConfigExtractor:
             r'(tuic://[^\s]+)',
             r'(wireguard://[^\s]+)'
         ]
-
+        
         self.dead_cache = {}
         self.failed_counter = {}
         self.last_post_cache = {}
@@ -671,58 +662,11 @@ class TelegramConfigExtractor:
         self.temp_suspend_file = "configs.txt/telegram/temp_suspend.json"
         self.last_seen_file = "configs.txt/telegram/last_seen.json"
         self.config_hash_cache = {}
-        self.num_workers = 350
-        self.global_timeout = 18
-        self.http_timeout = 13
-        self.tcp_ping_timeout = 6
-        self.max_retries = 1
         self.load_dead_cache()
         self.load_permanent_blacklist()
         self.load_temp_suspend()
         self.load_last_seen()
-
-    def test_config(self, config):
-        try:
-            if config.startswith('vmess://'):
-                decoded = self.decode_vmess(config)
-                if decoded:
-                    server = decoded.get('add', '')
-                    port = decoded.get('port', 443)
-            elif config.startswith('vless://') or config.startswith('trojan://'):
-                parsed = urlparse(config)
-                server = parsed.hostname
-                port = parsed.port or 443
-            elif config.startswith('ss://'):
-                if '@' in config:
-                    parts = config.split('@')
-                    if len(parts) == 2:
-                        server_port = parts[1].split('#')[0]
-                        if ':' in server_port:
-                            server, port = server_port.split(':', 1)
-                            port = int(port)
-                        else:
-                            return False
-                else:
-                    return False
-            else:
-                return False
-
-            if not server:
-                return False
-
-            for url in TEST_URLS:
-                try:
-                    test_url = f"http://{server}:{port}/"
-                    response = requests.get(test_url, timeout=self.http_timeout, allow_redirects=True)
-                    if response.status_code in [200, 204, 301, 302, 303, 307, 308]:
-                        return True
-                except:
-                    continue
-
-            return False
-        except:
-            return False
-
+    
     def load_dead_cache(self):
         try:
             if os.path.exists(self.cache_file):
@@ -736,7 +680,7 @@ class TelegramConfigExtractor:
                             continue
         except:
             self.dead_cache = {}
-
+    
     def save_dead_cache(self):
         try:
             os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
@@ -745,7 +689,7 @@ class TelegramConfigExtractor:
                 json.dump(cache_data, f, ensure_ascii=False, indent=2)
         except:
             pass
-
+    
     def load_permanent_blacklist(self):
         try:
             if os.path.exists(self.permanent_blacklist_file):
@@ -759,7 +703,7 @@ class TelegramConfigExtractor:
                             continue
         except:
             self.permanent_blacklist = {}
-
+    
     def save_permanent_blacklist(self):
         try:
             os.makedirs(os.path.dirname(self.permanent_blacklist_file), exist_ok=True)
@@ -768,7 +712,7 @@ class TelegramConfigExtractor:
                 json.dump(data, f, ensure_ascii=False, indent=2)
         except:
             pass
-
+    
     def load_temp_suspend(self):
         try:
             if os.path.exists(self.temp_suspend_file):
@@ -782,7 +726,7 @@ class TelegramConfigExtractor:
                             continue
         except:
             self.temp_suspended_cache = {}
-
+    
     def save_temp_suspend(self):
         try:
             os.makedirs(os.path.dirname(self.temp_suspend_file), exist_ok=True)
@@ -791,7 +735,7 @@ class TelegramConfigExtractor:
                 json.dump(data, f, ensure_ascii=False, indent=2)
         except:
             pass
-
+    
     def load_last_seen(self):
         try:
             if os.path.exists(self.last_seen_file):
@@ -805,7 +749,7 @@ class TelegramConfigExtractor:
                             continue
         except:
             self.last_post_cache = {}
-
+    
     def save_last_seen(self):
         try:
             os.makedirs(os.path.dirname(self.last_seen_file), exist_ok=True)
@@ -814,21 +758,21 @@ class TelegramConfigExtractor:
                 json.dump(data, f, ensure_ascii=False, indent=2)
         except:
             pass
-
+    
     def update_dead_cache(self, url):
         now = datetime.now(timezone.utc)
         self.failed_counter[url] = self.failed_counter.get(url, 0) + 1
-
+        
         if self.failed_counter[url] >= 3:
             self.dead_cache[url] = now
             self.save_dead_cache()
             print(f"  → Added to dead cache (failed {self.failed_counter[url]} times)")
-
+    
     def should_skip_channel(self, url):
         if url in self.permanent_blacklist:
             print(f"  → Permanently blacklisted")
             return True
-
+        
         if url in self.temp_suspended_cache:
             suspend_time = self.temp_suspended_cache[url]
             time_since_suspend = datetime.now(timezone.utc) - suspend_time
@@ -843,7 +787,7 @@ class TelegramConfigExtractor:
                 self.save_permanent_blacklist()
                 print(f"  → Moved to permanent blacklist (no posts for 7+ days)")
                 return True
-
+        
         if url in self.dead_cache:
             last_fail_time = self.dead_cache[url]
             time_since_fail = datetime.now(timezone.utc) - last_fail_time
@@ -855,10 +799,10 @@ class TelegramConfigExtractor:
                 del self.failed_counter[url]
                 self.save_dead_cache()
         return False
-
+    
     def adaptive_delay(self):
         time.sleep(random.uniform(0.4, 1.2))
-
+    
     def fetch_page(self, url):
         try:
             response = self.session.get(url, timeout=20)
@@ -866,7 +810,7 @@ class TelegramConfigExtractor:
             return response.text
         except:
             return ""
-
+    
     def get_last_post_time(self, soup):
         try:
             time_tags = soup.find_all('time')
@@ -887,28 +831,28 @@ class TelegramConfigExtractor:
         except Exception as e:
             print(f"Error parsing last post time: {e}")
             return None
-
+    
     def extract_from_soup(self, soup):
         configs = []
         elements = soup.find_all(['code', 'pre', 'div'])
-
+        
         for element in elements:
             text = element.get_text()
             for pattern in self.config_patterns:
                 matches = re.findall(pattern, text, re.IGNORECASE)
                 configs.extend(matches)
-
+        
         return configs
-
+    
     def clean_config(self, config_str):
         config_str = re.sub(r'[\n\r\t]', '', config_str)
         config_str = re.sub(r'\s+', ' ', config_str)
-
+        
         for char in ['"', "'", '<', '>', '`']:
             config_str = config_str.replace(char, '')
-
+        
         return config_str.strip()
-
+    
     def decode_vmess(self, config_str):
         try:
             base64_part = config_str[8:]
@@ -917,15 +861,15 @@ class TelegramConfigExtractor:
             return json.loads(base64.b64decode(base64_part).decode('utf-8'))
         except:
             return None
-
+    
     def standardize_ss(self, config_str):
         try:
             if not config_str.startswith('ss://'):
                 return config_str
-
+            
             parts = config_str.split('#', 1)
             base_part = parts[0][5:]
-
+            
             if '@' not in base_part:
                 if len(base_part) % 4 != 0:
                     base_part += '=' * (4 - len(base_part) % 4)
@@ -940,65 +884,65 @@ class TelegramConfigExtractor:
                         return result
                 except:
                     pass
-
+            
             return config_str
         except:
             return config_str
-
+    
     def validate_vmess(self, config_dict):
         try:
             required_keys = ['v', 'ps', 'add', 'port', 'id', 'aid']
             if not all(k in config_dict for k in required_keys):
                 return False
-
+            
             port = int(config_dict['port'])
             if port < 1 or port > 65535:
                 return False
-
+            
             uuid.UUID(config_dict['id'])
             return True
         except:
             return False
-
+    
     def validate_ss(self, config_str):
         try:
             config_str = self.standardize_ss(config_str)
             if not config_str.startswith('ss://'):
                 return False
-
+            
             parts = config_str.split('#', 1)
             base_part = parts[0][5:]
-
+            
             if '@' not in base_part:
                 return False
-
+            
             encoded_method_pass, server_part = base_part.split('@', 1)
-
+            
             if len(encoded_method_pass) % 4 != 0:
                 encoded_method_pass += '=' * (4 - len(encoded_method_pass) % 4)
-
+            
             try:
                 decoded_mp = base64.b64decode(encoded_method_pass).decode('utf-8')
                 if ':' not in decoded_mp:
                     return False
             except:
                 return False
-
+            
             if ':' not in server_part:
                 return False
-
+            
             server, port_str = server_part.split(':', 1)
             port = int(port_str)
             if port < 1 or port > 65535:
                 return False
-
+            
             return True
         except:
             return False
-
+    
     def validate_config(self, config_str):
         config_str = self.clean_config(config_str)
-
+        
         if config_str.startswith('vmess://'):
             decoded = self.decode_vmess(config_str)
             if decoded and isinstance(decoded, dict):
@@ -1015,12 +959,12 @@ class TelegramConfigExtractor:
             'wireguard://'
         ]):
             return True
-
+        
         return False
-
+    
     def tag_config(self, config_str, tag="ARISTA"):
         config_str = self.clean_config(config_str)
-
+        
         if config_str.startswith('vmess://'):
             decoded = self.decode_vmess(config_str)
             if decoded and isinstance(decoded, dict):
@@ -1033,37 +977,37 @@ class TelegramConfigExtractor:
             return f"{base}#{tag}"
         else:
             return f"{config_str}#{tag}"
-
+    
     def deduplicate(self, configs):
         unique_configs = []
         seen_hashes = set()
-
+        
         for config in configs:
             config_hash = hashlib.md5(config.encode()).hexdigest()
             if config_hash not in seen_hashes and config_hash not in self.config_hash_cache:
                 seen_hashes.add(config_hash)
                 self.config_hash_cache[config_hash] = datetime.now(timezone.utc)
                 unique_configs.append(config)
-
+        
         self.cleanup_old_hash_cache()
         return unique_configs
-
+    
     def cleanup_old_hash_cache(self):
         cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
         to_remove = [h for h, ts in self.config_hash_cache.items() if ts < cutoff]
         for h in to_remove:
             del self.config_hash_cache[h]
-
+    
     def categorize(self, configs):
         categories = {
             'vmess': [], 'vless': [], 'trojan': [], 'ss': [],
-            'hysteria2': [], 'hysteria': [], 'tuic': [],
+            'hysteria2': [], 'hysteria': [], 'tuic': [], 
             'wireguard': [], 'other': []
         }
-
+        
         for config in configs:
             config = self.clean_config(config)
-
+            
             if config.startswith('vmess://'):
                 categories['vmess'].append(config)
             elif config.startswith('vless://'):
@@ -1082,14 +1026,14 @@ class TelegramConfigExtractor:
                 categories['wireguard'].append(config)
             else:
                 categories['other'].append(config)
-
+        
         return categories
-
+    
     async def fetch_channel_async(self, session, url, semaphore):
         async with semaphore:
             if self.should_skip_channel(url):
                 return None, None, url
-
+            
             try:
                 headers = {
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -1099,33 +1043,33 @@ class TelegramConfigExtractor:
                     'Connection': 'keep-alive',
                     'Upgrade-Insecure-Requests': '1',
                 }
-
+                
                 async with session.get(url, headers=headers, timeout=aiohttp.ClientTimeout(total=20)) as response:
                     if response.status != 200:
                         self.update_dead_cache(url)
                         return None, None, url
-
+                    
                     html = await response.text()
                     return html, url, None
-
+                    
             except Exception as e:
                 self.update_dead_cache(url)
                 return None, None, url
-
+    
     async def process_channel_async(self, session, url, semaphore, limit_per_channel=15):
         html, channel_url, error = await self.fetch_channel_async(session, url, semaphore)
-
+        
         if html is None or error is not None:
             return [], 0
-
+        
         soup = BeautifulSoup(html, 'html.parser')
-
+        
         last_post_time = self.get_last_post_time(soup)
-
+        
         if not last_post_time:
             self.update_dead_cache(url)
             return [], 0
-
+        
         last_seen = self.last_post_cache.get(url)
         if last_seen and last_post_time == last_seen:
             time_since_last = datetime.now(timezone.utc) - last_post_time
@@ -1135,51 +1079,52 @@ class TelegramConfigExtractor:
                     self.save_temp_suspend()
                     print(f"  → Channel suspended (no new posts for {int(time_since_last.total_seconds()/3600)}h)")
                 return [], 0
-
+        
         self.last_post_cache[url] = last_post_time
-
+        
         if datetime.now(timezone.utc) - last_post_time > timedelta(days=2):
             if url not in self.temp_suspended_cache:
                 self.temp_suspended_cache[url] = datetime.now(timezone.utc)
                 self.save_temp_suspend()
                 print(f"  → Channel suspended (last post >2 days)")
             return [], 0
-
+        
         if url in self.temp_suspended_cache:
             del self.temp_suspended_cache[url]
             self.save_temp_suspend()
             print(f"  → Channel reactivated (new post detected)")
-
+        
         raw_configs = self.extract_from_soup(soup)
-
+        
         valid_configs = []
         for config in raw_configs:
             if self.validate_config(config):
-                valid_configs.append(config)
-
+                tagged_config = self.tag_config(config)
+                valid_configs.append(tagged_config)
+        
         if valid_configs:
             self.failed_counter[url] = 0
-
+        
         await asyncio.sleep(random.uniform(0.1, 0.3))
-
+        
         return valid_configs, len(valid_configs)
-
+    
     def process_channels(self, limit_per_channel=15):
         all_configs = []
         configs_per_channel = {}
         failed_channels = []
         skipped_channels = []
         dead_cached_skipped = 0
-
+        
         print(f"Processing {len(self.channels)} Telegram channels...")
-
+        
         self.channels = list(set(self.channels))
-
+        
         semaphore = asyncio.Semaphore(50)
-
+        
         async def process_all():
             nonlocal all_configs, configs_per_channel, failed_channels, skipped_channels, dead_cached_skipped
-
+            
             connector = aiohttp.TCPConnector(limit=100, limit_per_host=50)
             async with aiohttp.ClientSession(connector=connector) as session:
                 tasks = []
@@ -1188,74 +1133,53 @@ class TelegramConfigExtractor:
                         dead_cached_skipped += 1
                         continue
                     tasks.append(self.process_channel_async(session, url, semaphore, limit_per_channel))
-
+                
                 results = await asyncio.gather(*tasks, return_exceptions=True)
-
+                
                 for i, result in enumerate(results):
                     url = self.channels[i]
                     if isinstance(result, Exception):
                         self.update_dead_cache(url)
                         failed_channels.append(url)
                         continue
-
+                    
                     valid_configs, config_count = result
                     if config_count > 0:
                         configs_per_channel[url] = valid_configs
                     elif config_count == 0:
                         if url not in self.dead_cache:
                             skipped_channels.append(url)
-
+                
                 return configs_per_channel
-
+        
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         try:
             configs_per_channel = loop.run_until_complete(process_all())
         finally:
             loop.close()
-
+        
         self.save_last_seen()
         self.save_dead_cache()
         self.save_temp_suspend()
         self.save_permanent_blacklist()
-
+        
         latest_configs = []
         for configs in configs_per_channel.values():
             if len(configs) <= limit_per_channel:
                 latest_configs.extend(configs)
             else:
                 latest_configs.extend(configs[:limit_per_channel])
-
+        
         unique_configs = self.deduplicate(latest_configs)
-
-        print(f"\n📡 Testing {len(unique_configs)} configs with HTTP...")
-        alive_configs = []
-        dead_configs = 0
-
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_workers) as executor:
-            futures = {executor.submit(self.test_config, config): config for config in unique_configs}
-            for future in concurrent.futures.as_completed(futures):
-                config = futures[future]
-                try:
-                    if future.result():
-                        alive_configs.append(config)
-                    else:
-                        dead_configs += 1
-                except:
-                    dead_configs += 1
-
-        print(f"✅ Alive configs: {len(alive_configs)}")
-        print(f"❌ Dead configs: {dead_configs}")
-
-        tagged_configs = [self.tag_config(config) for config in alive_configs]
-        categories = self.categorize(tagged_configs)
-
-        return categories, len(alive_configs), len(failed_channels), len(skipped_channels), dead_cached_skipped
-
+        categories = self.categorize(unique_configs)
+        
+        return categories, len(unique_configs), len(failed_channels), len(skipped_channels), dead_cached_skipped
+    
     def save_results(self, categories, total_count):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         os.makedirs('configs.txt/telegram', exist_ok=True)
-
+        
         for category, configs in categories.items():
             if configs:
                 filename = f"configs.txt/telegram/{category}.txt"
@@ -1264,14 +1188,14 @@ class TelegramConfigExtractor:
                 content += f"# Count: {len(configs)}\n"
                 content += "# Source: Telegram Channels\n\n"
                 content += "\n".join(configs)
-
+                
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)
-
+        
         all_configs = []
         for configs in categories.values():
             all_configs.extend(configs)
-
+        
         if all_configs:
             filename = "configs.txt/telegram/all.txt"
             content = f"# All Telegram Configurations\n"
@@ -1279,29 +1203,29 @@ class TelegramConfigExtractor:
             content += f"# Total Count: {len(all_configs)}\n"
             content += "# Source: Telegram Channels\n\n"
             content += "\n".join(all_configs)
-
+            
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(content)
-
+        
         return len(all_configs)
 
 def main():
     print("=" * 60)
     print("ARISTA TELEGRAM CONFIG EXTRACTOR v2.0")
     print("=" * 60)
-
+    
     try:
         extractor = TelegramConfigExtractor()
         categories, total_count, failed_channels, skipped_channels, dead_cached_skipped = extractor.process_channels(limit_per_channel=15)
         saved_count = extractor.save_results(categories, total_count)
-
+        
         print(f"\n✅ PROCESSING COMPLETE")
-        print(f"Total alive configs: {total_count}")
+        print(f"Total unique configs: {total_count}")
         print(f"Configs saved: {saved_count}")
         print(f"Failed channels: {failed_channels}")
         print(f"Skipped inactive channels: {skipped_channels}")
         print(f"Skipped dead-cached channels: {dead_cached_skipped}")
-
+        
     except Exception as e:
         print(f"\n❌ ERROR: {e}")
 
