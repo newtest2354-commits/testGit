@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 150
-# Updated: 2026-06-29 07:05:19
+# Updated: 2026-06-29 07:26:21
 # Count: 149
 
 proxies:
@@ -1172,6 +1172,27 @@ proxies:
       Host: jl2klj.teeoomboom.de
 - name: 'T.ME: @aristapnel #106'
   type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: 6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: attitude-interracial-country-gen.trycloudflare.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
+    headers:
+      Host: attitude-interracial-country-gen.trycloudflare.com
+- name: 'T.ME: @aristapnel #107'
+  type: vmess
   server: 107.173.27.219
   port: 6666
   uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
@@ -1188,7 +1209,25 @@ proxies:
     path: /youtube
     headers:
       Host: 107.173.27.219
-- name: 'T.ME: @aristapnel #107'
+- name: 'T.ME: @aristapnel #108'
+  type: vmess
+  server: 69.84.182.49
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 69.84.182.49
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'T.ME: @aristapnel #109'
   type: vmess
   server: 45.92.70.236
   port: 22324
@@ -1202,7 +1241,7 @@ proxies:
   tcp-fast-open: true
   servername: 45.92.70.236
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #108'
+- name: 'T.ME: @aristapnel #110'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -1216,7 +1255,7 @@ proxies:
   tcp-fast-open: true
   servername: 85.90.217.42
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #109'
+- name: 'T.ME: @aristapnel #111'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -1230,7 +1269,7 @@ proxies:
   tcp-fast-open: true
   servername: 67.220.85.46
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #110'
+- name: 'T.ME: @aristapnel #112'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -1244,7 +1283,7 @@ proxies:
   tcp-fast-open: true
   servername: 38.110.1.246
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #111'
+- name: 'T.ME: @aristapnel #113'
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -1258,7 +1297,7 @@ proxies:
   tcp-fast-open: true
   servername: 38.91.107.49
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #112'
+- name: 'T.ME: @aristapnel #114'
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1272,7 +1311,7 @@ proxies:
   tcp-fast-open: true
   servername: 134.195.196.211
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #113'
+- name: 'T.ME: @aristapnel #115'
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -1286,7 +1325,7 @@ proxies:
   tcp-fast-open: true
   servername: 84.17.41.2
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #114'
+- name: 'T.ME: @aristapnel #116'
   type: vmess
   server: 23.226.135.232
   port: 55310
@@ -1300,7 +1339,7 @@ proxies:
   tcp-fast-open: true
   servername: 23.226.135.232
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #115'
+- name: 'T.ME: @aristapnel #117'
   type: vmess
   server: 82.198.246.37
   port: 180
@@ -1314,7 +1353,7 @@ proxies:
   tcp-fast-open: true
   servername: 82.198.246.37
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #116'
+- name: 'T.ME: @aristapnel #118'
   type: vmess
   server: 23.141.204.132
   port: 29633
@@ -1328,7 +1367,7 @@ proxies:
   tcp-fast-open: true
   servername: 23.141.204.132
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #117'
+- name: 'T.ME: @aristapnel #119'
   type: vmess
   server: 38.114.123.42
   port: 18000
@@ -1342,7 +1381,7 @@ proxies:
   tcp-fast-open: true
   servername: 38.114.123.42
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #118'
+- name: 'T.ME: @aristapnel #120'
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -1355,34 +1394,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 82.198.246.233
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #119'
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 82.198.246.250
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #120'
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 47.250.135.244
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #121'
   type: vless

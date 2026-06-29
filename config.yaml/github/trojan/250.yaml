@@ -1,5 +1,5 @@
 # GITHUB - TROJAN - Tier 250
-# Updated: 2026-06-29 07:05:16
+# Updated: 2026-06-29 07:26:17
 # Count: 235
 
 proxies:
@@ -3027,6 +3027,17 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #242'
   type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 151.101.56.6
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #243'
+  type: trojan
   server: kkvlvvq-a.catcat321.com
   port: 20035
   password: 63872b0d-87dd-4474-b690-92773af2922e
@@ -3036,7 +3047,7 @@ proxies:
   tcp-fast-open: true
   servername: hk.catxstar.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #243'
+- name: 'T.ME: @aristapnel #244'
   type: trojan
   server: 38.60.252.118
   port: 443
@@ -3047,18 +3058,18 @@ proxies:
   tcp-fast-open: true
   servername: 38.60.252.118
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #244'
+- name: 'T.ME: @aristapnel #245'
   type: trojan
-  server: 92.119.35.127
+  server: 92.119.35.123
   port: 443
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 92.119.35.127
+  servername: 92.119.35.123
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #245'
+- name: 'T.ME: @aristapnel #246'
   type: trojan
   server: 38.60.220.65
   port: 443
@@ -3069,22 +3080,18 @@ proxies:
   tcp-fast-open: true
   servername: 38.60.220.65
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #246'
+- name: 'T.ME: @aristapnel #247'
   type: trojan
   server: 43.169.18.179
   port: 443
   password: humanity
-  network: ws
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: 43.169.18.179
   client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #247'
+- name: 'T.ME: @aristapnel #248'
   type: trojan
   server: 149.104.104.58
   port: 443
@@ -3095,7 +3102,7 @@ proxies:
   tcp-fast-open: true
   servername: 149.104.104.58
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #248'
+- name: 'T.ME: @aristapnel #249'
   type: trojan
   server: 45.77.227.183
   port: 443
@@ -3106,7 +3113,7 @@ proxies:
   tcp-fast-open: true
   servername: 45.77.227.183
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #249'
+- name: 'T.ME: @aristapnel #250'
   type: trojan
   server: 103.125.216.18
   port: 443
@@ -3116,17 +3123,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 103.125.216.18
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #250'
-  type: trojan
-  server: 92.119.35.97
-  port: 443
-  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 92.119.35.97
   client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY

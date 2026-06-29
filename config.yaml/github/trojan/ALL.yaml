@@ -1,6 +1,6 @@
 # GITHUB - TROJAN - Tier ALL
-# Updated: 2026-06-29 07:05:16
-# Count: 267
+# Updated: 2026-06-29 07:26:17
+# Count: 265
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -3027,6 +3027,17 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #242'
   type: trojan
+  server: 151.101.56.6
+  port: 443
+  password: Mitivpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 151.101.56.6
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #243'
+  type: trojan
   server: kkvlvvq-a.catcat321.com
   port: 20035
   password: 63872b0d-87dd-4474-b690-92773af2922e
@@ -3036,7 +3047,7 @@ proxies:
   tcp-fast-open: true
   servername: hk.catxstar.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #243'
+- name: 'T.ME: @aristapnel #244'
   type: trojan
   server: 38.60.252.118
   port: 443
@@ -3047,18 +3058,18 @@ proxies:
   tcp-fast-open: true
   servername: 38.60.252.118
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #244'
+- name: 'T.ME: @aristapnel #245'
   type: trojan
-  server: 92.119.35.127
+  server: 92.119.35.123
   port: 443
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 92.119.35.127
+  servername: 92.119.35.123
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #245'
+- name: 'T.ME: @aristapnel #246'
   type: trojan
   server: 38.60.220.65
   port: 443
@@ -3069,22 +3080,18 @@ proxies:
   tcp-fast-open: true
   servername: 38.60.220.65
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #246'
+- name: 'T.ME: @aristapnel #247'
   type: trojan
   server: 43.169.18.179
   port: 443
   password: humanity
-  network: ws
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: 43.169.18.179
   client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #247'
+- name: 'T.ME: @aristapnel #248'
   type: trojan
   server: 149.104.104.58
   port: 443
@@ -3095,7 +3102,7 @@ proxies:
   tcp-fast-open: true
   servername: 149.104.104.58
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #248'
+- name: 'T.ME: @aristapnel #249'
   type: trojan
   server: 45.77.227.183
   port: 443
@@ -3106,7 +3113,7 @@ proxies:
   tcp-fast-open: true
   servername: 45.77.227.183
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #249'
+- name: 'T.ME: @aristapnel #250'
   type: trojan
   server: 103.125.216.18
   port: 443
@@ -3117,27 +3124,16 @@ proxies:
   tcp-fast-open: true
   servername: 103.125.216.18
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #250'
+- name: 'T.ME: @aristapnel #251'
   type: trojan
-  server: 92.119.35.97
+  server: 92.119.35.105
   port: 443
   password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 92.119.35.97
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #251'
-  type: trojan
-  server: 185.137.157.145
-  port: 443
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.137.157.145
+  servername: 92.119.35.105
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #252'
   type: trojan
@@ -3163,17 +3159,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #254'
   type: trojan
-  server: 13.36.2.68
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 13.36.2.68
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #255'
-  type: trojan
   server: 38.60.202.163
   port: 443
   password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
@@ -3183,7 +3168,7 @@ proxies:
   tcp-fast-open: true
   servername: 38.60.202.163
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #256'
+- name: 'T.ME: @aristapnel #255'
   type: trojan
   server: 185.137.157.59
   port: 443
@@ -3194,7 +3179,7 @@ proxies:
   tcp-fast-open: true
   servername: www.lateralio.click
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #257'
+- name: 'T.ME: @aristapnel #256'
   type: trojan
   server: 130.94.94.15
   port: 443
@@ -3205,7 +3190,7 @@ proxies:
   tcp-fast-open: true
   servername: 130.94.94.15
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #258'
+- name: 'T.ME: @aristapnel #257'
   type: trojan
   server: 213.35.127.18
   port: 443
@@ -3220,7 +3205,7 @@ proxies:
     path: '%2F'
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #259'
+- name: 'T.ME: @aristapnel #258'
   type: trojan
   server: 216.24.57.7
   port: 443
@@ -3235,7 +3220,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #260'
+- name: 'T.ME: @aristapnel #259'
   type: trojan
   server: 81.255.155.10
   port: 443
@@ -3250,18 +3235,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #262'
-  type: trojan
-  server: 103.125.216.18
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 103.125.216.18
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #263'
+- name: 'T.ME: @aristapnel #261'
   type: trojan
   server: 23.156.153.57
   port: 443
@@ -3276,7 +3250,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjaaa.hhllfly.kdns.fr
-- name: 'T.ME: @aristapnel #264'
+- name: 'T.ME: @aristapnel #262'
   type: trojan
   server: 151.101.0.0
   port: 80
@@ -3291,7 +3265,7 @@ proxies:
     path: '%2Fed%3Dmitivpn'
     headers:
       Host: 151.101.0.0
-- name: 'T.ME: @aristapnel #265'
+- name: 'T.ME: @aristapnel #263'
   type: trojan
   server: 151.241.129.141
   port: 443
@@ -3306,7 +3280,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #266'
+- name: 'T.ME: @aristapnel #264'
   type: trojan
   server: 142.91.108.54
   port: 443
@@ -3321,7 +3295,7 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #267'
+- name: 'T.ME: @aristapnel #265'
   type: trojan
   server: 154.17.22.175
   port: 443
@@ -3336,7 +3310,7 @@ proxies:
     path: '%2F'
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #268'
+- name: 'T.ME: @aristapnel #266'
   type: trojan
   server: 149.28.142.169
   port: 443
@@ -3351,7 +3325,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #269'
+- name: 'T.ME: @aristapnel #267'
   type: trojan
   server: 151.101.56.6
   port: 443
@@ -3366,7 +3340,7 @@ proxies:
     path: '%2Fde%3Dmitivpn'
     headers:
       Host: ssl.fastly.com
-- name: 'T.ME: @aristapnel #270'
+- name: 'T.ME: @aristapnel #268'
   type: trojan
   server: 81.255.155.10
   port: 443
@@ -3381,7 +3355,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #271'
+- name: 'T.ME: @aristapnel #269'
   type: trojan
   server: 23.27.52.79
   port: 443
@@ -3396,7 +3370,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #272'
+- name: 'T.ME: @aristapnel #270'
   type: trojan
   server: 161.248.63.77
   port: 443
@@ -3411,7 +3385,7 @@ proxies:
     path: /
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #273'
+- name: 'T.ME: @aristapnel #271'
   type: trojan
   server: 151.101.242.172
   port: 80
@@ -3426,7 +3400,7 @@ proxies:
     path: '%2Fed%3Dmitivpn'
     headers:
       Host: 151.101.242.172
-- name: 'T.ME: @aristapnel #274'
+- name: 'T.ME: @aristapnel #272'
   type: trojan
   server: 185.126.238.84
   port: 443
@@ -3437,7 +3411,7 @@ proxies:
   tcp-fast-open: true
   servername: 185.126.238.84
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #275'
+- name: 'T.ME: @aristapnel #273'
   type: trojan
   server: 146.75.116.190
   port: 80
@@ -3452,7 +3426,7 @@ proxies:
     path: '%2F%3Fhttps%3A%2F%2Ft.me%2Fapp_bedal%F0%9F%87%A8%F0%9F%87%B3'
     headers:
       Host: 146.75.116.190
-- name: 'T.ME: @aristapnel #276'
+- name: 'T.ME: @aristapnel #274'
   type: trojan
   server: 154.17.228.36
   port: 443
@@ -3467,7 +3441,7 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #277'
+- name: 'T.ME: @aristapnel #275'
   type: trojan
   server: iranpoems.ir
   port: 443
@@ -3482,7 +3456,7 @@ proxies:
     path: '%2Fde%3Dmitivpn'
     headers:
       Host: cdn.gamingdll.ir
-- name: 'T.ME: @aristapnel #278'
+- name: 'T.ME: @aristapnel #276'
   type: trojan
   server: 107.161.24.195
   port: 443
@@ -3497,7 +3471,7 @@ proxies:
     path: '%2F'
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #279'
+- name: 'T.ME: @aristapnel #277'
   type: trojan
   server: 146.235.16.191
   port: 443
@@ -3512,7 +3486,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #280'
+- name: 'T.ME: @aristapnel #278'
   type: trojan
   server: 37.235.49.118
   port: 443
@@ -3523,7 +3497,7 @@ proxies:
   tcp-fast-open: true
   servername: 37.235.49.118
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #281'
+- name: 'T.ME: @aristapnel #279'
   type: trojan
   server: 209.33.166.199
   port: 443
@@ -3538,7 +3512,7 @@ proxies:
     path: '%2F'
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #282'
+- name: 'T.ME: @aristapnel #280'
   type: trojan
   server: 103.125.216.11
   port: 443
@@ -3549,7 +3523,7 @@ proxies:
   tcp-fast-open: true
   servername: 103.125.216.11
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #283'
+- name: 'T.ME: @aristapnel #281'
   type: trojan
   server: 23.149.28.8.sslip.io
   port: 8443
@@ -3813,7 +3787,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #257'
   - 'T.ME: @aristapnel #258'
   - 'T.ME: @aristapnel #259'
-  - 'T.ME: @aristapnel #260'
+  - 'T.ME: @aristapnel #261'
   - 'T.ME: @aristapnel #262'
   - 'T.ME: @aristapnel #263'
   - 'T.ME: @aristapnel #264'
@@ -3834,8 +3808,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #279'
   - 'T.ME: @aristapnel #280'
   - 'T.ME: @aristapnel #281'
-  - 'T.ME: @aristapnel #282'
-  - 'T.ME: @aristapnel #283'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
