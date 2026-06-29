@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 200
-// Updated: 2026-06-29 04:26:30
+// Updated: 2026-06-29 07:08:43
 // Count: 160
 
 {
@@ -1614,41 +1614,6 @@
     {
       "type": "vmess",
       "tag": "T.ME: @aristapnel #136",
-      "server": "18.184.156.126",
-      "server_port": 1002,
-      "uuid": "440cddf8-bfdc-4936-b842-381d572a12aa",
-      "security": "auto",
-      "tls": {
-        "enabled": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "T.ME: @aristapnel #137",
-      "server": "yg1.ygkkk.dpdns.org",
-      "server_port": 443,
-      "uuid": "6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "attitude-interracial-country-gen.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm",
-        "headers": {
-          "Host": "attitude-interracial-country-gen.trycloudflare.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "T.ME: @aristapnel #138",
       "server": "107.173.27.219",
       "server_port": 6666,
       "uuid": "f0a2fbe5-29bf-468c-ddc1-b524552d1a23",
@@ -1666,7 +1631,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #139",
+      "tag": "T.ME: @aristapnel #137",
       "server": "45.92.70.236",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1677,7 +1642,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #140",
+      "tag": "T.ME: @aristapnel #138",
       "server": "85.90.217.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1688,7 +1653,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #141",
+      "tag": "T.ME: @aristapnel #139",
       "server": "67.220.85.46",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1699,7 +1664,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #142",
+      "tag": "T.ME: @aristapnel #140",
       "server": "38.110.1.246",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1710,7 +1675,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #143",
+      "tag": "T.ME: @aristapnel #141",
       "server": "38.91.107.49",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1721,7 +1686,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #144",
+      "tag": "T.ME: @aristapnel #142",
       "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1732,7 +1697,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #145",
+      "tag": "T.ME: @aristapnel #143",
       "server": "84.17.41.2",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1743,7 +1708,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #146",
+      "tag": "T.ME: @aristapnel #144",
       "server": "23.226.135.232",
       "server_port": 55310,
       "uuid": "22066968-ef90-455e-b981-4bf782d25386",
@@ -1754,7 +1719,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #147",
+      "tag": "T.ME: @aristapnel #145",
       "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
@@ -1765,7 +1730,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #148",
+      "tag": "T.ME: @aristapnel #146",
       "server": "23.141.204.132",
       "server_port": 29633,
       "uuid": "0685a0bf-2413-45d2-dc00-c0281387c247",
@@ -1776,7 +1741,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #149",
+      "tag": "T.ME: @aristapnel #147",
       "server": "38.114.123.42",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1787,7 +1752,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #150",
+      "tag": "T.ME: @aristapnel #148",
       "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
@@ -1798,7 +1763,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #151",
+      "tag": "T.ME: @aristapnel #149",
       "server": "82.198.246.250",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
@@ -1809,7 +1774,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #152",
+      "tag": "T.ME: @aristapnel #150",
       "server": "47.250.135.244",
       "server_port": 10000,
       "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
@@ -1820,7 +1785,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #153",
+      "tag": "T.ME: @aristapnel #151",
       "server": "216.106.185.141",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1831,7 +1796,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #154",
+      "tag": "T.ME: @aristapnel #152",
       "server": "213.156.141.52",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1842,7 +1807,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #155",
+      "tag": "T.ME: @aristapnel #153",
       "server": "172.104.80.66",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1854,7 +1819,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #156",
+      "tag": "T.ME: @aristapnel #154",
       "server": "67.220.72.237",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -1865,7 +1830,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #157",
+      "tag": "T.ME: @aristapnel #155",
       "server": "165.154.195.38",
       "server_port": 35034,
       "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
@@ -1876,7 +1841,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #158",
+      "tag": "T.ME: @aristapnel #156",
       "server": "104.21.89.181",
       "server_port": 80,
       "uuid": "65b17c0b-0a52-4b54-9bc9-60e31397b841",
@@ -1894,7 +1859,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #159",
+      "tag": "T.ME: @aristapnel #157",
       "server": "104.21.55.229",
       "server_port": 80,
       "uuid": "65b17c0b-0a52-4b54-9bc9-60e31397b841",
@@ -1912,7 +1877,7 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #160",
+      "tag": "T.ME: @aristapnel #158",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -1926,6 +1891,35 @@
         "headers": {
           "Host": ""
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #159",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "kr02.a0a.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #160",
+      "server": "155.254.126.249",
+      "server_port": 6001,
+      "uuid": "a030842a-d29a-4ea9-a776-14fc4b9e102d",
+      "security": "auto",
+      "tls": {
+        "enabled": false
       }
     },
     {
