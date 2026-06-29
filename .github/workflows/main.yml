@@ -54,6 +54,11 @@ jobs:
         rm -rf best_ip/
         mkdir -p best_ip
 
+    - name: Clean old smart_configs files
+      run: |
+        rm -rf smart_configs/
+        mkdir -p smart_configs
+
     - name: Run Telegram Config Extractor
       run: python Arista/telegram.py
       timeout-minutes: 20
@@ -73,6 +78,10 @@ jobs:
 
     - name: Process Best IPs
       run: python Arista/best_ip.py
+      timeout-minutes: 10
+
+    - name: Generate Smart Configs (ARISTA ULTRA)
+      run: python Arista/smart_combiner_v2.py
       timeout-minutes: 10
 
     - name: Create summary
