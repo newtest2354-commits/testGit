@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-06-29 14:04:33
+# Updated: 2026-06-29 15:59:19
 # Count: 495
 
 proxies:
@@ -8799,21 +8799,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #498'
   type: vless
-  server: 151.101.69.219
-  port: 443
-  uuid: 0054d04a-2384-471e-b4f8-a52699c21ff8
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: global.fastly.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #499'
-  type: vless
   server: 172.67.195.229
   port: 443
   uuid: 00e94078-bb1e-49aa-8567-e1b3b2843150
@@ -8833,25 +8818,46 @@ proxies:
       Host: rapid-hat-441d.platovpn.workers.dev
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'T.ME: @aristapnel #500'
+- name: 'T.ME: @aristapnel #499'
   type: vless
-  server: 185.91.54.126
-  port: 8445
-  uuid: 011cedd5-6af3-45dd-8ee9-2878b0a581cf
-  network: grpc
+  server: 93.93.88.28
+  port: 443
+  uuid: 02ab2364-44e0-4f1e-992b-72a3d4cdc3d0
+  network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 360.yandex.ru
+  servername: cdn-discover.truesight.store
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-  grpc-opts:
-    grpc-service-name: ns
+  ws-opts:
+    path: /v1/data/sync/
+    headers:
+      Host: cdn-discover.truesight.store
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'T.ME: @aristapnel #500'
+  type: vless
+  server: 89.208.231.191
+  port: 8443
+  uuid: 0387bd2f-3459-07d0-87f9-7df4a12b5c95
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: o-gate.perekrestok.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
   reality-opts:
-    public-key: -22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test

@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 50
-// Updated: 2026-06-29 14:07:32
+// Updated: 2026-06-29 16:02:47
 // Count: 40
 
 {
@@ -250,24 +250,24 @@
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #13",
-      "server": "140.245.27.220",
-      "server_port": 51000,
-      "password": "940f51d6-e0a4-4add-b96b-328e4a84b642",
+      "server": "31.76.28.28",
+      "server_port": 443,
+      "password": "8bc63720-5ec8-45b5-b6a6-9a21ffb490e8",
       "tls": {
         "enabled": true,
-        "server_name": "140.245.27.220",
+        "server_name": "31.76.28.28",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #14",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "140.245.27.220",
+      "server_port": 51000,
+      "password": "940f51d6-e0a4-4add-b96b-328e4a84b642",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "140.245.27.220",
         "insecure": true
       }
     },
@@ -286,24 +286,24 @@
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #16",
-      "server": "13.231.108.76",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "13.231.108.76",
+        "server_name": "103.115.109.49",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #17",
-      "server": "202.146.222.174",
+      "server": "13.231.108.76",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "13.231.108.76",
         "insecure": true
       }
     },
@@ -322,24 +322,24 @@
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #19",
-      "server": "62.210.124.146",
-      "server_port": 22000,
-      "password": "dongtaiwang.com",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "62.210.124.146",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #20",
-      "server": "3.66.236.81",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "server": "157.230.222.46",
+      "server_port": 8443,
+      "password": "MySecurePassword123",
       "tls": {
         "enabled": true,
-        "server_name": "3.66.236.81",
+        "server_name": "157.230.222.46",
         "insecure": true
       }
     },

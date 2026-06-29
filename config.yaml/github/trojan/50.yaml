@@ -1,6 +1,6 @@
 # GITHUB - TROJAN - Tier 50
-# Updated: 2026-06-29 14:04:33
-# Count: 41
+# Updated: 2026-06-29 15:59:19
+# Count: 36
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -430,7 +430,7 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #42'
+- name: 'T.ME: @aristapnel #45'
   type: trojan
   server: 146.75.116.190
   port: 80
@@ -445,7 +445,7 @@ proxies:
     path: /?https://t.me/app_bedal🇨🇳
     headers:
       Host: 146.75.116.190
-- name: 'T.ME: @aristapnel #43'
+- name: 'T.ME: @aristapnel #47'
   type: trojan
   server: 151.101.110.219
   port: 443
@@ -460,7 +460,7 @@ proxies:
     path: /de
     headers:
       Host: ssl.fastly.com
-- name: 'T.ME: @aristapnel #45'
+- name: 'T.ME: @aristapnel #50'
   type: trojan
   server: 151.101.56.6
   port: 443
@@ -475,69 +475,6 @@ proxies:
     path: /de
     headers:
       Host: ssl.fastly.com
-- name: 'T.ME: @aristapnel #46'
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: Mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /de
-    headers:
-      Host: ssl.fastly.com
-- name: 'T.ME: @aristapnel #47'
-  type: trojan
-  server: 167.82.101.251
-  port: 443
-  password: Mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /de
-    headers:
-      Host: ssl.fastly.com
-- name: 'T.ME: @aristapnel #48'
-  type: trojan
-  server: 92.119.35.117
-  port: 443
-  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 92.119.35.117
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #49'
-  type: trojan
-  server: 92.119.35.120
-  port: 443
-  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 92.119.35.120
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #50'
-  type: trojan
-  server: 92.119.35.123
-  port: 443
-  password: aR9EJWEB2Jp3m6xKJK%3DCt7kLyqFSU-iDBR
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 92.119.35.123
-  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -580,13 +517,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #32'
   - 'T.ME: @aristapnel #33'
   - 'T.ME: @aristapnel #37'
-  - 'T.ME: @aristapnel #42'
-  - 'T.ME: @aristapnel #43'
   - 'T.ME: @aristapnel #45'
-  - 'T.ME: @aristapnel #46'
   - 'T.ME: @aristapnel #47'
-  - 'T.ME: @aristapnel #48'
-  - 'T.ME: @aristapnel #49'
   - 'T.ME: @aristapnel #50'
 - name: 🎬 ARISTA STREAM
   type: fallback

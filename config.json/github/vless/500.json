@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-29 14:07:32
+// Updated: 2026-06-29 16:02:46
 // Count: 492
 
 {
@@ -9823,26 +9823,6 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #498",
-      "server": "151.101.69.219",
-      "server_port": 443,
-      "uuid": "0054d04a-2384-471e-b4f8-a52699c21ff8",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "T.ME: @aristapnel #499",
       "server": "172.67.195.229",
       "server_port": 443,
       "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
@@ -9865,13 +9845,39 @@
     },
     {
       "type": "vless",
-      "tag": "T.ME: @aristapnel #500",
-      "server": "185.91.54.126",
-      "server_port": 8445,
-      "uuid": "011cedd5-6af3-45dd-8ee9-2878b0a581cf",
+      "tag": "T.ME: @aristapnel #499",
+      "server": "93.93.88.28",
+      "server_port": 443,
+      "uuid": "02ab2364-44e0-4f1e-992b-72a3d4cdc3d0",
       "tls": {
         "enabled": true,
-        "server_name": "360.yandex.ru",
+        "server_name": "cdn-discover.truesight.store",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v1/data/sync/",
+        "headers": {
+          "Host": "93.93.88.28"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "T.ME: @aristapnel #500",
+      "server": "89.208.231.191",
+      "server_port": 8443,
+      "uuid": "0387bd2f-3459-07d0-87f9-7df4a12b5c95",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-gate.perekrestok.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -9879,13 +9885,11 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "-22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk"
+          "public_key": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
+          "short_id": "d8c6b58bcbb0c323"
         }
       },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ns"
-      }
+      "flow": "xtls-rprx-vision"
     },
     {
       "type": "direct",
