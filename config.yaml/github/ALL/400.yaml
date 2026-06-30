@@ -1,6 +1,6 @@
 # GITHUB - ALL - Tier 400
-# Updated: 2026-06-30 07:29:03
-# Count: 382
+# Updated: 2026-06-30 09:52:00
+# Count: 383
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -2040,13 +2040,29 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #204'
   type: ss
-  server: 80.208.229.172
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 4LuSQluWs3meAy5vOo7ikZ
+  server: 46.17.43.147
+  port: 30129
+  cipher: aes-256-gcm
+  password: 32c0ea6e823341a2
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #205'
+  type: ss
+  server: 212.192.13.91
+  port: 30129
+  cipher: aes-256-gcm
+  password: 7e1dd4c55bf85da5
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #206'
+  type: ss
+  server: 141.133.175.194
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: cAqbBYBB0f9CAmpU_mc_7FyvvLCcwzt0
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #207'
   type: ss
   server: 45.77.232.213
   port: 15675
@@ -2054,7 +2070,7 @@ proxies:
   password: TWG7J1KR5KsPaV5qZI+rieueKxxafZSpCH
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #206'
+- name: 'T.ME: @aristapnel #208'
   type: ss
   server: 45.32.122.179
   port: 23027
@@ -2062,7 +2078,7 @@ proxies:
   password: I-bP3lFh.dTG3XitF7XtVK83CZ7rI2Ut=n
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #207'
+- name: 'T.ME: @aristapnel #209'
   type: ss
   server: 91.108.254.104
   port: 13683
@@ -2070,7 +2086,7 @@ proxies:
   password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #208'
+- name: 'T.ME: @aristapnel #210'
   type: ss
   server: 38.54.80.160
   port: 16292
@@ -2078,7 +2094,7 @@ proxies:
   password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #209'
+- name: 'T.ME: @aristapnel #211'
   type: ss
   server: r3mrcg001286ek2.cybervena.com
   port: 50099
@@ -2086,63 +2102,39 @@ proxies:
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #210'
+- name: 'T.ME: @aristapnel #212'
   type: ss
-  server: 103.241.66.76
+  server: 193.168.175.56
   port: 14605
   cipher: chacha20-ietf-poly1305
   password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #211'
+- name: 'T.ME: @aristapnel #213'
   type: ss
-  server: 91.108.254.252
-  port: 18982
-  cipher: chacha20-ietf-poly1305
-  password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #212'
-  type: ss
-  server: 38.180.221.143
+  server: 38.180.221.145
   port: 17283
   cipher: chacha20-ietf-poly1305
   password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #213'
-  type: ss
-  server: 103.106.231.82
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-  tcp-fast-open: true
 - name: 'T.ME: @aristapnel #214'
-  type: ss
-  server: 154.223.16.96
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #215'
   type: ss
   server: 46.224.2.35
   port: 47199
   cipher: chacha20-ietf-poly1305
-  password: Jx2HKJK7kiti86e8AnQIbX
+  password: h2GNP6xzss0xQ5kf7BNcJI
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #216'
+- name: 'T.ME: @aristapnel #215'
   type: ss
-  server: 103.111.114.80
+  server: 103.111.114.82
   port: 28061
   cipher: chacha20-ietf-poly1305
   password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #217'
+- name: 'T.ME: @aristapnel #216'
   type: ss
   server: 104.156.233.234
   port: 27116
@@ -2150,7 +2142,7 @@ proxies:
   password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #218'
+- name: 'T.ME: @aristapnel #217'
   type: ss
   server: 82.38.31.181
   port: 8080
@@ -2158,15 +2150,15 @@ proxies:
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #219'
+- name: 'T.ME: @aristapnel #218'
   type: ss
-  server: 82.38.31.217
+  server: 82.38.31.216
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #220'
+- name: 'T.ME: @aristapnel #219'
   type: ss
   server: 82.38.31.207
   port: 8080
@@ -2174,9 +2166,17 @@ proxies:
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
+- name: 'T.ME: @aristapnel #220'
+  type: ss
+  server: 82.38.31.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  tcp-fast-open: true
 - name: 'T.ME: @aristapnel #221'
   type: ss
-  server: 82.38.31.205
+  server: 82.38.31.193
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -2184,7 +2184,7 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #222'
   type: ss
-  server: 82.38.31.192
+  server: 82.38.31.214
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -2192,13 +2192,13 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #223'
   type: ss
-  server: 82.38.31.214
+  server: 82.38.31.190
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #225'
+- name: 'T.ME: @aristapnel #224'
   type: ss
   server: 172.234.202.34
   port: 24833
@@ -2206,7 +2206,7 @@ proxies:
   password: hRd=IXkjozMEKLeGR_0q09jtwly5J2la2O
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #226'
+- name: 'T.ME: @aristapnel #225'
   type: ss
   server: 82.38.31.176
   port: 8080
@@ -2214,7 +2214,7 @@ proxies:
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #227'
+- name: 'T.ME: @aristapnel #226'
   type: ss
   server: 67.219.106.119
   port: 26286
@@ -2222,7 +2222,7 @@ proxies:
   password: xfscSDcb-SeEqqRb.omzVGgVgNpXh3bA1u
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #228'
+- name: 'T.ME: @aristapnel #227'
   type: ss
   server: 141.227.152.129
   port: 8388
@@ -2230,7 +2230,7 @@ proxies:
   password: VJeAjiJ40F2Il17Elv285W
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #229'
+- name: 'T.ME: @aristapnel #228'
   type: ss
   server: 140.174.184.5
   port: 8388
@@ -2238,7 +2238,7 @@ proxies:
   password: qItG8SueYQcP
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #230'
+- name: 'T.ME: @aristapnel #229'
   type: ss
   server: 61.171.92.202
   port: 1001
@@ -2246,20 +2246,28 @@ proxies:
   password: '123'
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #231'
+- name: 'T.ME: @aristapnel #230'
   type: ss
-  server: 82.38.31.17
+  server: 82.38.31.16
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #232'
+- name: 'T.ME: @aristapnel #231'
   type: ss
   server: 213.226.68.8
   port: 31348
   cipher: chacha20-ietf-poly1305
   password: hkasb5cVrs4jE18jCEJxB4Gr55hVGW24y35gU9GIIeyT31Fw
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #232'
+  type: ss
+  server: 45.129.96.62
+  port: 41348
+  cipher: chacha20-ietf-poly1305
+  password: 6U3psR0sQuQxWXoBHB4KTD3YacwQwS21XvSEy9
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #233'
@@ -2408,34 +2416,34 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #251'
   type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #252'
+  type: ss
+  server: 82.38.31.192
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #253'
+  type: ss
   server: 8.209.74.72
   port: 20001
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #252'
+- name: 'T.ME: @aristapnel #254'
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #253'
-  type: ss
-  server: 46.246.97.3
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: nbWNC8zZ0eXokIOuW5rL8oNrXmXg5qAuL05R4fGNKCS7IG0u
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #254'
-  type: ss
-  server: 82.38.31.13
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #255'
@@ -5233,6 +5241,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #221'
   - 'T.ME: @aristapnel #222'
   - 'T.ME: @aristapnel #223'
+  - 'T.ME: @aristapnel #224'
   - 'T.ME: @aristapnel #225'
   - 'T.ME: @aristapnel #226'
   - 'T.ME: @aristapnel #227'

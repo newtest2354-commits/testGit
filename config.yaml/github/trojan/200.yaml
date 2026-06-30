@@ -1,5 +1,5 @@
 # GITHUB - TROJAN - Tier 200
-# Updated: 2026-06-30 07:28:59
+# Updated: 2026-06-30 09:51:56
 # Count: 188
 
 proxies:
@@ -2195,7 +2195,7 @@ proxies:
       Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #171'
   type: trojan
-  server: 45.130.125.126
+  server: 45.130.125.112
   port: 443
   password: humanity
   network: ws
@@ -2210,6 +2210,21 @@ proxies:
       Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #172'
   type: trojan
+  server: 45.130.125.126
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'T.ME: @aristapnel #173'
+  type: trojan
   server: 45.130.125.158
   port: 443
   password: humanity
@@ -2223,7 +2238,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #173'
+- name: 'T.ME: @aristapnel #174'
   type: trojan
   server: 45.130.125.160
   port: 443
@@ -2238,7 +2253,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #174'
+- name: 'T.ME: @aristapnel #175'
   type: trojan
   server: 45.130.125.2
   port: 443
@@ -2253,7 +2268,7 @@ proxies:
     path: /assignment
     headers:
       Host: Www.cReaTIOnLONG.OrG
-- name: 'T.ME: @aristapnel #175'
+- name: 'T.ME: @aristapnel #176'
   type: trojan
   server: 45.130.125.32
   port: 443
@@ -2268,7 +2283,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #176'
+- name: 'T.ME: @aristapnel #177'
   type: trojan
   server: 45.130.125.69
   port: 443
@@ -2283,7 +2298,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #177'
+- name: 'T.ME: @aristapnel #178'
   type: trojan
   server: 45.130.125.75
   port: 443
@@ -2298,7 +2313,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #178'
+- name: 'T.ME: @aristapnel #179'
   type: trojan
   server: 45.130.125.76
   port: 443
@@ -2313,7 +2328,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #179'
+- name: 'T.ME: @aristapnel #180'
   type: trojan
   server: 45.130.125.96
   port: 443
@@ -2328,7 +2343,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #180'
+- name: 'T.ME: @aristapnel #181'
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -2343,7 +2358,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #181'
+- name: 'T.ME: @aristapnel #182'
   type: trojan
   server: 66.81.247.155
   port: 443
@@ -2358,7 +2373,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #182'
+- name: 'T.ME: @aristapnel #183'
   type: trojan
   server: 8.6.112.0
   port: 443
@@ -2373,7 +2388,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #183'
+- name: 'T.ME: @aristapnel #184'
   type: trojan
   server: 8.6.112.6
   port: 443
@@ -2388,7 +2403,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #184'
+- name: 'T.ME: @aristapnel #185'
   type: trojan
   server: 81.255.155.10
   port: 443
@@ -2403,7 +2418,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #185'
+- name: 'T.ME: @aristapnel #186'
   type: trojan
   server: 85.198.11.172
   port: 40443
@@ -2418,7 +2433,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #186'
+- name: 'T.ME: @aristapnel #187'
   type: trojan
   server: chatgpt.com
   port: 443
@@ -2433,7 +2448,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #187'
+- name: 'T.ME: @aristapnel #188'
   type: trojan
   server: sourceforge.net
   port: 443
@@ -2448,7 +2463,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #188'
+- name: 'T.ME: @aristapnel #189'
   type: trojan
   server: www.calmlunch.com
   port: 443
@@ -2463,7 +2478,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #189'
+- name: 'T.ME: @aristapnel #190'
   type: trojan
   server: www.creationlong.org
   port: 443
@@ -2478,7 +2493,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #190'
+- name: 'T.ME: @aristapnel #191'
   type: trojan
   server: www.gossipglove.com
   port: 443
@@ -2493,7 +2508,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #191'
+- name: 'T.ME: @aristapnel #192'
   type: trojan
   server: www.ignitelimit.com
   port: 443
@@ -2508,7 +2523,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #192'
+- name: 'T.ME: @aristapnel #193'
   type: trojan
   server: www.multiplydose.com
   port: 443
@@ -2523,7 +2538,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #193'
+- name: 'T.ME: @aristapnel #194'
   type: trojan
   server: 45.77.227.183
   port: 443
@@ -2534,7 +2549,7 @@ proxies:
   tcp-fast-open: true
   servername: 45.77.227.183
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #194'
+- name: 'T.ME: @aristapnel #195'
   type: trojan
   server: 185.137.157.154
   port: 443
@@ -2545,7 +2560,7 @@ proxies:
   tcp-fast-open: true
   servername: fra154.clientfirewall.click
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #195'
+- name: 'T.ME: @aristapnel #196'
   type: trojan
   server: 185.137.157.250
   port: 443
@@ -2556,7 +2571,7 @@ proxies:
   tcp-fast-open: true
   servername: fra250.clientfirewall.click
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #196'
+- name: 'T.ME: @aristapnel #197'
   type: trojan
   server: 146.70.90.197
   port: 57452
@@ -2566,17 +2581,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 146.70.90.197
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #197'
-  type: trojan
-  server: 146.70.90.198
-  port: 57452
-  password: t1k169n5zmvvwn96r9ft
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 146.70.90.198
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #198'
   type: trojan
@@ -2591,14 +2595,14 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #199'
   type: trojan
-  server: 38.60.220.65
-  port: 443
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
+  server: 146.70.90.198
+  port: 57452
+  password: t1k169n5zmvvwn96r9ft
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 38.60.220.65
+  servername: 146.70.90.198
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #200'
   type: trojan
