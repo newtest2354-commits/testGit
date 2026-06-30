@@ -1,5 +1,5 @@
 // GITHUB - VMESS - Tier ALL
-// Updated: 2026-06-30 20:38:13
+// Updated: 2026-06-30 21:08:20
 // Count: 44
 
 {
@@ -9,23 +9,19 @@
   },
   "dns": {
     "strategy": "prefer_ipv4",
-    "independent_cache": true,
-    "cache_capacity": 8192,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15"
-    },
     "servers": [
       {
         "type": "https",
         "tag": "cloudflare",
         "server": "1.1.1.1",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
         "type": "https",
         "tag": "google",
         "server": "8.8.8.8",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
@@ -35,11 +31,11 @@
     ],
     "rules": [
       {
-        "domain": [
-          "geosite:private"
+        "query_type": [
+          "A",
+          "AAAA"
         ],
-        "action": "route",
-        "server": "local"
+        "server": "cloudflare"
       }
     ],
     "final": "cloudflare"
@@ -47,20 +43,16 @@
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in",
+      "tag": "tun",
       "interface_name": "singbox-tun",
-      "mtu": 9000,
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "auto_redirect": true,
       "strict_route": true,
       "stack": "mixed",
-      "endpoint_independent_nat": true,
-      "sniff": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff": true
     }
   ],
   "outbounds": [
@@ -85,7 +77,7 @@
       "tls": {
         "enabled": true,
         "server_name": "uk5.taskflowhub.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -120,7 +112,7 @@
       "tls": {
         "enabled": true,
         "server_name": "atiins.com.tr",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -206,7 +198,7 @@
       "tls": {
         "enabled": true,
         "server_name": "n1744454498.lie5d.cyou",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -248,7 +240,7 @@
       "tls": {
         "enabled": true,
         "server_name": "n1744454501.4u9ma.icu",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -301,7 +293,7 @@
       "tls": {
         "enabled": true,
         "server_name": "nm7386.teeoomboom.de",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -325,7 +317,7 @@
       "tls": {
         "enabled": true,
         "server_name": "jl2klj.teeoomboom.de",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -731,6 +723,10 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
@@ -843,26 +839,11 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": {
-      "server": "cloudflare",
-      "strategy": "prefer_ipv4"
-    },
     "final": "🚀 ARISTA AUTO BEST",
     "rules": [
       {
-        "clash_mode": "Direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "🚀 ARISTA AUTO BEST"
-      },
-      {
-        "action": "sniff"
-      },
-      {
         "protocol": "dns",
-        "action": "hijack-dns"
+        "outbound": "dns-out"
       }
     ]
   }

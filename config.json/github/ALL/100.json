@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 100
-// Updated: 2026-06-30 20:38:13
+// Updated: 2026-06-30 21:08:21
 // Count: 80
 
 {
@@ -9,23 +9,19 @@
   },
   "dns": {
     "strategy": "prefer_ipv4",
-    "independent_cache": true,
-    "cache_capacity": 8192,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15"
-    },
     "servers": [
       {
         "type": "https",
         "tag": "cloudflare",
         "server": "1.1.1.1",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
         "type": "https",
         "tag": "google",
         "server": "8.8.8.8",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
@@ -35,11 +31,11 @@
     ],
     "rules": [
       {
-        "domain": [
-          "geosite:private"
+        "query_type": [
+          "A",
+          "AAAA"
         ],
-        "action": "route",
-        "server": "local"
+        "server": "cloudflare"
       }
     ],
     "final": "cloudflare"
@@ -47,20 +43,16 @@
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in",
+      "tag": "tun",
       "interface_name": "singbox-tun",
-      "mtu": 9000,
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "auto_redirect": true,
       "strict_route": true,
       "stack": "mixed",
-      "endpoint_independent_nat": true,
-      "sniff": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff": true
     }
   ],
   "outbounds": [
@@ -161,7 +153,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.multiplydose.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -184,7 +176,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fra250.clientfirewall.click",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -200,7 +192,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fra154.clientfirewall.click",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -216,7 +208,7 @@
       "tls": {
         "enabled": true,
         "server_name": "linkkon-w.ir",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -242,7 +234,7 @@
       "tls": {
         "enabled": true,
         "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -265,7 +257,7 @@
       "tls": {
         "enabled": true,
         "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -288,7 +280,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -311,7 +303,7 @@
       "tls": {
         "enabled": true,
         "server_name": "global.fastly.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -351,7 +343,7 @@
       "tls": {
         "enabled": true,
         "server_name": "FAST-Route-DD4E2D.FREEfiReMO7964.WOrkeRS.DEV",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -377,7 +369,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.ignitelimit.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -400,7 +392,7 @@
       "tls": {
         "enabled": true,
         "server_name": "51.75.86.196",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -416,7 +408,7 @@
       "tls": {
         "enabled": true,
         "server_name": "51.75.86.196",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -432,7 +424,7 @@
       "tls": {
         "enabled": true,
         "server_name": "51.75.86.196",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -712,7 +704,7 @@
       "tls": {
         "enabled": true,
         "server_name": "uk5.taskflowhub.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -747,7 +739,7 @@
       "tls": {
         "enabled": true,
         "server_name": "atiins.com.tr",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -833,7 +825,7 @@
       "tls": {
         "enabled": true,
         "server_name": "n1744454498.lie5d.cyou",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -875,7 +867,7 @@
       "tls": {
         "enabled": true,
         "server_name": "n1744454501.4u9ma.icu",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -928,7 +920,7 @@
       "tls": {
         "enabled": true,
         "server_name": "nm7386.teeoomboom.de",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -952,7 +944,7 @@
       "tls": {
         "enabled": true,
         "server_name": "jl2klj.teeoomboom.de",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1037,7 +1029,7 @@
       "tls": {
         "enabled": true,
         "server_name": "apple.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1059,7 +1051,7 @@
       "tls": {
         "enabled": true,
         "server_name": "play.google.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -1080,7 +1072,7 @@
       "tls": {
         "enabled": true,
         "server_name": "zh.hollowspot.ir",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1106,7 +1098,7 @@
       "tls": {
         "enabled": true,
         "server_name": "google.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1128,7 +1120,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ads.x5.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
@@ -1150,7 +1142,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.ibm.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1172,7 +1164,7 @@
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1193,7 +1185,7 @@
       "tls": {
         "enabled": true,
         "server_name": "google.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1215,7 +1207,7 @@
       "tls": {
         "enabled": true,
         "server_name": "rahgozar.italiantourism.net.",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1234,7 +1226,7 @@
       "tls": {
         "enabled": true,
         "server_name": "google.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1266,7 +1258,7 @@
       "tls": {
         "enabled": true,
         "server_name": "cd11.thisiswe.uno",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1289,7 +1281,7 @@
       "tls": {
         "enabled": true,
         "server_name": "nobitex.sylu.net",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1315,7 +1307,7 @@
       "tls": {
         "enabled": true,
         "server_name": "instxrpt.samanidempire.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1341,7 +1333,7 @@
       "tls": {
         "enabled": true,
         "server_name": "yandex.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1362,7 +1354,7 @@
       "tls": {
         "enabled": true,
         "server_name": "st.okcdn.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
@@ -1384,7 +1376,7 @@
       "tls": {
         "enabled": true,
         "server_name": "maviks.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1406,7 +1398,7 @@
       "tls": {
         "enabled": true,
         "server_name": "max.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1428,7 +1420,7 @@
       "tls": {
         "enabled": true,
         "server_name": "yandex.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1457,6 +1449,10 @@
     {
       "type": "block",
       "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     },
     {
       "type": "urltest",
@@ -1643,26 +1639,11 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": {
-      "server": "cloudflare",
-      "strategy": "prefer_ipv4"
-    },
     "final": "🚀 ARISTA AUTO BEST",
     "rules": [
       {
-        "clash_mode": "Direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "🚀 ARISTA AUTO BEST"
-      },
-      {
-        "action": "sniff"
-      },
-      {
         "protocol": "dns",
-        "action": "hijack-dns"
+        "outbound": "dns-out"
       }
     ]
   }

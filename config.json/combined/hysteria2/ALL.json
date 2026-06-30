@@ -1,5 +1,5 @@
 // COMBINED - HYSTERIA2 - Tier ALL
-// Updated: 2026-06-30 20:38:12
+// Updated: 2026-06-30 21:08:20
 // Count: 42
 
 {
@@ -9,23 +9,19 @@
   },
   "dns": {
     "strategy": "prefer_ipv4",
-    "independent_cache": true,
-    "cache_capacity": 8192,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15"
-    },
     "servers": [
       {
         "type": "https",
         "tag": "cloudflare",
         "server": "1.1.1.1",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
         "type": "https",
         "tag": "google",
         "server": "8.8.8.8",
+        "server_port": 443,
         "path": "/dns-query"
       },
       {
@@ -35,11 +31,11 @@
     ],
     "rules": [
       {
-        "domain": [
-          "geosite:private"
+        "query_type": [
+          "A",
+          "AAAA"
         ],
-        "action": "route",
-        "server": "local"
+        "server": "cloudflare"
       }
     ],
     "final": "cloudflare"
@@ -47,73 +43,29 @@
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in",
+      "tag": "tun",
       "interface_name": "singbox-tun",
-      "mtu": 9000,
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "auto_redirect": true,
       "strict_route": true,
       "stack": "mixed",
-      "endpoint_independent_nat": true,
-      "sniff": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff": true
     }
   ],
   "outbounds": [
     {
       "type": "hysteria2",
       "tag": "ARISTA #1",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "ARISTA #2",
-      "server": "191.101.238.183",
-      "server_port": 54040,
-      "password": "q3tf4lsdoqpgpo4x",
-      "tls": {
-        "enabled": true,
-        "server_name": "191.101.238.183",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "@JynMarket"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "ARISTA #4",
       "server": "65.20.114.95",
       "server_port": 443,
       "password": "V2rayyNGvpn",
       "tls": {
         "enabled": true,
         "server_name": "www.oracle.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -126,14 +78,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "ARISTA #5",
+      "tag": "ARISTA #2",
       "server": "143.14.59.229",
       "server_port": 443,
       "password": "t-me-V2RayyNGvpn",
       "tls": {
         "enabled": true,
         "server_name": "www.oracle.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -146,14 +98,34 @@
     },
     {
       "type": "hysteria2",
-      "tag": "ARISTA #6",
+      "tag": "ARISTA #3",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "ARISTA #4",
       "server": "80.66.81.78",
       "server_port": 9443,
       "password": "rs2mR3g9bZiMloftx6lZQ59Um1Ld",
       "tls": {
         "enabled": true,
         "server_name": "tunel1.washing.help",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -162,6 +134,26 @@
       "obfs": {
         "type": "salamander",
         "password": "oMgvuBy5Lj5kYM57sGsnjpjNcSEQ"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "ARISTA #5",
+      "server": "191.101.238.183",
+      "server_port": 54040,
+      "password": "q3tf4lsdoqpgpo4x",
+      "tls": {
+        "enabled": true,
+        "server_name": "191.101.238.183",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JynMarket"
       }
     },
     {
@@ -533,7 +525,7 @@
       "tls": {
         "enabled": true,
         "server_name": "YAPC-1.afshin.ir",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -553,7 +545,7 @@
       "tls": {
         "enabled": true,
         "server_name": "YAPC-1.afshin.ir",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -573,7 +565,7 @@
       "tls": {
         "enabled": true,
         "server_name": "6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -589,7 +581,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -605,7 +597,7 @@
       "tls": {
         "enabled": true,
         "server_name": "news.dd.msk.su",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
@@ -628,7 +620,7 @@
       "tls": {
         "enabled": true,
         "server_name": "social.klipp.su",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
@@ -651,7 +643,7 @@
       "tls": {
         "enabled": true,
         "server_name": "musicclips.videolinks.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
@@ -674,7 +666,7 @@
       "tls": {
         "enabled": true,
         "server_name": "nrealistic.nn-foto.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "edge"
@@ -697,14 +689,18 @@
       "tag": "block"
     },
     {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
         "ARISTA #1",
         "ARISTA #2",
+        "ARISTA #3",
         "ARISTA #4",
         "ARISTA #5",
-        "ARISTA #6",
         "T.ME: @aristapnel #7",
         "T.ME: @aristapnel #8",
         "T.ME: @aristapnel #9",
@@ -755,9 +751,9 @@
       "outbounds": [
         "ARISTA #1",
         "ARISTA #2",
+        "ARISTA #3",
         "ARISTA #4",
         "ARISTA #5",
-        "ARISTA #6",
         "T.ME: @aristapnel #7",
         "T.ME: @aristapnel #8",
         "T.ME: @aristapnel #9",
@@ -805,26 +801,11 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": {
-      "server": "cloudflare",
-      "strategy": "prefer_ipv4"
-    },
     "final": "🚀 ARISTA AUTO BEST",
     "rules": [
       {
-        "clash_mode": "Direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "🚀 ARISTA AUTO BEST"
-      },
-      {
-        "action": "sniff"
-      },
-      {
         "protocol": "dns",
-        "action": "hijack-dns"
+        "outbound": "dns-out"
       }
     ]
   }
