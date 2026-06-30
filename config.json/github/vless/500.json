@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-30 14:35:14
+// Updated: 2026-06-30 18:38:11
 // Count: 492
 
 {
@@ -9823,84 +9823,62 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #498",
-      "server": "188.114.97.0",
-      "server_port": 443,
-      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
+      "server": "154.83.159.9",
+      "server_port": 8443,
+      "uuid": "0047a8bc-0025-4d45-899b-c75c669f3ede",
       "tls": {
         "enabled": true,
-        "server_name": "stipulations.gelatin.workers.dev",
+        "server_name": "storage.yandex.net",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "firefox"
         },
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
-        "headers": {
-          "Host": "stipulations.gelatin.workers.dev"
+        "reality": {
+          "enabled": true,
+          "public_key": "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo",
+          "short_id": "6f15101ff2cc4887"
         }
-      }
+      },
+      "flow": "xtls-rprx-vision"
     },
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #499",
-      "server": "172.67.215.168",
+      "server": "172.67.195.229",
       "server_port": 443,
-      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
+      "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
       "tls": {
         "enabled": true,
-        "server_name": "stipulations.gelatin.workers.dev",
+        "server_name": "rapid-hat-441d.platovpn.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ]
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
+        "path": "/",
         "headers": {
-          "Host": "stipulations.gelatin.workers.dev"
+          "Host": "rapid-hat-441d.platovpn.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #500",
-      "server": "104.21.5.28",
-      "server_port": 443,
-      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
+      "server": "ov-italy1.09vpn.com",
+      "server_port": 80,
+      "uuid": "049e56d8-0ba0-49e3-b764-ee04122b9f00",
       "tls": {
-        "enabled": true,
-        "server_name": "stipulations.gelatin.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ]
+        "enabled": false
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
+        "path": "/vless/",
         "headers": {
-          "Host": "stipulations.gelatin.workers.dev"
+          "Host": "ov-italy1.09vpn.com"
         }
       }
     },

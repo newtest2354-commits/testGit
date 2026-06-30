@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 50
-# Updated: 2026-06-30 14:33:11
+# Updated: 2026-06-30 18:35:11
 # Count: 50
 
 proxies:
@@ -9,13 +9,14 @@ proxies:
   port: 443
   password: humanity
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.gossipglove.com
   client-fingerprint: chrome
   ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
     headers:
       Host: www.gossipglove.com
 - name: 'T.ME: @aristapnel #2'
@@ -24,13 +25,13 @@ proxies:
   port: 443
   password: humanity
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.multiplydose.com
-  client-fingerprint: chrome
   ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #3'
@@ -39,24 +40,24 @@ proxies:
   port: 28126
   password: oJRk-2+NoHJ3N4frj_O2.0CzT+WAgdcs7b
   network: tcp
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.game-bridge.click
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #4'
   type: trojan
   server: 104.21.40.34
   port: 443
   password: humanity
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.multiplydose.com
-  client-fingerprint: chrome
   ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #5'
@@ -65,24 +66,24 @@ proxies:
   port: 443
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   network: tcp
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.lateralio.click
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #6'
   type: trojan
   server: 172.64.147.166
   port: 443
   password: humanity
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.multiplydose.com
-  client-fingerprint: chrome
   ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #7'
@@ -91,13 +92,13 @@ proxies:
   port: 443
   password: humanity
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: www.multiplydose.com
-  client-fingerprint: chrome
   ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #8'
@@ -106,35 +107,38 @@ proxies:
   port: 443
   password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
   network: tcp
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: fra250.clientfirewall.click
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #9'
   type: trojan
   server: 185.137.157.154
   port: 443
   password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
   network: tcp
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: fra154.clientfirewall.click
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #10'
   type: trojan
   server: 104.21.18.41
   port: 443
   password: MiTiVPN
   network: ws
+  tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: linkkon-w.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: '%2Fcdn%3Dmitivpn'
+    path: /cdn=mitivpn
     headers:
       Host: linkkon-w.ir
 - name: 'T.ME: @aristapnel #11'
@@ -143,96 +147,82 @@ proxies:
   port: 443
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'T.ME: @aristapnel #12'
   type: hysteria2
-  server: mumbai-3.nezhasu.com
-  port: 443
-  password: 2b195c17-5ff5-4b0d-a809-210b92212394
-  sni: mumbai-3.nezhasu.com
-  skip-cert-verify: false
+  server: 202.61.205.86
+  port: 4433
+  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
+  sni: de1.xiaoliyu.cyou
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #13'
   type: hysteria2
-  server: lsdg1.lansecs.top
-  port: 58338
-  password: e42a38c4-4bea-42d6-90f1-3076e12f8c51
-  sni: lsdg1.lansecs.top
-  skip-cert-verify: false
+  server: 140.245.27.220
+  port: 51000
+  password: 940f51d6-e0a4-4add-b96b-328e4a84b642
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #14'
   type: hysteria2
-  server: 70.34.215.221
-  port: 20335
-  password: 80747420-96c4-4a2f-83e6-eea4e46beb09
-  sni: 70.34.215.221
-  skip-cert-verify: false
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: U1wBrYQyFm
 - name: 'T.ME: @aristapnel #15'
   type: hysteria2
-  server: dir.cybsecguru.com
-  port: 35000
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  sni: dir.cybsecguru.com
-  skip-cert-verify: false
+  server: 13.231.108.76
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.231.108.76
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: '%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
 - name: 'T.ME: @aristapnel #16'
   type: hysteria2
-  server: falankefu1.nezhasu.com
+  server: 202.146.222.174
   port: 443
-  password: 2b195c17-5ff5-4b0d-a809-210b92212394
-  sni: falankefu1.nezhasu.com
-  skip-cert-verify: false
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #17'
   type: hysteria2
-  server: lsus3.lansecs.top
-  port: 58338
-  password: e42a38c4-4bea-42d6-90f1-3076e12f8c51
-  sni: lsus3.lansecs.top
-  skip-cert-verify: false
+  server: 62.210.124.146
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #18'
   type: hysteria2
-  server: lundun1.nezhasu.com
+  server: 3.79.47.137
   port: 443
-  password: 2b195c17-5ff5-4b0d-a809-210b92212394
-  sni: lundun1.nezhasu.com
-  skip-cert-verify: false
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 3.79.47.137
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #19'
   type: hysteria2
-  server: xg.xn--mes13n8pi8x2b.shop
-  port: 21072
-  password: 642dc0b9-6481-4d84-ad60-3586e870f263
-  sni: xg.xn--mes13n8pi8x2b.shop
-  skip-cert-verify: false
+  server: 47.131.248.82
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #20'
   type: hysteria2
-  server: xg.xn--mes13n8pi8x2b.shop
-  port: 21494
-  password: 642dc0b9-6481-4d84-ad60-3586e870f263
-  sni: xg.xn--mes13n8pi8x2b.shop
-  skip-cert-verify: false
+  server: vpn-sg-001.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
   fast-open: true
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #21'
   type: ss
   server: 82.38.31.149
@@ -323,10 +313,9 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 89.167.82.102
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #32'
   type: vmess
   server: uk5.taskflowhub.org
@@ -337,13 +326,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: uk5.taskflowhub.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #33'
   type: vmess
   server: 69.84.182.49
@@ -354,10 +339,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 69.84.182.49
-  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
@@ -372,7 +356,7 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: atiins.com.tr
   client-fingerprint: chrome
@@ -389,14 +373,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.89.107.51
-  client-fingerprint: chrome
   ws-opts:
     path: /
-    headers:
-      Host: 45.89.107.51
 - name: 'T.ME: @aristapnel #36'
   type: vmess
   server: 8.218.17.136
@@ -407,14 +388,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 8.218.17.136
-  client-fingerprint: chrome
   ws-opts:
     path: /
-    headers:
-      Host: 8.218.17.136
 - name: 'T.ME: @aristapnel #37'
   type: vmess
   server: 209.126.84.189
@@ -425,10 +403,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 209.126.84.189
-  client-fingerprint: chrome
   ws-opts:
     path: /vmessws
     headers:
@@ -443,10 +420,9 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 62.146.235.193
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #39'
   type: vmess
   server: n1744454498.lie5d.cyou
@@ -457,13 +433,9 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: n1744454498.lie5d.cyou
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
     path: /
     headers:
@@ -478,10 +450,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tcp-fast-open: true
   servername: 5.196.29.123
-  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
@@ -494,14 +465,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: apple.com
   reality-opts:
     public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
     short-id: 8bcfe256cf216fd8
@@ -513,13 +479,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: K0iITauuYEqIayR3IB5Ny8MVKyORDJ65rUSHc3tLe1E
     short-id: 42c0b628ba6a42a9
@@ -531,19 +493,14 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: zh.hollowspot.ir
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  servername: zh.hollowspot.ir
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: zh.hollowspot.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #44'
   type: vless
   server: 45.145.41.35
@@ -552,14 +509,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882
@@ -571,14 +524,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: ads.x5.ru
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
     short-id: cd57a927f6b72d81
@@ -590,14 +539,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ibm.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.ibm.com
   reality-opts:
     public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
     short-id: 4a5b6c7d
@@ -609,13 +554,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: ve8spuAYBeV8j7QnofoqGecdYl1KZYYcykiyHHzNg1U
     short-id: 0bce
@@ -627,14 +568,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882
@@ -646,13 +583,11 @@ proxies:
   network: httpupgrade
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rahgozar.italiantourism.net.
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: rahgozar.italiantourism.net.
 - name: 'T.ME: @aristapnel #50'
   type: vless
   server: 194.107.126.157
@@ -661,14 +596,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882

@@ -1,6 +1,6 @@
 # GITHUB - VLESS - Tier 300
-# Updated: 2026-06-30 14:33:09
-# Count: 299
+# Updated: 2026-06-30 18:35:08
+# Count: 300
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -11,14 +11,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: apple.com
   reality-opts:
     public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
     short-id: 8bcfe256cf216fd8
@@ -30,13 +25,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: K0iITauuYEqIayR3IB5Ny8MVKyORDJ65rUSHc3tLe1E
     short-id: 42c0b628ba6a42a9
@@ -48,19 +39,14 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: zh.hollowspot.ir
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  servername: zh.hollowspot.ir
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: zh.hollowspot.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #4'
   type: vless
   server: 45.145.41.35
@@ -69,14 +55,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882
@@ -88,14 +70,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: ads.x5.ru
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
     short-id: cd57a927f6b72d81
@@ -107,14 +85,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ibm.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.ibm.com
   reality-opts:
     public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
     short-id: 4a5b6c7d
@@ -126,13 +100,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: ve8spuAYBeV8j7QnofoqGecdYl1KZYYcykiyHHzNg1U
     short-id: 0bce
@@ -144,14 +114,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882
@@ -163,13 +129,11 @@ proxies:
   network: httpupgrade
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rahgozar.italiantourism.net.
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: rahgozar.italiantourism.net.
 - name: 'T.ME: @aristapnel #10'
   type: vless
   server: 194.107.126.157
@@ -178,14 +142,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU
     short-id: 9eb31eb7572c0882
@@ -197,10 +157,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 51.38.64.226
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #12'
   type: vless
   server: 45.130.125.198
@@ -209,19 +166,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cd11.thisiswe.uno
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cd11.thisiswe.uno
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: cd11.thisiswe.uno
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #13'
   type: vless
   server: glob.thisiswe.uno
@@ -230,19 +181,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nobitex.sylu.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: nobitex.sylu.net
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: nobitex.sylu.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #14'
   type: vless
   server: 192.248.180.137
@@ -251,19 +198,14 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: instxrpt.samanidempire.org
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  servername: instxrpt.samanidempire.org
   ws-opts:
-    path: '%2F5a7200cd'
+    path: /5a7200cd
     headers:
       Host: instxrpt.samanidempire.org
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #15'
   type: vless
   server: 109.172.55.157
@@ -272,13 +214,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yandex.ru
   reality-opts:
     public-key: -zsPOGrZY1Dlb6eypa5V_OPaLBpT66FX3cSo0mNX8SI
     short-id: 47ee5c592c1672cf
@@ -290,14 +228,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: st.okcdn.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: st.okcdn.ru
   reality-opts:
     public-key: P-3bYKbPp5YeCefayC3S3PvLanBv_lp0p_5qfrjbM34
     short-id: 39a1eb3ec417cd66
@@ -309,14 +243,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: maviks.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: maviks.ru
   reality-opts:
     public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
     short-id: 0f917152a871e9c0
@@ -328,14 +258,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: max.ru
   reality-opts:
     public-key: eQXsYV276NoiN9SDwuloNrJkX-NU2tDtkMK6ntKQwlg
     short-id: 701775cae5f3a793
@@ -347,13 +273,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yandex.ru
   reality-opts:
     public-key: xrzsSwm-PkWv-DgyaFCVd_QELA6YFBtvaDOlQCd7Sj8
     short-id: e4656850eaed4e86
@@ -365,10 +287,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 57.129.133.88
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #21'
   type: vless
   server: 31.170.22.193
@@ -377,14 +296,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: apple.com
   reality-opts:
     public-key: cFora2YYa3aZdpWW8vMD9iX97qRKtyLzXv4pWgXoh20
     short-id: ead461
@@ -396,14 +311,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: web.max.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: web.max.ru
   reality-opts:
     public-key: 0esXSTe5YLKpPWeLCiDvQlFwmxZ_pXeTxTdUDiW5_3g
     short-id: 90a13f
@@ -415,10 +326,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: zyro.adslimit.info
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #24'
   type: vless
   server: 91.132.51.160
@@ -427,14 +335,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.refersion.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.refersion.com
   reality-opts:
     public-key: qzm3WJz3wvusnMdBDNbj-XboJZWGqClcXOOcM-LexkQ
     short-id: e164b85aec8a7422
@@ -446,14 +350,12 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: jina-4182217232-direct.yektanet.co
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
+  servername: jina-4182217232-direct.yektanet.co
 - name: 'T.ME: @aristapnel #26'
   type: vless
   server: 152.53.116.71
@@ -462,13 +364,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: L0T7BLyB6gtVckvnxryaK-GGd2XwgoJ3YFM9M8kXmho
     short-id: '7554'
@@ -480,13 +378,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: a3wxOmmJ95RHcuVYvxGusowLy8c6a4amlbS2OxMNTHc
     short-id: 52ad
@@ -498,13 +392,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: qq
   servername: tradingview.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: 1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg
     short-id: 50ed6f6007515d63
@@ -516,14 +406,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.techradar.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.techradar.com
   reality-opts:
     public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
     short-id: 174c6cf22e22
@@ -535,14 +421,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: ads.x5.ru
   reality-opts:
     public-key: OBR2JYROQB8odK5glVW_KLnsWl3UZ-voyGq_9ihQgTI
     short-id: d49d578f280fd83a
@@ -554,14 +436,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: germany.scroogethebest.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: germany.scroogethebest.com
   reality-opts:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
@@ -573,13 +451,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: tMbRR1FTvBecmMv3GLv50T21hXHqHxulqWBKwNEW50Q
     short-id: 822d
@@ -591,16 +465,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sc-france2.09vpn.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2Fvless%2F'
-    headers:
-      Host: sc-france2.09vpn.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+    path: /vless/
 - name: 'T.ME: @aristapnel #34'
   type: vless
   server: 152.53.46.200
@@ -609,14 +476,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: at.jojack.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: at.jojack.ru
   reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: 8dc4fccb2bcfc99d
@@ -628,14 +491,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: edge
+  servername: www.yandex.ru
   reality-opts:
     public-key: QRvZBf0tz7ij9V7L4MjXkHoMkdDAbwc-UzyDt-PLshU
 - name: 'T.ME: @aristapnel #36'
@@ -646,14 +505,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: ads.x5.ru
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
     short-id: 33554379411b3219
@@ -665,14 +520,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: api-maps.yandex.ru
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
     short-id: 65ce6cee3941af69
@@ -684,14 +535,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: ads.x5.ru
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 - name: 'T.ME: @aristapnel #39'
@@ -702,14 +548,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nl.jojack.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: nl.jojack.ru
   reality-opts:
     public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
     short-id: 6bb3c7f9f97b45b8
@@ -721,14 +563,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: 5post-gate.x5.ru
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
     short-id: 6354585c37827955
@@ -740,14 +578,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: odbiaA-5s0mkehtfrf2SBcrKAMDP1sFjxKHJYdDCKgc
     short-id: '81'
@@ -759,14 +593,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: yandex.ru
   reality-opts:
     public-key: UZZZh7NCnRvU1y7D45FgrZFwIDVIrdLm8TVjx6IudGQ
     short-id: a1b2c3d4e5f60789
@@ -778,14 +608,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 8f222b3475800821
@@ -797,14 +623,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.microsoft.com
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
     short-id: 18e4d2d21241
@@ -816,14 +638,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: api-maps.yandex.ru
   reality-opts:
     public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
     short-id: a20d3ed244c76426
@@ -835,13 +653,9 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: one-piece.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: one-piece.com
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
@@ -855,14 +669,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 1929ef620e9b34f5
@@ -874,14 +684,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 1929ef620e9b34f5
@@ -893,14 +699,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: f4b4a6365558ea2e
@@ -912,13 +714,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ads.x5.ru
   reality-opts:
     public-key: 6_hMGHFRodRl4rUOlv0mJJBC-9en9gNpypLiNqBAuw0
     short-id: '281902'
@@ -930,14 +728,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
@@ -949,13 +743,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: Qkso5vLwNsJx8xXmMfwzEYXey_XmDMriA9k4uP-negg
     short-id: a9b6
@@ -967,14 +757,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: api-maps.yandex.ru
   reality-opts:
     public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
     short-id: a1b2c3d4e5f6789a
@@ -986,13 +772,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: 2Z2meC9rRAMD3k52ne8dh8PdfRNpOs5T9yObPyFkXyQ
     short-id: f9fe
@@ -1004,14 +786,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: google.com
   reality-opts:
     public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
     short-id: 9f35da6c9412b832
@@ -1023,14 +801,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
@@ -1042,14 +816,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.techradar.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.techradar.com
   reality-opts:
     public-key: Cs45TZ-4YKa8fWZ72YJcIcQCKipWsoYNZHEqFvs-PTE
     short-id: f6e197a0b9f2
@@ -1061,14 +831,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 1929ef620e9b34f5
@@ -1080,13 +846,10 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pqh30v5.carwashipdir.shop
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
   - h2
-  - http/1.1
+  servername: pqh30v5.carwashipdir.shop
 - name: 'T.ME: @aristapnel #60'
   type: vless
   server: 104.21.33.123
@@ -1095,19 +858,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fi.unoix.io
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: fi.unoix.io
   ws-opts:
-    path: '%2FNet3rffws'
+    path: /Net3rffws
     headers:
       Host: fi.unoix.io
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #61'
   type: vless
   server: 46.249.109.128
@@ -1116,14 +873,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.microsoft.com
   reality-opts:
     public-key: q42m1wg11kZLyRtjaKus8T-NNl1vriRG3V1eVTL6ICc
     short-id: 37e6f3e4339e
@@ -1135,13 +888,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ea.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ea.com
   reality-opts:
     public-key: 3iQ5QX52pIjouDXoPSfrQRvpqaOTqG26IJLctU7McAY
     short-id: '02'
@@ -1153,10 +902,7 @@ proxies:
   network: grpc
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.82.251.208
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #64'
   type: vless
   server: 84.252.143.25
@@ -1165,14 +911,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 48fccabc158a4c22
@@ -1184,13 +926,9 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.google.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.google.com
   grpc-opts:
     grpc-service-name: vless
   reality-opts:
@@ -1204,19 +942,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: jafarservices.jafarghasemiturk.ir
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: jafarservices.jafarghasemiturk.ir
   ws-opts:
-    path: '%2Fws%3Fed%3D2560'
+    path: /ws?ed=2560
     headers:
       Host: jafarservices.jafarghasemiturk.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #67'
   type: vless
   server: 79.137.175.44
@@ -1225,14 +957,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: m.vk.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: m.vk.ru
   reality-opts:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 04bf0403f96e5b4b
@@ -1244,13 +972,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: random
   servername: logggg.nammknammknammknammknammkb2.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: RravQN06gzsNsm5ojEhZGrxBgLGEpqEThtHEltdjpBk
     short-id: b3d76d
@@ -1262,10 +986,7 @@ proxies:
   network: grpc
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.82.251.195
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #70'
   type: vless
   server: 198.50.119.86
@@ -1274,16 +995,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: telewebion.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2F39427%2FNextlife'
+    path: /39427/Nextlife
     headers:
       Host: telewebion.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #71'
   type: vless
   server: 45.82.251.249
@@ -1292,10 +1008,7 @@ proxies:
   network: grpc
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.82.251.249
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #72'
   type: vless
   server: 84.252.143.25
@@ -1304,14 +1017,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 04bf0403f96e5b4b
@@ -1323,14 +1032,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: tradingview.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: tradingview.com
   reality-opts:
     public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
     short-id: f7aa9e61197d3ac6
@@ -1342,19 +1047,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: r4.bb0.ccwu.cc
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: r4.bb0.ccwu.cc
   ws-opts:
-    path: '%2FAbRz6tBwBWo4gds7cXpDB5nO5'
+    path: /AbRz6tBwBWo4gds7cXpDB5nO5
     headers:
       Host: r4.bb0.ccwu.cc
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #75'
   type: vless
   server: 141.101.120.21
@@ -1363,16 +1062,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ggbnh.1x5.indevs.in
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2FhBasD7EdpBQ0zGAzsYHmsMrnO'
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
     headers:
       Host: ggbnh.1x5.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #76'
   type: vless
   server: dns.dressforida.monster
@@ -1381,14 +1075,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.microsoft.com
   reality-opts:
     public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
     short-id: 9eff19e0405a
@@ -1400,13 +1090,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: max.ru
   reality-opts:
     public-key: w28tNIWZCfW4X9aQDLwXECK3pU59zihJ0GIMA13u5X8
 - name: 'T.ME: @aristapnel #78'
@@ -1417,14 +1103,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nl.jojack.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: nl.jojack.ru
   reality-opts:
     public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
     short-id: 6bb3c7f9f97b45b8
@@ -1436,13 +1118,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: 1xMt7stxzh55Xy31H180TZNMvRYNkhEE86StqE4CtDs
     short-id: 2f2a
@@ -1454,14 +1132,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.mozilla.org
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.mozilla.org
   reality-opts:
     public-key: 4SvSS7EqHyV_LDW4vB2f7UIj6x_GXsR3vMnqnaxspHo
     short-id: 42237f32aba8
@@ -1473,14 +1147,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ang12.fasssst.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: ang12.fasssst.ru
   reality-opts:
     public-key: FkukwtrnUTnH3H7HtmWdxZV6axzxP-yE63TcviTR9jA
     short-id: 64318fb6091432
@@ -1492,16 +1162,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ghj.ae1autumn.cc.cd
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2FXR8So0uqFVa3vY9ZbxgW4'
+    path: /XR8So0uqFVa3vY9ZbxgW4
     headers:
       Host: ghj.ae1autumn.cc.cd
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #83'
   type: vless
   server: 62.60.177.167
@@ -1510,14 +1175,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: st.ozone.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: st.ozone.ru
   reality-opts:
     public-key: uI6NV8Mkk7kf864izhLcAnk6nVDH6cE-_5HRJwMQGXs
     short-id: 0ea9a621ae03e231
@@ -1529,14 +1190,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: 205748bc0f24a747
@@ -1548,14 +1205,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
     short-id: e49b4e3d5f46d5c2
@@ -1567,14 +1220,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 1929ef620e9b34f5
@@ -1586,14 +1235,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.microsoft.com
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
     short-id: 9409f73c2fd7
@@ -1605,19 +1250,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vbhj.dddct.us.ci
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: vbhj.dddct.us.ci
   ws-opts:
-    path: '%2FUzlFfVDyqJL3rI4BWzwNzcYz'
+    path: /UzlFfVDyqJL3rI4BWzwNzcYz
     headers:
       Host: vbhj.dddct.us.ci
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #89'
   type: vless
   server: 84.252.136.245
@@ -1626,14 +1265,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: 205748bc0f24a747
@@ -1645,14 +1280,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: apple.com
   reality-opts:
     public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
 - name: 'T.ME: @aristapnel #91'
@@ -1663,19 +1293,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: njkkl.5nn.ccwu.cc
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: njkkl.5nn.ccwu.cc
   ws-opts:
-    path: '%2F1Aeip9N4V6m20grcpQ8L96b'
+    path: /1Aeip9N4V6m20grcpQ8L96b
     headers:
       Host: njkkl.5nn.ccwu.cc
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #92'
   type: vless
   server: 66.42.54.48
@@ -1684,13 +1308,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: node1.nanonet.host
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #93'
   type: vless
   server: 172.234.130.82
@@ -1699,13 +1318,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: yahoo.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM
     short-id: 1a24af87
@@ -1717,13 +1332,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk
     short-id: 4ae260
@@ -1735,14 +1346,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: apple.com
   reality-opts:
     public-key: nEtLZNAdk_LgKNk4aNuk1E1IWaxvuOOT9UZZqJ-q_FA
     short-id: afef94e2
@@ -1754,14 +1361,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: KWSjlwoF8TwmwGbOItbe89ZWkjw0m1vUNpSDf55nZwI
     short-id: d9c2d8
@@ -1773,19 +1376,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: tttyu.003330333.xyz
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: tttyu.003330333.xyz
   ws-opts:
-    path: '%2FF24D1rlC85bVBOSONBms'
+    path: /F24D1rlC85bVBOSONBms
     headers:
       Host: tttyu.003330333.xyz
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #98'
   type: vless
   server: 77.110.114.1
@@ -1794,14 +1391,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: srv27.outlinekeys.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: srv27.outlinekeys.com
   reality-opts:
     public-key: 3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ
 - name: 'T.ME: @aristapnel #99'
@@ -1812,14 +1404,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: safari
+  servername: www.icloud.com
   reality-opts:
     public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
 - name: 'T.ME: @aristapnel #100'
@@ -1830,13 +1418,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yandex.ru
   reality-opts:
     public-key: -kDgSQgouE56cqDIDwgCco1LNQ-8q61WllL5egDI0yI
     short-id: '6670'
@@ -1848,19 +1432,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: BBBNMkL.TaiwAn2028.INdEvS.iN
   ws-opts:
-    path: '%2Fs2VHv9VUVzg35A6ueyyZnWd'
+    path: /s2VHv9VUVzg35A6ueyyZnWd
     headers:
       Host: BbBNMkL.TAIWan2028.iNDEVs.In
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #102'
   type: vless
   server: 47.82.6.36
@@ -1869,10 +1447,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 47.82.6.36
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #103'
   type: vless
   server: 112.120.48.176
@@ -1881,14 +1456,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: safari
+  servername: www.icloud.com
   reality-opts:
     public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
 - name: 'T.ME: @aristapnel #104'
@@ -1899,16 +1470,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 158.178.234.153
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
     path: /
-    headers:
-      Host: 158.178.234.153
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #105'
   type: vless
   server: 47.245.38.111
@@ -1917,13 +1481,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.autodesk.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.autodesk.com
   reality-opts:
     public-key: y167aJhpgWWjltY4UCir_uu8Mj__Hkc1W4etD0QXYH4
     short-id: 860705e716cbe6ed
@@ -1935,19 +1495,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: uj.999j.indevs.in
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: uj.999j.indevs.in
   ws-opts:
-    path: '%2F15ZYK3adOPjqSc7fzeJr'
+    path: /15ZYK3adOPjqSc7fzeJr
     headers:
       Host: uj.999j.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #107'
   type: vless
   server: 45.147.251.170
@@ -1956,13 +1510,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: WH0kgqh8uI7zBktvnmEhMOKqmxWMfgspWUzXtDlW3Qk
     short-id: cafe
@@ -1974,19 +1524,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F185.186.245.40%3A81'
+    path: /185.186.245.40:81
     headers:
       Host: afrcloud22.mmv.kr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #109'
   type: vless
   server: 212.227.95.106
@@ -1995,13 +1538,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: XxphGtGbyJegOM0QIy65eyC8g3dzlKOMY0tWFBnTCWc
     short-id: a0cb
@@ -2013,14 +1552,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: yandex.ru
   reality-opts:
     public-key: UZZZh7NCnRvU1y7D45FgrZFwIDVIrdLm8TVjx6IudGQ
     short-id: a1b2c3d4e5f60789
@@ -2032,14 +1567,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: free.spectrum.vu
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: free.spectrum.vu
   reality-opts:
     public-key: qNyuqiky1x0VL88_KzItJpZNQ1DfkSPTBf5BBLJRrnA
     short-id: 28b11f1e725a23ad
@@ -2051,19 +1582,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ovhwuxian.pai50288.uk
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F57ba2ab1'
+    path: /57ba2ab1
     headers:
       Host: ovhwuxian.pai50288.uk
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #113'
   type: vless
   server: 93.94.51.13
@@ -2072,13 +1596,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yandex.ru
   reality-opts:
     public-key: JlMOb8hVg1VOrRlMLdXpv8IADp-R4I-cIT856hz_Cg0
     short-id: f686d19cd7b8b3df
@@ -2090,13 +1610,8 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0
 - name: 'T.ME: @aristapnel #115'
@@ -2107,13 +1622,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: kjuk6kiPzQdy7aBA9-6RM2tJU2Ke2s_aN8pucLeOg3Q
     short-id: 37da
@@ -2125,14 +1636,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.intel.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.intel.com
   reality-opts:
     public-key: PJQxY2FFwn9nXutKZx1t9TcMnRjqXpBAnIDB5jvwEAU
     short-id: d91248fbca
@@ -2144,14 +1651,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: fuck.rkn
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
@@ -2163,14 +1666,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: retn.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: retn.net
   reality-opts:
     public-key: 2s4DLPlhc3evv3LN-qV-nXdjQtJ7jQ35i--PE8JeeG4
 - name: 'T.ME: @aristapnel #119'
@@ -2181,16 +1680,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: metaplayer.gameredzone.top
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2Ft.me.V2RayyNGvpn%3Fed%3D1024'
+    path: /t.me.V2RayyNGvpn?ed=1024
     headers:
       Host: metaplayer.gameredzone.top
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #120'
   type: vless
   server: 45.136.128.184
@@ -2199,13 +1693,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: 08TPrmO6ClQQvBeWPVKuotkRZ_WKD6jL3aFeeRlVVVM
     short-id: 0bee
@@ -2217,14 +1707,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: randomized
+  servername: google.com
   reality-opts:
     public-key: o2jxNDCcRkxW9uur_7MAcnr2umdiRUBfNEKu1bONcnk
     short-id: 6ba85179e30d4fc2
@@ -2236,19 +1722,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: u.89060004.xyz
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: u.89060004.xyz
   ws-opts:
-    path: '%2FAbRz6tBwBWo4gds7cXpDB5nO5'
+    path: /AbRz6tBwBWo4gds7cXpDB5nO5
     headers:
       Host: u.89060004.xyz
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #123'
   type: vless
   server: 45.13.119.38
@@ -2257,14 +1737,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fran.scroogethebest.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
   reality-opts:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
@@ -2276,19 +1752,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: bBBbBB.taiWan2028.indeVs.iN
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fs2VHv9VUVzg35A6ueyyZnWd'
+    path: /s2VHv9VUVzg35A6ueyyZnWd
     headers:
       Host: BBBbBb.tAIWAn2028.iNDevS.IN
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #125'
   type: vless
   server: 83.147.255.191
@@ -2297,13 +1766,8 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: eh.vk.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   grpc-opts:
     grpc-service-name: xyz
   reality-opts:
@@ -2316,19 +1780,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rt.dddc.us.ci
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: rt.dddc.us.ci
   ws-opts:
-    path: '%2FeDVWlsljXYWmzP5D1vsO'
+    path: /eDVWlsljXYWmzP5D1vsO
     headers:
       Host: rt.dddc.us.ci
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #127'
   type: vless
   server: 89.169.128.105
@@ -2337,14 +1795,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: yandex.ru
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
@@ -2356,16 +1810,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #129'
   type: vless
   server: 51.250.75.178
@@ -2374,14 +1823,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: yandex.ru
   reality-opts:
     public-key: EQszgdCF6wZeEc0GmXLZcj6dNedc-PF9WUu5MXsP8Uk
     short-id: 4e2dc2056ed45d12
@@ -2393,19 +1838,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ca.adobe-connect.top
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ca.adobe-connect.top
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: ca.adobe-connect.top
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #131'
   type: vless
   server: 162.159.153.247
@@ -2414,19 +1853,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: jop-6z6.pages.dev
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: jop-6z6.pages.dev
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
     headers:
       Host: jop-6z6.pages.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #132'
   type: vless
   server: 77.239.108.97
@@ -2435,14 +1868,12 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.bing.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
   alpn:
   - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: www.bing.com
   reality-opts:
     public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
 - name: 'T.ME: @aristapnel #133'
@@ -2453,14 +1884,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: google.com
   reality-opts:
     public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
     short-id: 9f35da6c9412b832
@@ -2472,19 +1899,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: h.7282728.xyz
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2FN4XLnUcJW0HJfbCLo'
+    path: /N4XLnUcJW0HJfbCLo
     headers:
       Host: h.7282728.xyz
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #135'
   type: vless
   server: 89.169.162.214
@@ -2493,14 +1913,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: random
+  servername: yandex.ru
   reality-opts:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: e57932a42872a362
@@ -2512,14 +1928,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: germany.scroogethebest.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: germany.scroogethebest.com
   reality-opts:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
@@ -2531,16 +1943,9 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 62.60.176.237
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-Telegramjoin%3A%40V2Ray_Rolly-
-    headers:
-      Host: 62.60.176.237
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+    path: Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-
 - name: 'T.ME: @aristapnel #138'
   type: vless
   server: 91.107.253.99
@@ -2549,10 +1954,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 91.107.253.99
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #139'
   type: vless
   server: 38.180.204.189
@@ -2561,13 +1963,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: google.com
   reality-opts:
     public-key: _WB4K6w5EoQuBAan6fsS9NPJf5wa6ggmxIa8No93ghM
     short-id: 6553e6d9
@@ -2579,10 +1977,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 57.128.159.109
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #141'
   type: vless
   server: 74.48.142.49
@@ -2591,14 +1986,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: apple.com
   reality-opts:
     public-key: dMSJb9t_gfHkMT9sQGSAjxVcX_Vc-JUSihPyd9JPNzc
     short-id: 1a3236d7
@@ -2610,19 +2001,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: uuujki.7777112.xyz
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: uuujki.7777112.xyz
   ws-opts:
-    path: '%2F391sfnZ2bBhmKb8nOkg'
+    path: /391sfnZ2bBhmKb8nOkg
     headers:
       Host: uuujki.7777112.xyz
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #143'
   type: vless
   server: 40.160.6.133
@@ -2631,10 +2018,7 @@ proxies:
   network: grpc
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 40.160.6.133
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #144'
   type: vless
   server: 81.208.170.142
@@ -2643,13 +2027,9 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ebay.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.ebay.com
   reality-opts:
     public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
     short-id: 775eb6408888248e
@@ -2661,14 +2041,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: freede.spectrum.vu
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: freede.spectrum.vu
   reality-opts:
     public-key: F4Cbv0swJucaDwQdOibmLHhynexUdaVf8CFvTFe81mc
     short-id: 8b4c2d5a1e3f
@@ -2680,19 +2055,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: tty34.003330333.xyz
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: tty34.003330333.xyz
   ws-opts:
-    path: '%2FVUEhrz1FFlVljj0Fy6bojk'
+    path: /VUEhrz1FFlVljj0Fy6bojk
     headers:
       Host: tty34.003330333.xyz
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #147'
   type: vless
   server: 40.160.14.104
@@ -2701,10 +2070,7 @@ proxies:
   network: grpc
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 40.160.14.104
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #148'
   type: vless
   server: 141.193.213.20
@@ -2713,19 +2079,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 80bab3a2.gon-7ye.pages.dev
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: 80bab3a2.gon-7ye.pages.dev
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
     headers:
       Host: 80bab3a2.gon-7ye.pages.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #149'
   type: vless
   server: 104.21.95.114
@@ -2734,19 +2096,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F185.186.245.40%3A81'
+    path: /185.186.245.40:81
     headers:
       Host: afrcloud22.mmv.kr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #150'
   type: vless
   server: 172.67.204.44
@@ -2755,19 +2110,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: frgt.0of.ccwu.cc
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: frgt.0of.ccwu.cc
   ws-opts:
-    path: '%2F7ZHQqqDZuBdYKaAHx8c'
+    path: /7ZHQqqDZuBdYKaAHx8c
     headers:
       Host: frgt.0of.ccwu.cc
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #151'
   type: vless
   server: 162.19.10.94
@@ -2776,14 +2125,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nasnet-162191094-direct.sharghdaily.co
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: nasnet-162191094-direct.sharghdaily.co
 - name: 'T.ME: @aristapnel #152'
   type: vless
   server: 104.17.239.248
@@ -2792,13 +2136,10 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pqh29v7.carwashipdir.shop
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
   - h2
-  - http/1.1
+  servername: pqh29v7.carwashipdir.shop
 - name: 'T.ME: @aristapnel #153'
   type: vless
   server: 5.255.100.32
@@ -2807,10 +2148,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: check-host.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #154'
   type: vless
   server: 144.217.133.97
@@ -2819,10 +2157,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 144.217.133.97
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #155'
   type: vless
   server: afrcloud22.mmv.kr
@@ -2831,16 +2166,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: chatgpt.com.afrcloud22.mmv.kr
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2F157.245.215.195%3D8443'
+    path: /157.245.215.195=8443
     headers:
       Host: chatgpt.com.afrcloud22.mmv.kr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #156'
   type: vless
   server: 104.18.42.98
@@ -2849,16 +2179,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ggbnh.1x5.indevs.in
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2FhBasD7EdpBQ0zGAzsYHmsMrnO'
+    path: /hBasD7EdpBQ0zGAzsYHmsMrnO
     headers:
       Host: ggbnh.1x5.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #157'
   type: vless
   server: 185.171.202.58
@@ -2867,14 +2192,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fran.scroogethebest.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: fran.scroogethebest.com
   reality-opts:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
@@ -2886,19 +2207,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F185.186.245.40%3A81'
+    path: /185.186.245.40:81
     headers:
       Host: afrcloud22.mmv.kr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #159'
   type: vless
   server: 185.122.164.45
@@ -2907,14 +2221,12 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.aljazeera.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: www.aljazeera.net
   reality-opts:
     public-key: WAmg2ZhiUT_W4Co9OEQL5u40eBFD3dhxX83mfsX4MGo
     short-id: b8b4fb16
@@ -2926,14 +2238,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: google.com
   reality-opts:
     public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
     short-id: e49b4e3d5f46d5c2
@@ -2945,13 +2253,9 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ya.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ya.ru
   reality-opts:
     public-key: 98aKRSTSW_8Fpd8e63HOuqLhnlGvZrTD5EBPTMy0tBc
     short-id: 7dcd0c337708
@@ -2963,10 +2267,7 @@ proxies:
   network: httpupgrade
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: bio.mehrsazi.ir
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #163'
   type: vless
   server: 185.124.175.36
@@ -2975,10 +2276,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.124.175.36
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #164'
   type: vless
   server: 3.70.227.1
@@ -2987,10 +2285,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.70.227.1
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #165'
   type: vless
   server: 45.89.220.73
@@ -2999,10 +2294,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: varzesh3.ir
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #166'
   type: vless
   server: maxa19.box11x0.ir
@@ -3011,13 +2303,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: K0iITauuYEqIayR3IB5Ny8MVKyORDJ65rUSHc3tLe1E
     short-id: 42c0b628ba6a42a9
@@ -3029,14 +2317,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.google.com
   reality-opts:
     public-key: fygfmVgp2H6Y4ECbiDODx57Zz4CTNGFLYGtCqC31xiM
     short-id: 1da66e71
@@ -3048,19 +2331,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: Valsiin.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #169'
   type: vless
   server: f1.hamrahconf.ir
@@ -3069,19 +2345,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sp.secoxi.site
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: sp.secoxi.site
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: p3-sync-01.secoxi.site
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #170'
   type: vless
   server: 94.183.171.3
@@ -3090,10 +2360,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: bmw.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #171'
   type: vless
   server: fastly1.hamrahflow.ir
@@ -3102,19 +2369,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: Valsiin.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #172'
   type: vless
   server: fastly3.hamrahflow.ir
@@ -3123,19 +2383,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: Valsiin.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #173'
   type: vless
   server: f1.springpaatogh8.store
@@ -3144,19 +2397,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: digikala.sorza.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
     headers:
       Host: chess.sorza.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #174'
   type: vless
   server: 104.18.166.203
@@ -3165,19 +2411,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ndkwiut2718.ir
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ndkwiut2718.ir
   ws-opts:
-    path: '%2Fpa'
+    path: /pa
     headers:
       Host: hs-4dfc2225.ndkwiut2718.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #175'
   type: vless
   server: ip-data.turkserver.ir
@@ -3186,19 +2426,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: all-fm2.netsnap.ir.
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: all-fm2.netsnap.ir.
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #176'
   type: vless
   server: c8f7b1ab85189cf5.first.sapienza-mahan.ir
@@ -3207,19 +2441,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: harro-likeh1.sdcards1.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: harro-likeh1.sdcards1.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #177'
   type: vless
   server: 104.16.80.144
@@ -3228,19 +2455,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: all-fm2.netsnap.ir.
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: all-fm2.netsnap.ir.
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: all-fm2.netsnap.ir.
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #178'
   type: vless
   server: almas4.alireza031.shop
@@ -3249,16 +2470,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: D2R57.divarcdn.com%2C0ziwu.snappfood.ir%2CBXTLd.yjc.ir%2C1QjBQ.digikala.com%2C7fYt7.tic.ir
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2FALMAS4'
+    path: /ALMAS4
     headers:
-      Host: D2R57.divarcdn.com%2C0ziwu.snappfood.ir%2CBXTLd.yjc.ir%2C1QjBQ.digikala.com%2C7fYt7.tic.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+      Host: D2R57.divarcdn.com,0ziwu.snappfood.ir,BXTLd.yjc.ir,1QjBQ.digikala.com,7fYt7.tic.ir
 - name: 'T.ME: @aristapnel #179'
   type: vless
   server: 219.79.98.117
@@ -3267,14 +2483,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: safari
+  servername: www.icloud.com
   reality-opts:
     public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
 - name: 'T.ME: @aristapnel #180'
@@ -3285,13 +2497,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: yandex.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: zjv3djnsCKDqP7zZFIrJ9ImzgdPE3zFMCYrOvdWqkEE
     short-id: 1f9364
@@ -3303,10 +2510,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.67.176.243
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #182'
   type: vless
   server: 18.199.85.118
@@ -3315,10 +2519,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 18.199.85.118
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #183'
   type: vless
   server: 3.127.134.128
@@ -3327,10 +2528,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.127.134.128
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #184'
   type: vless
   server: glob.thisiswe.uno
@@ -3339,19 +2537,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: p1.thisiswe.uno
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: p1.thisiswe.uno
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: p1.thisiswe.uno
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #185'
   type: vless
   server: 3.64.178.198
@@ -3360,10 +2552,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.64.178.198
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #186'
   type: vless
   server: srvfree.iranai.space
@@ -3372,10 +2561,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: '%2F---V2RRVIP'
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #187'
   type: vless
   server: srvfree.iranai.space
@@ -3384,10 +2570,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: '%2Fmtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn'
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #188'
   type: vless
   server: 45.130.125.198
@@ -3396,19 +2579,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: kaja.thisiswe.uno
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: kaja.thisiswe.uno
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: kaja.thisiswe.uno
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #189'
   type: vless
   server: v2.speedbluepanel.sbs
@@ -3417,10 +2594,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: play.google.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #190'
   type: vless
   server: zf.sg1000.eu.cc
@@ -3429,13 +2603,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   reality-opts:
     public-key: XcaJjk49Yof0-ZTuwFlFvBqd_QJC_uabiIWC1g6rvAk
     short-id: 1f7bfe
@@ -3447,13 +2617,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.yahoo.com
   reality-opts:
     public-key: 527jKuAA9NDmBT1awVij74Qdfl4aRk_pqcGQSOvfbCM
     short-id: cdb321e1bb50034a
@@ -3465,10 +2631,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cloudflare.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #193'
   type: vless
   server: poli.appleseraj.ir
@@ -3477,19 +2640,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: nigeria.mastermarly.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F%3Fed%3D2048'
+    path: /?ed=2048
     headers:
       Host: nigeria.mastermarly.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #194'
   type: vless
   server: 104.21.48.147
@@ -3498,16 +2654,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: afrcloud22.mmv.kr
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: '%2F64.181.218.67%3D443'
+    path: /64.181.218.67=443
     headers:
       Host: afrcloud22.mmv.kr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #195'
   type: vless
   server: srvfree.iranai.space
@@ -3516,10 +2667,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: srvfree.iranai.space
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #196'
   type: vless
   server: 18.159.35.41
@@ -3528,10 +2676,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 18.159.35.41
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #197'
   type: vless
   server: glob.thisiswe.uno
@@ -3540,19 +2685,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: godplease11.thisiswe.uno
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: godplease11.thisiswe.uno
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: godplease11.thisiswe.uno
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #198'
   type: vless
   server: 185.24.252.99
@@ -3561,10 +2702,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.24.252.99
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #199'
   type: vless
   server: 3.70.45.81
@@ -3573,10 +2711,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.70.45.81
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #200'
   type: vless
   server: 107.174.198.228
@@ -3585,19 +2720,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 53e5ab44.lfree.cn.mt
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
-  - http/1.1
+  - h3
+  client-fingerprint: random
+  servername: 53e5ab44.lfree.cn.mt
   ws-opts:
-    path: '%2Fsocks5%3D44fa737d%3A1bab4a4504ca%4038.96.191.150%3A21719'
+    path: /socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719
     headers:
       Host: 53e5ab44.lfree.cn.mt
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #201'
   type: vless
   server: 94.184.24.235
@@ -3606,10 +2737,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 94.184.24.235
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #202'
   type: vless
   server: 172.64.145.38
@@ -3618,19 +2746,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: digikala.sorza.ir
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: digikala.sorza.ir
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: gamepc.sorza.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #203'
   type: vless
   server: 3.70.201.52
@@ -3639,10 +2761,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 3.70.201.52
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #204'
   type: vless
   server: fastly2.hamrahflow.ir
@@ -3651,19 +2770,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: Valsiin.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #205'
   type: vless
   server: 2.189.161.205
@@ -3672,10 +2784,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: varzesh3.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #206'
   type: vless
   server: f1.springpaatogh8.store
@@ -3684,19 +2793,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: digikala.sorza.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
     headers:
       Host: chess.sorza.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #207'
   type: vless
   server: sahand.cocomelon.org
@@ -3705,14 +2807,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: finance.yahoo.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: ios
+  servername: finance.yahoo.com
   reality-opts:
     public-key: 1LHMePKT5PP9F9WQ1HhZUWZlrK2p9AW_sUwKNfO4ZC0
     short-id: dd8ca121bb77dad9
@@ -3724,10 +2822,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 37.202.245.90
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #209'
   type: vless
   server: 188.114.97.20
@@ -3736,19 +2831,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: 2a22c9ec10bd4cb1.fairit.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: forsweden.fairit.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #210'
   type: vless
   server: vb13.homianco.ir
@@ -3757,13 +2845,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: K0iITauuYEqIayR3IB5Ny8MVKyORDJ65rUSHc3tLe1E
     short-id: 42c0b628ba6a42a9
@@ -3775,13 +2859,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: K0iITauuYEqIayR3IB5Ny8MVKyORDJ65rUSHc3tLe1E
     short-id: 42c0b628ba6a42a9
@@ -3793,19 +2873,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: android
   servername: MS_sw1cd924ce21e177d2-sfX.digitstocks.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    path: /?ed=2560
     headers:
       Host: cpt1.digitstocks.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #213'
   type: vless
   server: 83.168.71.216
@@ -3814,13 +2888,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ads.x5.ru
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
@@ -3832,16 +2902,11 @@ proxies:
   network: ws
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vms.lifetime07.workers.dev
-  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
     path: /
     headers:
       Host: vms.lifetime07.workers.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #215'
   type: vless
   server: 89.169.39.55
@@ -3850,17 +2915,27 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: max.ru
   reality-opts:
     public-key: Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU
     short-id: 28a059440d3d5ba1
+- name: 'T.ME: @aristapnel #216'
+  type: vless
+  server: 211.49.57.175
+  port: 443
+  uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: s5.868001.xyz
+  ws-opts:
+    path: /proxyipfp=chrome
+    headers:
+      Host: s5.868001.xyz
 - name: 'T.ME: @aristapnel #217'
   type: vless
   server: 185.229.191.53
@@ -3869,13 +2944,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #218'
   type: vless
   server: 77.74.123.163
@@ -3884,13 +2954,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn3-87.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #219'
   type: vless
   server: 185.229.191.49
@@ -3899,13 +2965,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #220'
   type: vless
   server: 185.229.191.184
@@ -3914,13 +2975,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #221'
   type: vless
   server: 185.229.191.69
@@ -3929,13 +2985,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #222'
   type: vless
   server: 83.168.71.216
@@ -3944,13 +2995,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ads.x5.ru
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
@@ -3962,13 +3009,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ads.x5.ru
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
@@ -3980,14 +3023,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: max.ru
   reality-opts:
     public-key: Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU
     short-id: '825867'
@@ -3999,13 +3038,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #226'
   type: vless
   server: 45.159.12.3
@@ -4014,13 +3048,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ams1.fromblancwithlove.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ams1.fromblancwithlove.com
 - name: 'T.ME: @aristapnel #227'
   type: vless
   server: 79.127.227.57
@@ -4029,13 +3059,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #228'
   type: vless
   server: 185.229.191.67
@@ -4044,13 +3069,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #229'
   type: vless
   server: 185.229.191.69
@@ -4059,13 +3079,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #230'
   type: vless
   server: 162.249.126.78
@@ -4074,13 +3089,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn7-09.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn7-09.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #231'
   type: vless
   server: 185.229.191.145
@@ -4089,13 +3100,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #232'
   type: vless
   server: 45.159.12.3
@@ -4104,13 +3110,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ams1.fromblancwithlove.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ams1.fromblancwithlove.com
 - name: 'T.ME: @aristapnel #233'
   type: vless
   server: 217.28.48.29
@@ -4119,10 +3121,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 217.28.48.29
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #234'
   type: vless
   server: 173.245.58.75
@@ -4131,19 +3130,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: terazhediii.info
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fhdgrbws'
+    path: /hdgrbws
     headers:
       Host: terazhediii.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #235'
   type: vless
   server: 95.182.80.48
@@ -4152,13 +3144,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
   servername: yahoo.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: oYCopzg1jDV54b-i8nR9_ULi7uivm_qfCM95LwRBfXU
     short-id: '61'
@@ -4170,13 +3158,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.wechat.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.wechat.com
   reality-opts:
     public-key: V-fTxzejwmP5x9rjQR5i1IE7WrSn-syZq9Qp41jukFE
     short-id: a7
@@ -4188,19 +3172,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: nbhhh.mrcool.kdns.fr
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fproxyip%3Ddc844a1f.tp15333.ip.090227.xyz'
+    path: /proxyip=dc844a1f.tp15333.ip.090227.xyz
     headers:
       Host: nbhhh.mrcool.kdns.fr
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #238'
   type: vless
   server: 188.114.97.6
@@ -4209,19 +3186,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: small-voice-c4c5.itsnewrzan.workers.dev
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fproxyip%3D40.233.87.120'
+    path: /proxyip=40.233.87.120
     headers:
       Host: small-voice-c4c5.itsnewrzan.workers.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #239'
   type: vless
   server: 152.233.28.201
@@ -4230,13 +3200,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #240'
   type: vless
   server: 45.206.0.44
@@ -4245,14 +3210,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: storage.yandex.net
   reality-opts:
     public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
     short-id: ea10cd5686751ec5
@@ -4264,19 +3224,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: WAnDERINg-FIelD-030c.HSuSudJFifjDHxCCv.WorkeRS.Dev
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2FeyJqdW5rIjoiZzdoR3kxczdkcUxmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D%3Fed%3D2560'
+    path: /eyJqdW5rIjoiZzdoR3kxczdkcUxmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
       Host: wandering-field-030c.hsusudjfifjdhxccv.workers.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #242'
   type: vless
   server: 95.133.245.170
@@ -4285,13 +3238,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
+  client-fingerprint: qq
   servername: cdn3-87.vk-cdnvideo.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #243'
   type: vless
   server: 162.249.126.198
@@ -4300,14 +3249,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn8-90.yahoo.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: cdn8-90.yahoo.com
   reality-opts:
     public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
     short-id: 8015c191d21aa452
@@ -4319,14 +3264,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: qq
+  servername: enterprisekitten.com
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
@@ -4338,13 +3279,9 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: yahoo.com
   grpc-opts:
     grpc-service-name: vless-grpc
   reality-opts:
@@ -4357,14 +3294,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: enterprisekitten.com
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
@@ -4376,13 +3309,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #248'
   type: vless
   server: 185.229.191.69
@@ -4391,13 +3319,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #249'
   type: vless
   server: 185.229.191.67
@@ -4406,13 +3329,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #250'
   type: vless
   server: 104.16.75.223
@@ -4421,19 +3339,10 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: server-ir-7.ariyuz.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2F'
-    headers:
-      Host: server-ir-7.ariyuz.org
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+    path: /
 - name: 'T.ME: @aristapnel #251'
   type: vless
   server: 188.114.97.6
@@ -4442,19 +3351,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: terazhediii.info
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: terazhediii.info
   ws-opts:
-    path: '%2Fhdgrbws'
+    path: /hdgrbws
     headers:
       Host: terazhediii.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #252'
   type: vless
   server: 45.90.97.132
@@ -4463,14 +3366,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.bvps.cloud
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: fr.bvps.cloud
   reality-opts:
     public-key: 65T6l7e51lwKu1rzQ4FgqVPe-JyG43IqPLw6r9U2v10
     short-id: 0befa76540b5db79
@@ -4482,19 +3380,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: amooaliii.net
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: amooaliii.net
   ws-opts:
-    path: '%2Fjdhfyws'
+    path: /jdhfyws
     headers:
       Host: amooaliii.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #254'
   type: vless
   server: 46.229.243.73
@@ -4503,13 +3395,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn3-87.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #255'
   type: vless
   server: 159.195.60.190
@@ -4518,14 +3406,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: free2.anotherboring.top
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: free2.anotherboring.top
   reality-opts:
     public-key: 4wQjPB3VmJXy_VEecZl2vut6SAerBMPOldUrOV-Je0I
     short-id: 87119a6de24e23ca
@@ -4537,13 +3420,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #257'
   type: vless
   server: 77.73.131.154
@@ -4552,14 +3430,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vindobona.org
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: vindobona.org
   reality-opts:
     public-key: 5GhMSJXQv1wXHVD999YHRRj83m-7VKH8qb_vTxBGbng
     short-id: 08
@@ -4571,19 +3444,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: vangoghhh.info
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Frdfgtws'
+    path: /rdfgtws
     headers:
       Host: vangoghhh.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #259'
   type: vless
   server: 185.229.191.12
@@ -4592,13 +3458,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #260'
   type: vless
   server: 45.159.12.118
@@ -4607,13 +3468,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #261'
   type: vless
   server: rezerv4.yunus.guru
@@ -4622,14 +3478,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rezerv4.yunus.guru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: rezerv4.yunus.guru
   reality-opts:
     public-key: wdUdFTq0BP7xFnAWNbfdAFeieIOuExZ3HUctSiChCzU
     short-id: e80a3158be637ee1
@@ -4641,13 +3492,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #263'
   type: vless
   server: 45.159.12.26
@@ -4656,13 +3502,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #264'
   type: vless
   server: 95.173.199.80
@@ -4671,13 +3512,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: buh-ro-01.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #265'
   type: vless
   server: 152.233.35.228
@@ -4686,13 +3522,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: de1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #266'
   type: vless
   server: 45.130.125.126
@@ -4701,19 +3532,15 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: BpB-expO--10RaYly4zY.EXPO.App
-  client-fingerprint: chrome
+  skip-cert-verify: true
   alpn:
-  - h2
   - http/1.1
+  client-fingerprint: chrome
+  servername: BpB-expO--10RaYly4zY.EXPO.App
   ws-opts:
-    path: '%2FeyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19%3Fed'
+    path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed
     headers:
       Host: bpb-expo--10rayly4zy.expo.app
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #267'
   type: vless
   server: 194.164.217.139
@@ -4722,13 +3549,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.samsung.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.samsung.com
   reality-opts:
     public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
     short-id: 05fdaa8a05be46a9
@@ -4740,13 +3563,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #269'
   type: vless
   server: 152.233.28.201
@@ -4755,13 +3573,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #270'
   type: vless
   server: 141.193.213.20
@@ -4770,19 +3583,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: amoosamiii.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fpoiuyws'
+    path: /poiuyws
     headers:
       Host: amoosamiii.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #271'
   type: vless
   server: 85.234.114.53
@@ -4791,14 +3597,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: r1.mizulina.top
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: r1.mizulina.top
 - name: 'T.ME: @aristapnel #272'
   type: vless
   server: 18.153.81.34
@@ -4807,10 +3609,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 18.153.81.34
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #273'
   type: vless
   server: 194.164.217.139
@@ -4819,13 +3618,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.samsung.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.samsung.com
   reality-opts:
     public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
     short-id: 05fdaa8a05be46a9
@@ -4837,13 +3632,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.yahoo.com
   reality-opts:
     public-key: oqrU5jM7qTRqjb1N-cakTOyTtVU3Zs9lmet-irbr8TU
     short-id: 6443cb87ea
@@ -4855,13 +3646,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn9-33.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #276'
   type: vless
   server: 162.249.126.199
@@ -4870,13 +3657,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn7-09.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn7-09.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #277'
   type: vless
   server: 95.133.245.166
@@ -4885,13 +3668,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn7-09.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn7-09.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #278'
   type: vless
   server: 45.159.12.34
@@ -4900,13 +3679,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ams1.fromblancwithlove.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: ams1.fromblancwithlove.com
 - name: 'T.ME: @aristapnel #279'
   type: vless
   server: cdn7-09.vk-cdnvideo.com
@@ -4915,13 +3690,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn7-09.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn7-09.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #280'
   type: vless
   server: 46.229.243.148
@@ -4930,13 +3701,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn9-33.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #281'
   type: vless
   server: 77.74.123.181
@@ -4945,13 +3712,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn3-87.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #282'
   type: vless
   server: 45.206.0.38
@@ -4960,14 +3723,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: storage.yandex.net
   reality-opts:
     public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
     short-id: ea10cd5686751ec5
@@ -4979,14 +3738,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: storage.yandex.net
   reality-opts:
     public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
     short-id: ea10cd5686751ec5
@@ -4998,10 +3753,7 @@ proxies:
   network: tcp
   tls: false
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 217.28.48.29
-  client-fingerprint: chrome
+  skip-cert-verify: true
 - name: 'T.ME: @aristapnel #285'
   type: vless
   server: 15.204.97.219
@@ -5010,14 +3762,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fuck.rkn
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: fuck.rkn
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
@@ -5029,19 +3777,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: vangoghhh.info
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Frdfgtws'
+    path: /rdfgtws
     headers:
       Host: vangoghhh.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #287'
   type: vless
   server: betty.ns.cloudflare.com
@@ -5050,19 +3791,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: amooaliii.net
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: amooaliii.net
   ws-opts:
-    path: '%2Fjdhfyws'
+    path: /jdhfyws
     headers:
       Host: amooaliii.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #288'
   type: vless
   server: 209.127.228.114
@@ -5071,14 +3806,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cars.morro-settings.ru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: cars.morro-settings.ru
   reality-opts:
     public-key: 8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI
     short-id: dd
@@ -5090,13 +3821,8 @@ proxies:
   network: grpc
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: aws.amazon.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   reality-opts:
     public-key: nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY
     short-id: 5d
@@ -5108,14 +3834,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rezerv1.yunus.guru
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  servername: rezerv1.yunus.guru
   reality-opts:
     public-key: -X9CZv5MYKivpxPVP1vdgFKf2AJWmZ0Pju-j8LFmlh4
     short-id: 6c88854e73e86773
@@ -5127,14 +3848,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: storage.yandex.net
   reality-opts:
     public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
     short-id: ea10cd5686751ec5
@@ -5146,13 +3863,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: google.com
   reality-opts:
     public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
     short-id: 3ca620a7ed5f3196
@@ -5164,13 +3877,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: cdn3-87.vk-cdnvideo.com
 - name: 'T.ME: @aristapnel #294'
   type: vless
   server: 217.217.247.253
@@ -5179,14 +3888,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: firefox
+  servername: enterprisekitten.com
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
@@ -5198,14 +3903,10 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: free1.anotherboring.top
-  client-fingerprint: chrome
+  skip-cert-verify: true
   flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: chrome
+  servername: free1.anotherboring.top
   reality-opts:
     public-key: vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI
     short-id: 53cd45d26d7b53fe
@@ -5217,19 +3918,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: srv03.perfectbulk.info
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: srv03.perfectbulk.info
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: srv03.perfectbulk.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #297'
   type: vless
   server: 109.61.18.135
@@ -5238,13 +3933,9 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.wechat.com
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: www.wechat.com
   reality-opts:
     public-key: V-fTxzejwmP5x9rjQR5i1IE7WrSn-syZq9Qp41jukFE
     short-id: a7
@@ -5256,13 +3947,8 @@ proxies:
   network: tcp
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'T.ME: @aristapnel #299'
   type: vless
   server: 45.130.125.158
@@ -5271,19 +3957,13 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: srv03.perfectbulk.info
+  skip-cert-verify: true
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  servername: srv03.perfectbulk.info
   ws-opts:
-    path: '%2F'
+    path: /
     headers:
       Host: srv03.perfectbulk.info
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #300'
   type: vless
   server: betty.ns.cloudflare.com
@@ -5292,19 +3972,12 @@ proxies:
   network: ws
   tls: true
   udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
+  skip-cert-verify: true
   servername: amooaliii.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: '%2Fjdhfyws'
+    path: /jdhfyws
     headers:
       Host: amooaliii.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -5529,6 +4202,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #213'
   - 'T.ME: @aristapnel #214'
   - 'T.ME: @aristapnel #215'
+  - 'T.ME: @aristapnel #216'
   - 'T.ME: @aristapnel #217'
   - 'T.ME: @aristapnel #218'
   - 'T.ME: @aristapnel #219'
