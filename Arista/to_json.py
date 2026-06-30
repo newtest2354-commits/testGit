@@ -104,7 +104,7 @@ class ConfigToJSONConverter:
         tls = {
             "enabled": True,
             "server_name": self.clean_host(self.get_first(qs, "sni", host)),
-            "insecure": True,
+            "insecure": True
             "utls": {
                 "enabled": True,
                 "fingerprint": fp
@@ -127,9 +127,7 @@ class ConfigToJSONConverter:
             }
             sid = self.get_first(qs, "sid")
             if sid:
-                sid = sid.lower().strip()
-                if re.fullmatch(r"[0-9a-f]{2,16}", sid):
-                    reality["short_id"] = sid
+                reality["short_id"] = sid.lower()
             tls["reality"] = reality
         return tls
 
@@ -142,12 +140,9 @@ class ConfigToJSONConverter:
                 "headers": {"Host": self.clean_host(self.get_first(qs, "host", host))}
             }
         elif network == "grpc":
-            service = unquote(self.get_first(qs, "serviceName", ""))
-            if service.startswith("/"):
-                service = service[1:]
             return {
                 "type": "grpc",
-                "service_name": service or "GunService"
+                "service_name": unquote(self.get_first(qs, "serviceName", "GunService"))
             }
         elif network == "http":
             return {
@@ -482,66 +477,73 @@ class ConfigToJSONConverter:
 
     def build_singbox_config(self, proxies: List[Dict]) -> Dict:
         if not proxies:
-            proxies = []
-        proxy_groups = self.build_proxy_groups(proxies)
-        outbounds = list(proxies)
-        outbounds.extend([
-            {
-                "type": "direct",
-                "tag": "direct"
-            },
-            {
-                "type": "block",
-                "tag": "block"
-            },
-            {
-                "type": "dns",
-                "tag": "dns-out"
+            return {
+                "log": {
+                    "level": "info",
+                    "timestamp": True
+                },
+                "inbounds": [],
+                "outbounds": [
+                    {
+                        "type": "direct",
+                        "tag": "direct"
+                    }
+                ],
+                "route": {
+                    "final": "direct",
+                    "rules": []
+                }
             }
-        ])
-        outbounds.extend(proxy_groups)
+
+        cleaned_proxies = [
+            dict(p)
+            for p in proxies
+            if isinstance(p, dict)
+        ]
+
+        proxy_groups = self.build_proxy_groups(cleaned_proxies)
+
         return {
             "log": {
                 "level": "info",
                 "timestamp": True
             },
+
             "dns": {
-                "strategy": "prefer_ipv4",
                 "servers": [
                     {
-                        "type": "https",
-                        "tag": "cloudflare",
-                        "server": "1.1.1.1",
-                        "server_port": 443,
-                        "path": "/dns-query"
+                        "type": "udp",
+                        "tag": "google",
+                        "server": "8.8.8.8"
                     },
                     {
-                        "type": "https",
-                        "tag": "google",
-                        "server": "8.8.8.8",
-                        "server_port": 443,
-                        "path": "/dns-query"
+                        "type": "udp",
+                        "tag": "google2",
+                        "server": "8.8.4.4"
                     },
                     {
                         "type": "local",
                         "tag": "local"
                     }
                 ],
+
                 "rules": [
                     {
-                        "query_type": [
-                            "A",
-                            "AAAA"
+                        "domain": [
+                            "geosite:private"
                         ],
-                        "server": "cloudflare"
+                        "action": "route",
+                        "server": "local"
                     }
                 ],
-                "final": "cloudflare"
+
+                "final": "google"
             },
+
             "inbounds": [
                 {
                     "type": "tun",
-                    "tag": "tun",
+                    "tag": "tun-in",
                     "interface_name": "singbox-tun",
                     "address": [
                         "172.19.0.1/30",
@@ -549,18 +551,43 @@ class ConfigToJSONConverter:
                     ],
                     "auto_route": True,
                     "strict_route": True,
-                    "stack": "mixed",
-                    "sniff": True
+                    "stack": "mixed"
                 }
             ],
-            "outbounds": outbounds,
+
+            "outbounds": (
+                cleaned_proxies
+                + [
+                    {
+                        "type": "direct",
+                        "tag": "direct"
+                    },
+                    {
+                        "type": "block",
+                        "tag": "block"
+                    }
+                ]
+                + proxy_groups
+            ),
+
             "route": {
                 "auto_detect_interface": True,
+
+                "default_domain_resolver": {
+                    "server": "google",
+                    "strategy": "prefer_ipv4"
+                },
+
                 "final": "🚀 ARISTA AUTO BEST",
+
                 "rules": [
                     {
+                        "action": "sniff",
+                        "timeout": "300ms"
+                    },
+                    {
                         "protocol": "dns",
-                        "outbound": "dns-out"
+                        "action": "hijack-dns"
                     }
                 ]
             }
