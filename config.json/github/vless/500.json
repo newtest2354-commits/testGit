@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-30 21:08:20
+// Updated: 2026-06-30 21:56:44
 // Count: 492
 
 {
@@ -8,21 +8,16 @@
     "timestamp": true
   },
   "dns": {
-    "strategy": "prefer_ipv4",
     "servers": [
       {
-        "type": "https",
-        "tag": "cloudflare",
-        "server": "1.1.1.1",
-        "server_port": 443,
-        "path": "/dns-query"
+        "type": "udp",
+        "tag": "google",
+        "server": "8.8.8.8"
       },
       {
-        "type": "https",
-        "tag": "google",
-        "server": "8.8.8.8",
-        "server_port": 443,
-        "path": "/dns-query"
+        "type": "udp",
+        "tag": "google2",
+        "server": "8.8.4.4"
       },
       {
         "type": "local",
@@ -31,19 +26,19 @@
     ],
     "rules": [
       {
-        "query_type": [
-          "A",
-          "AAAA"
+        "domain": [
+          "geosite:private"
         ],
-        "server": "cloudflare"
+        "action": "route",
+        "server": "local"
       }
     ],
-    "final": "cloudflare"
+    "final": "google"
   },
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun",
+      "tag": "tun-in",
       "interface_name": "singbox-tun",
       "address": [
         "172.19.0.1/30",
@@ -51,8 +46,7 @@
       ],
       "auto_route": true,
       "strict_route": true,
-      "stack": "mixed",
-      "sniff": true
+      "stack": "mixed"
     }
   ],
   "outbounds": [
@@ -9408,7 +9402,7 @@
       },
       "transport": {
         "type": "grpc",
-        "service_name": "dashboard"
+        "service_name": "/dashboard"
       }
     },
     {
@@ -9895,10 +9889,6 @@
     {
       "type": "block",
       "tag": "block"
-    },
-    {
-      "type": "dns",
-      "tag": "dns-out"
     },
     {
       "type": "urltest",
@@ -10909,11 +10899,18 @@
   ],
   "route": {
     "auto_detect_interface": true,
+    "default_domain_resolver": {
+      "server": "google",
+      "strategy": "prefer_ipv4"
+    },
     "final": "🚀 ARISTA AUTO BEST",
     "rules": [
       {
+        "action": "sniff"
+      },
+      {
         "protocol": "dns",
-        "outbound": "dns-out"
+        "action": "hijack-dns"
       }
     ]
   }

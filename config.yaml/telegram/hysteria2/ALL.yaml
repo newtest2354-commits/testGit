@@ -1,6 +1,6 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-30 21:05:30
-# Count: 5
+# Updated: 2026-06-30 21:53:33
+# Count: 7
 
 mixed-port: 7890
 allow-lan: false
@@ -50,25 +50,15 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 65.20.114.95
-  port: 443
-  password: V2rayyNGvpn
-  sni: www.oracle.com
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
   skip-cert-verify: true
   fast-open: true
   obfs: salamander
-  obfs-password: t-me-v2rayyngvpn
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
 - name: 'ARISTA #2'
-  type: hysteria2
-  server: 143.14.59.229
-  port: 443
-  password: t-me-V2RayyNGvpn
-  sni: www.oracle.com
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #3'
   type: hysteria2
   server: 130.49.161.70
   port: 443
@@ -78,17 +68,47 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 'ARISTA #4'
+- name: 'ARISTA #3'
   type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
+  server: nrealistic.nn-foto.ru
+  port: 1935
+  password: 653m8mmiy7048p0f
+  sni: nrealistic.nn-foto.ru
   skip-cert-verify: true
   fast-open: true
   obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
+  obfs-password: lhfl2z9mjngb7csh
+- name: 'ARISTA #4'
+  type: hysteria2
+  server: 65.20.114.95
+  port: 443
+  password: V2rayyNGvpn
+  sni: www.oracle.com
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: t-me-v2rayyngvpn
 - name: 'ARISTA #5'
+  type: hysteria2
+  server: 143.14.59.229
+  port: 443
+  password: t-me-V2RayyNGvpn
+  sni: www.oracle.com
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
+- name: 'ARISTA #6'
+  type: hysteria2
+  server: 2.26.49.16
+  port: 443
+  password: 653m8mmiy7048p0f
+  sni: social.klipp.su
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: 3sv5vpdl9xr84lyb
+- name: 'ARISTA #7'
   type: hysteria2
   server: 191.101.238.183
   port: 54040
@@ -112,6 +132,8 @@ proxy-groups:
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
+  - 'ARISTA #6'
+  - 'ARISTA #7'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
