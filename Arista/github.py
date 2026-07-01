@@ -5,7 +5,7 @@ import hashlib
 import base64
 import uuid
 from datetime import datetime
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs, unquote
 import os
 
 SOURCES = [
@@ -58,6 +58,10 @@ class GitHubConfigExtractor:
                 return config_str
             
             config_str = config_str.strip()
+            
+            if '#' in config_str:
+                base, tag = config_str.split('#', 1)
+                config_str = base + "#" + unquote(tag)
             
             if '@' in config_str and '#' not in config_str:
                 return config_str
@@ -180,27 +184,109 @@ class GitHubConfigExtractor:
         else:
             return f"{config_str}#{tag}"
     
+    def normalize_config(self, config):
+        if isinstance(config, dict):
+            return config
+        if config.startswith("vmess://"):
+            vm = self.decode_vmess(config)
+            if vm:
+                vm.pop("ps", None)
+                return vm
+            return None
+        try:
+            p = urlparse(config)
+            result = {
+                "scheme": p.scheme,
+                "server": p.hostname or "",
+                "port": p.port or 0,
+                "user": unquote(p.username or ""),
+                "path": unquote(p.path or "")
+            }
+            query = parse_qs(p.query)
+            for k in sorted(query):
+                result[k] = query[k][0]
+            return result
+        except:
+            return None
+    
+    def build_unique_key(self, obj):
+        if not obj:
+            return ""
+        proto = obj.get("scheme") or "vmess"
+        if proto == "vmess":
+            fields = [
+                obj.get("add",""),
+                str(obj.get("port","")),
+                obj.get("id",""),
+                obj.get("net",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("tls",""),
+                obj.get("sni","")
+            ]
+        elif proto == "vless":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni",""),
+                obj.get("flow","")
+            ]
+        elif proto == "trojan":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni","")
+            ]
+        elif proto == "ss":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("method","")
+            ]
+        elif proto in ("hysteria2","hy2"):
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("obfs-password",""),
+                obj.get("sni","")
+            ]
+        elif proto == "tuic":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("congestion_control",""),
+                obj.get("sni","")
+            ]
+        else:
+            fields = sorted(obj.items())
+        return json.dumps(fields, sort_keys=True, ensure_ascii=False)
+    
     def deduplicate(self, configs):
-        unique_configs = []
-        seen_hashes = set()
-        
+        unique = []
+        seen = set()
         for config in configs:
-            normalized = config
-            if isinstance(config, str) and config.startswith('vmess://'):
-                decoded = self.decode_vmess(config)
-                if decoded and isinstance(decoded, dict):
-                    decoded_copy = decoded.copy()
-                    decoded_copy['ps'] = "TEMP_TAG"
-                    normalized = 'vmess://' + base64.b64encode(json.dumps(decoded_copy, separators=(',', ':'), ensure_ascii=False).encode()).decode()
-            elif isinstance(config, str):
-                normalized = config.split('#',1)[0] if '#' in config else config
-            
-            config_hash = hashlib.md5(normalized.encode()).hexdigest()
-            if config_hash not in seen_hashes:
-                seen_hashes.add(config_hash)
-                unique_configs.append(config)
-        
-        return unique_configs
+            obj = self.normalize_config(config)
+            if obj is None:
+                continue
+            key = self.build_unique_key(obj)
+            md5 = hashlib.md5(key.encode()).hexdigest()
+            if md5 not in seen:
+                seen.add(md5)
+                unique.append(config)
+        return unique
     
     def categorize(self, configs):
         categories = {
