@@ -1,5 +1,5 @@
 // TELEGRAM - HYSTERIA2 - Tier ALL
-// Updated: 2026-07-01 10:02:27
+// Updated: 2026-07-01 14:50:43
 // Count: 6
 
 {
@@ -41,13 +41,13 @@
     {
       "type": "hysteria2",
       "tag": "ARISTA #1",
-      "server": "80.66.81.78",
-      "server_port": 9443,
-      "password": "rs2mR3g9bZiMloftx6lZQ59Um1Ld",
+      "server": "65.20.114.95",
+      "server_port": 443,
+      "password": "V2rayyNGvpn",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "tunel1.washing.help",
+        "server_name": "www.oracle.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -56,19 +56,19 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "oMgvuBy5Lj5kYM57sGsnjpjNcSEQ"
+        "password": "t-me-v2rayyngvpn"
       }
     },
     {
       "type": "hysteria2",
       "tag": "ARISTA #2",
-      "server": "130.49.161.70",
+      "server": "143.14.59.229",
       "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "password": "t-me-V2RayyNGvpn",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
+        "server_name": "www.oracle.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -77,7 +77,7 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+        "password": "t-me-V2RayyNGvpn"
       }
     },
     {
@@ -104,13 +104,13 @@
     {
       "type": "hysteria2",
       "tag": "ARISTA #4",
-      "server": "65.20.114.95",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "password": "V2rayyNGvpn",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.oracle.com",
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -119,19 +119,19 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "t-me-v2rayyngvpn"
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "hysteria2",
       "tag": "ARISTA #5",
-      "server": "143.14.59.229",
-      "server_port": 443,
-      "password": "t-me-V2RayyNGvpn",
+      "server": "80.66.81.78",
+      "server_port": 9443,
+      "password": "rs2mR3g9bZiMloftx6lZQ59Um1Ld",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.oracle.com",
+        "server_name": "tunel1.washing.help",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -140,7 +140,7 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "t-me-V2RayyNGvpn"
+        "password": "oMgvuBy5Lj5kYM57sGsnjpjNcSEQ"
       }
     },
     {
