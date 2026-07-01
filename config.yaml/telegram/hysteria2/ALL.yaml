@@ -1,6 +1,6 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-07-01 14:48:19
-# Count: 6
+# Updated: 2026-07-01 20:07:48
+# Count: 5
 
 mixed-port: 7890
 allow-lan: false
@@ -50,15 +50,25 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 65.20.114.95
-  port: 443
-  password: V2rayyNGvpn
-  sni: www.oracle.com
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
   skip-cert-verify: true
   fast-open: true
   obfs: salamander
-  obfs-password: t-me-v2rayyngvpn
+  obfs-password: '@JynMarket'
 - name: 'ARISTA #2'
+  type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
+- name: 'ARISTA #3'
   type: hysteria2
   server: 143.14.59.229
   port: 443
@@ -68,16 +78,6 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #3'
-  type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: '@JynMarket'
 - name: 'ARISTA #4'
   type: hysteria2
   server: 130.49.161.70
@@ -89,16 +89,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'ARISTA #5'
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'ARISTA #6'
   type: hysteria2
   server: nrealistic.nn-foto.ru
   port: 1935
@@ -122,7 +112,6 @@ proxy-groups:
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
-  - 'ARISTA #6'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
