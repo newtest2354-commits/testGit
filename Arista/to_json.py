@@ -276,6 +276,7 @@ class ConfigToJSONConverter:
                 "server": parsed.hostname,
                 "server_port": int(parsed.port),
                 "uuid": parsed.username,
+                "domain_resolver": "google",
                 "tls": self.build_tls(qs, parsed.hostname)
             }
             flow = self.get_first(qs, "flow")
@@ -320,7 +321,8 @@ class ConfigToJSONConverter:
                 "server": server,
                 "server_port": int(port),
                 "method": method,
-                "password": password
+                "password": password,
+                "domain_resolver": "google"
             }
         except:
             return None
@@ -341,7 +343,8 @@ class ConfigToJSONConverter:
                 "server": c["add"],
                 "server_port": int(c["port"]),
                 "uuid": c["id"],
-                "security": c.get("scy", "auto")
+                "security": c.get("scy", "auto"),
+                "domain_resolver": "google"
             }
             aid = int(c.get("aid", 0))
             if aid > 0:
@@ -378,6 +381,7 @@ class ConfigToJSONConverter:
                 "server": p.hostname,
                 "server_port": int(p.port),
                 "password": unquote(p.username),
+                "domain_resolver": "google",
                 "tls": self.build_tls(q, p.hostname)
             }
             transport = self.build_transport_trojan(q, p.hostname)
@@ -410,6 +414,7 @@ class ConfigToJSONConverter:
                 "server": p.hostname,
                 "server_port": int(p.port),
                 "password": unquote(p.username or ""),
+                "domain_resolver": "google",
                 "tls": tls_config
             }
             obfs = self.get_first(q, "obfs")
@@ -574,6 +579,7 @@ class ConfigToJSONConverter:
 
             "route": {
                 "auto_detect_interface": True,
+                "default_domain_resolver": "google",
                 "final": self._safe_final(cleaned_proxies),
                 "rules": [
                     {
