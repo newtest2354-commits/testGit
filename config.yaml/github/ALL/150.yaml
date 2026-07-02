@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 150
-# Updated: 2026-07-02 04:01:06
+# Updated: 2026-07-02 09:21:52
 # Count: 148
 
 mixed-port: 7890
@@ -1224,19 +1224,6 @@ proxies:
     path: /
 - name: 'T.ME: @aristapnel #105'
   type: vmess
-  server: spt.reata.ir
-  port: 1050
-  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: spt.reata.ir
-- name: 'T.ME: @aristapnel #106'
-  type: vmess
   server: 45.92.70.236
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -1248,7 +1235,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.92.70.236
-- name: 'T.ME: @aristapnel #107'
+- name: 'T.ME: @aristapnel #106'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -1261,7 +1248,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 85.90.217.42
-- name: 'T.ME: @aristapnel #108'
+- name: 'T.ME: @aristapnel #107'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -1274,7 +1261,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 67.220.85.46
-- name: 'T.ME: @aristapnel #109'
+- name: 'T.ME: @aristapnel #108'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -1287,7 +1274,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.110.1.246
-- name: 'T.ME: @aristapnel #110'
+- name: 'T.ME: @aristapnel #109'
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -1300,7 +1287,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.91.107.49
-- name: 'T.ME: @aristapnel #111'
+- name: 'T.ME: @aristapnel #110'
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1313,7 +1300,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 134.195.196.211
-- name: 'T.ME: @aristapnel #112'
+- name: 'T.ME: @aristapnel #111'
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -1326,7 +1313,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 84.17.41.2
-- name: 'T.ME: @aristapnel #113'
+- name: 'T.ME: @aristapnel #112'
   type: vmess
   server: 23.226.135.232
   port: 55310
@@ -1339,7 +1326,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 23.226.135.232
-- name: 'T.ME: @aristapnel #114'
+- name: 'T.ME: @aristapnel #113'
   type: vmess
   server: 82.198.246.37
   port: 180
@@ -1352,7 +1339,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.37
-- name: 'T.ME: @aristapnel #115'
+- name: 'T.ME: @aristapnel #114'
   type: vmess
   server: 23.141.204.132
   port: 29633
@@ -1365,7 +1352,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 23.141.204.132
-- name: 'T.ME: @aristapnel #116'
+- name: 'T.ME: @aristapnel #115'
   type: vmess
   server: 38.114.123.42
   port: 18000
@@ -1378,7 +1365,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.114.123.42
-- name: 'T.ME: @aristapnel #117'
+- name: 'T.ME: @aristapnel #116'
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -1391,7 +1378,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.233
-- name: 'T.ME: @aristapnel #118'
+- name: 'T.ME: @aristapnel #117'
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -1404,7 +1391,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.250
-- name: 'T.ME: @aristapnel #119'
+- name: 'T.ME: @aristapnel #118'
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -1417,7 +1404,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 47.250.135.244
-- name: 'T.ME: @aristapnel #120'
+- name: 'T.ME: @aristapnel #119'
   type: vmess
   server: 216.106.185.141
   port: 22324
@@ -1430,6 +1417,19 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 216.106.185.141
+- name: 'T.ME: @aristapnel #120'
+  type: vmess
+  server: 213.156.141.52
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 213.156.141.52
 - name: 'T.ME: @aristapnel #121'
   type: vless
   server: 94.131.123.167

@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 100
-// Updated: 2026-07-02 04:03:54
+// Updated: 2026-07-02 09:24:34
 // Count: 80
 
 {
@@ -965,15 +965,6 @@
     {
       "type": "vmess",
       "tag": "ARISTA #55",
-      "server": "spt.reata.ir",
-      "server_port": 1050,
-      "uuid": "b5b183b6-a4f0-41ad-a015-ba9f000ad7ed",
-      "security": "auto",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "vmess",
-      "tag": "ARISTA #56",
       "server": "45.92.70.236",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -982,7 +973,7 @@
     },
     {
       "type": "vmess",
-      "tag": "ARISTA #57",
+      "tag": "ARISTA #56",
       "server": "85.90.217.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -991,7 +982,7 @@
     },
     {
       "type": "vmess",
-      "tag": "ARISTA #58",
+      "tag": "ARISTA #57",
       "server": "67.220.85.46",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1000,7 +991,7 @@
     },
     {
       "type": "vmess",
-      "tag": "ARISTA #59",
+      "tag": "ARISTA #58",
       "server": "38.110.1.246",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -1009,8 +1000,17 @@
     },
     {
       "type": "vmess",
-      "tag": "ARISTA #60",
+      "tag": "ARISTA #59",
       "server": "38.91.107.49",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "vmess",
+      "tag": "ARISTA #60",
+      "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",

@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 100
-# Updated: 2026-07-02 04:01:06
+# Updated: 2026-07-02 09:21:52
 # Count: 100
 
 mixed-port: 7890
@@ -909,19 +909,6 @@ proxies:
     path: /
 - name: 'T.ME: @aristapnel #75'
   type: vmess
-  server: spt.reata.ir
-  port: 1050
-  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: spt.reata.ir
-- name: 'T.ME: @aristapnel #76'
-  type: vmess
   server: 45.92.70.236
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -933,7 +920,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.92.70.236
-- name: 'T.ME: @aristapnel #77'
+- name: 'T.ME: @aristapnel #76'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -946,7 +933,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 85.90.217.42
-- name: 'T.ME: @aristapnel #78'
+- name: 'T.ME: @aristapnel #77'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -959,7 +946,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 67.220.85.46
-- name: 'T.ME: @aristapnel #79'
+- name: 'T.ME: @aristapnel #78'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -972,7 +959,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.110.1.246
-- name: 'T.ME: @aristapnel #80'
+- name: 'T.ME: @aristapnel #79'
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -985,6 +972,19 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.91.107.49
+- name: 'T.ME: @aristapnel #80'
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 134.195.196.211
 - name: 'T.ME: @aristapnel #81'
   type: vless
   server: 94.131.123.167
